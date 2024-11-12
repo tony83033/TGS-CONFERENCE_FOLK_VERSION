@@ -3,6 +3,7 @@ import Hero from "@/components/customComponents/Hero";
 import CityCardGrid from "@/components/customComponents/CityCards";
 import GalleryCarousel from "@/components/customComponents/Gallery";
 import MentorProfile from "@/components/customComponents/Mentor";
+import PricingComponent from "@/components/customComponents/PricingTickets";
 export default function Home() {
   return (
    <>
@@ -10,6 +11,7 @@ export default function Home() {
    <CityCardGrid></CityCardGrid>
    <MentorProfile></MentorProfile>
    <GalleryCarousel></GalleryCarousel>
+   <PricingComponent></PricingComponent>
    </>
   );
 }
