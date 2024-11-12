@@ -11,7 +11,7 @@ interface ImageData {
 }
 
 const galleryImages: ImageData[] = [
-  { src: "/../../app/public/assets/cityCards", alt: "Gallery Image 1" },
+  { src: "/../../app/public/assets/cityCards/Mumbai.jpg", alt: "Gallery Image 1" },
   { src: "/../../app/public/assets/cityCards", alt: "Gallery Image 2" },
   { src: "/../../app/public/assets/cityCards", alt: "Gallery Image 3" },
   { src: "/../../app/public/assets/cityCards", alt: "Gallery Image 4" },
