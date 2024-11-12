@@ -2,23 +2,35 @@
 import { useEffect, useState } from "react"
 import Image from "next/image"
 import { cn } from "@/lib/utils" // Helper for conditional classes
-
-
+import bangolor from "../../app/public/assets/cityCards/bangalore.jpg"
+import Event1Image from "../../app/public/assets/event-gallery/event-gallery-1.jpg";
+import Event2Image from "../../app/public/assets/event-gallery/event-gallery-2.jpg";
+import Event3Image from "../../app/public/assets/event-gallery/event-gallery-3.jpg";
+import Event4Image from "../../app/public/assets/event-gallery/event-gallery-4.jpg";
+import Event5Image from "../../app/public/assets/event-gallery/event-gallery-5.jpg";
+import Event6Image from "../../app/public/assets/event-gallery/event-gallery-6.jpg";
+import Event7Image from "../../app/public/assets/event-gallery/event-gallery-7.jpg";
+import Event8Image from "../../app/public/assets/event-gallery/event-gallery-8.jpg";
+import Event9Image from "../../app/public/assets/event-gallery/event-gallery-9.jpg";
+// import Event10Image from "../../app/public/assets/event-gallery/event-gallery-10.jpg";
 // Define your image type and data array for gallery images
 interface ImageData {
   src: string
   alt: string
 }
 
-const galleryImages: ImageData[] = [
-  { src: "/../../app/public/assets/cityCards", alt: "Gallery Image 1" },
-  { src: "/../../app/public/assets/cityCards", alt: "Gallery Image 2" },
-  { src: "/../../app/public/assets/cityCards", alt: "Gallery Image 3" },
-  { src: "/../../app/public/assets/cityCards", alt: "Gallery Image 4" },
-  { src: "/../../app/public/assets/cityCards", alt: "Gallery Image 5" },
-  { src: "/../../app/public/assets/cityCards", alt: "Gallery Image 6" },
-  { src: "/../../app/public/assets/cityCards", alt: "Gallery Image 7" },
-]
+const galleryImages = [
+  { src: Event1Image.src.toString(), alt: "Gallery Image 1" },
+  { src: Event2Image.src.toString(), alt: "Gallery Image 2" },
+  { src: Event3Image.src.toString(), alt: "Gallery Image 3" },
+  { src: Event4Image.src.toString(), alt: "Gallery Image 4" },
+  { src: Event5Image.src.toString(), alt: "Gallery Image 5" },
+  { src: Event6Image.src.toString(), alt: "Gallery Image 6" },
+  { src: Event7Image.src.toString(), alt: "Gallery Image 7" },
+  { src: Event8Image.src.toString(), alt: "Gallery Image 8" },
+  { src: Event9Image.src.toString(), alt: "Gallery Image 9" },
+  // { src: Event10Image.src.toString(), alt: "Gallery Image 10" },
+];
 
 export default function GalleryCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0)
