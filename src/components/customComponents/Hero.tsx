@@ -124,7 +124,7 @@ const Hero = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 mt-12">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 -mt-16">
         {/* Title - Now replaced with HeroImage */}
         <div className="">
           <img
@@ -135,7 +135,7 @@ const Hero = () => {
         </div>
 
         {/* Play Button Section with adjusted spacing */}
-        <div className="-mt-12 flex flex-col items-center gap-6">
+        <div className="-mt-6 flex flex-col items-center gap-6">
           {/* Play Button */}
           <button
             onClick={() => setIsVideoOpen(true)}
@@ -152,12 +152,7 @@ const Hero = () => {
           </button>
 
           {/* About Event Button */}
-          <button
-            onClick={() => setIsVideoOpen(true)}
-            className="px-10 py-2.5 rounded-full border-2 border-[#FF1744] text-white hover:bg-[#FF1744]/10 transition-colors duration-300"
-          >
-            About The Event
-          </button>
+          
         </div>
       </div>
 
