@@ -6,6 +6,7 @@ import About from "@/components/customComponents/About";
 import MentorProfile from "@/components/customComponents/Mentor";
 import PricingComponent from "@/components/customComponents/PricingTickets";
 import Faq from "@/components/customComponents/Faq";
+import Testimonials from "@/components/customComponents/CourseTestimonials"
 import Levels from "@/components/customComponents/Levels";
 import EventSchedule from "@/components/customComponents/Shedule";
 export default function Home() {
@@ -20,7 +21,9 @@ export default function Home() {
    {/* <GalleryCarousel></GalleryCarousel> */}
    <Faq></Faq>
    
+   
    <PricingComponent></PricingComponent>
+   <Testimonials></Testimonials>
    </>
   );
 }
