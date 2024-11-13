@@ -86,7 +86,7 @@ const posts = [
 
 export default function Component() {
   return (
-    <div className="bg-[#000820] p-6 mx-auto">
+    <div className="bg-[#000000] p-6 mx-auto">
       <div className="mx-auto" style={{ width: '920px' }}>
         <h2 className="text-white text-md">
           HEAR IT FROM THEM

@@ -128,7 +128,7 @@ export default function Component() {
           </div>
         </div>
 
-        <div className="mt-16">
+        <div className="mt">
           <h2 className="text-3xl font-bold mb-8 text-center">
             Capstone Project: <span className="text-emerald-400">Secure, Observable, and Scalable</span> Application Deployment
           </h2>

@@ -5,6 +5,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, List } from 'lucide-react'; // Importing icons from lucide-react, you can replace with other icons if needed
+import LOGO from "../../app/public/assets/docker.png"
 
 // Utility function to conditionally combine classes (similar to `shadcn-utils`' `cn` function)
 function cn(...classes: string[]): string {
@@ -35,13 +36,14 @@ const Navbar: React.FC = () => {
     <header
       className={cn(
         "header sticky top-0 w-full z-50 transition-colors duration-300",
-        scrolled ? "bg-[#000820] bg-opacity-50" : "bg-transparent"
+        scrolled ? "bg-black bg-opacity-50" : "bg-transparent"
       )}
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
         <a href="index.html" className="flex items-center space-x-2">
-          <img src="assets/img/TGS.svg" alt="tgs" className="h-8" />
+          {/* <img src="" alt="tgs" className="h-8" /> */}
+          TGS
         </a>
 
         {/* Navigation Menu */}
@@ -127,3 +129,8 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
+
+
+
+
+
