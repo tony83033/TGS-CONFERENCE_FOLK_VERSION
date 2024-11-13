@@ -147,7 +147,7 @@ const FaqAccordion: React.FC = () => {
         <div key={index} className="border-b border-gray-300 last:border-b-0">
           <button
             onClick={() => toggleAccordion(index)}
-            className="w-full flex justify-between items-center py-4 text-left text-gray-900 hover:text-blue-800 transition-colors duration-200"
+            className="w-full flex justify-between items-center py-4 text-left text-gray-900 hover:text-blue-500 transition-colors duration-200 h-20"
             aria-expanded={activeIndex === index}
           >
             <span className="font-medium">{item.question}</span>
