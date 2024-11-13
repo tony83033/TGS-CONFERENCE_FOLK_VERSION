@@ -1,94 +1,6 @@
 
 
 
-// import { Card } from "@/components/ui/card"
-// import { Shield, Lock, Monitor, BarChart3, Cloud, Brain } from 'lucide-react'
-// import React from 'react'
-
-// interface ProjectTopic {
-//   title: string
-//   icon: React.ReactNode
-// }
-
-// export default function Component() {
-//   const topics: ProjectTopic[] = [
-//     { title: "Data Privacy and Security", icon: <Shield className="w-8 h-8 text-blue-600" /> },
-//     { title: "Cybersecurity Threats", icon: <Lock className="w-8 h-8 text-blue-600" /> },
-//     { title: "Digital Inclusion", icon: <Monitor className="w-8 h-8 text-blue-600" /> },
-//     { title: "Digital Transformation", icon: <BarChart3 className="w-8 h-8 text-blue-600" /> },
-//     { title: "Cloud Computing Challenges", icon: <Cloud className="w-8 h-8 text-blue-600" /> },
-//     { title: "Artificial Intelligence Ethics", icon: <Brain className="w-8 h-8 text-blue-600" /> },
-//   ]
-
-//   return (
-//     <div className="w-full max-w-4xl mx-auto p-8 bg-[#f5f5dc] rounded-3xl relative overflow-hidden shadow-md">
-//       {/* Decorative Background Circles */}
-//       <div className="absolute top-0 left-0 w-48 h-48 bg-blue-200 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-30" />
-//       <div className="absolute bottom-0 right-0 w-48 h-48 bg-blue-200 rounded-full translate-x-1/2 translate-y-1/2 opacity-30" />
-
-//       {/* Title */}
-//       <h1 className="text-2xl font-bold text-center mb-8 text-blue-800 relative z-10">
-//         Capstone Project Examples in Information Technology
-//       </h1>
-
-//       {/* Circle Layout */}
-//       <div className="relative flex items-center justify-center aspect-square w-full max-w-lg mx-auto">
-//         {/* Center Circle */}
-//         <div className="absolute w-40 h-40 bg-green-600 rounded-full flex items-center justify-center z-20 shadow-lg">
-//           <span className="text-white font-semibold text-lg text-center px-4">
-//             Project Ideas
-//           </span>
-//         </div>
-
-//         {/* Project Topics arranged in circular layout */}
-//         {topics.map((topic, index) => {
-//           const angle = (index * (360 / topics.length) * Math.PI) / 180
-//           const radius = 220 // Distance between the center and topic cards
-//           const x = Math.cos(angle) * radius
-//           const y = Math.sin(angle) * radius
-
-//           return (
-//             <div
-//               key={topic.title}
-//               className="absolute transform -translate-x-1/2 -translate-y-1/2"
-//               style={{
-//                 left: `calc(50% + ${x}px)`,
-//                 top: `calc(50% + ${y}px)`,
-//               }}
-//             >
-//               <Card className="w-36 p-3 flex flex-col items-center gap-2 text-center bg-white shadow-md hover:shadow-lg transition-shadow">
-//                 <div className="p-2 bg-blue-100 rounded-full">
-//                   {topic.icon}
-//                 </div>
-//                 <span className="text-xs font-medium text-blue-800">{topic.title}</span>
-//               </Card>
-//               {/* Connector Line */}
-//               <div
-//                 className="absolute left-1/2 top-1/2 h-[1px] bg-blue-300 -z-10 origin-left"
-//                 style={{
-//                   width: `${radius - 40}px`, // Set width based on radius minus the card radius
-//                   transform: `rotate(${(angle * 180) / Math.PI}deg)`,
-//                 }}
-//               />
-//             </div>
-//           )
-//         })}
-//       </div>
-
-//       {/* Tag or Initials Badge */}
-//       <div className="absolute top-2 right-2 bg-green-200 text-green-800 rounded-full px-3 py-1 text-sm font-semibold">
-//         NS
-//       </div>
-//     </div>
-//   )
-// }
-
-
-
-
-
-
-
 
 
 import { Button } from "@/components/ui/button"
@@ -103,6 +15,7 @@ import {
   Globe,
 } from "lucide-react"
 import Image from "next/image"
+import Docker from "../../app/public/assets/docker.png"
 
 export default function Component() {
   const steps = [
@@ -145,11 +58,12 @@ export default function Component() {
   ]
 
   const avatars = [
-    { src: "/placeholder.svg", alt: "User 1", top: "20%", left: "20%" },
-    { src: "/placeholder.svg", alt: "User 2", top: "30%", left: "50%" },
-    { src: "/placeholder.svg", alt: "User 3", top: "60%", left: "30%" },
-    { src: "/placeholder.svg", alt: "User 4", top: "70%", left: "70%" },
-    { src: "/placeholder.svg", alt: "User 5", top: "40%", left: "80%" },
+    { src: Docker, alt: "User 1", top: "25%", left: "10%" },
+    { src: Docker, alt: "User 2", top: "30%", left: "40%" },
+    { src: Docker, alt: "User 3", top: "60%", left: "30%" },
+    { src: Docker, alt: "User 4", top: "50%", left: "70%" },
+    { src: Docker, alt: "User 5", top: "35%", left: "90%" },
+    { src: Docker, alt: "User 6", top: "60%", left: "12%" },
   ]
 
   return (
@@ -201,17 +115,16 @@ export default function Component() {
 
           {/* Content */}
           <div>
-            <h1 className="text-4xl font-bold mb-4">
-              Hey there, <span className="text-emerald-400">developer!</span>
-            </h1>
-            <p className="text-xl mb-6">
-              Join our global community. Prep for tech interviews and upskill yourself. Get access to
-              coveted tech jobs and collaborate to build the future of tech in our
-              hackathons.
-            </p>
-            <Button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-md text-lg">
+          <h1 className="text-4xl font-bold mb-4">
+  Master Capstone Projects in <span className="text-emerald-400">Cloud DevOps</span>
+</h1>
+<p className="text-xl mb-6">
+  Develop secure, observable, and scalable application deployments. From designing microservices and optimizing containers to setting up GitOps workflows and monitoring with Grafana, these projects will elevate your DevOps expertise to production-grade standards.
+</p>
+
+            {/* <Button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-md text-lg">
               Join now
-            </Button>
+            </Button> */}
           </div>
         </div>
 
