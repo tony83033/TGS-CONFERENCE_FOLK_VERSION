@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic'
 import React from 'react';
 import {
   Accordion,
@@ -5,11 +6,30 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+
+// Dynamic imports for Tooltip components
+const TooltipProvider = dynamic(
+    () => import("@/components/ui/tooltip").then((mod) => mod.TooltipProvider),
+    { ssr: false }
+  );
+  const Tooltip = dynamic(
+    () => import("@/components/ui/tooltip").then((mod) => mod.Tooltip),
+    { ssr: false }
+  );
+  const TooltipTrigger = dynamic(
+    () => import("@/components/ui/tooltip").then((mod) => mod.TooltipTrigger),
+    { ssr: false }
+  );
+  const TooltipContent = dynamic(
+    () => import("@/components/ui/tooltip").then((mod) => mod.TooltipContent),
+    { ssr: false }
+  );
 import { ChevronDown } from 'lucide-react';
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import technologyImage from "../../../app/public/assets/docker.png"
 import mentorImage from "../../../app/public/assets/mentor.jpeg"
+import { Badge  } from "@/components/ui/badge"
 
 const CourseSchedule = () => {
   const courseData = [
@@ -47,34 +67,61 @@ const CourseSchedule = () => {
           <AccordionItem value="main" className="border-none">
             {/* Header section as Accordion Trigger */}
             <AccordionTrigger className="p-0 hover:no-underline">
-              <div className="flex w-full items-start">
-                {/* Left section with mentor image and timestamp */}
-                <div className="flex flex-col items-start">
-                  <img 
-                    src={technologyImage.src.toString()}
-                    alt="Mentor" 
-                    className="rounded-full w-12 h-12 mb-2"
-                  />
-                  <span className="inline-block px-3 py-1 bg-blue-50 text-blue-600 rounded-lg text-sm">
-                    10:00 AM
-                  </span>
-                </div>
-                
-                {/* Center title */}
-                <h1 className="text-2xl font-semibold text-blue-500 flex-1 text-center">
-                  Universe of Kubernetes
-                </h1>
+  <div className="flex w-full items-start gap-4">
+    {/* Left: Mentor Image */}
+    <div className="flex flex-col items-center">
+      <img 
+        src={technologyImage.src.toString()}
+        alt="technology" 
+        className="rounded-full w-12 h-12 mb-2"
+      />
+      <span className="inline-block px-3 py-1 bg-blue-50 text-blue-600 rounded-lg text-sm">
+        10:00 AM
+      </span>
+    </div>
 
-                {/* Right tech image */}
-                <div className="flex-shrink-0">
-                  <img 
-                    src={mentorImage.src.toString()}
-                    alt="Technology" 
-                    className="rounded-full w-12 h-12"
-                  />
-                </div>
+   {/* Left-Aligned Title and Subheading */}
+   <div className="flex-1">
+    <div className='text-left'>
+              <h3 className="text-lg font-semibold text-gray-900">
+              World of Docker Containers
+              </h3>
+              <p className="text-sm text-gray-500 mt-1">
+                Advanced Kubernetes Security Patterns & Best Practices
+              </p>
               </div>
-            </AccordionTrigger>
+              <div className="flex items-center gap-2 mt-2">
+                <span className="px-2 py-1 bg-yellow-100 text-yellow-700 rounded text-xs font-medium">
+                  vimal sir
+                </span>
+                <span className="text-sm text-gray-500">
+                  45 min session
+                </span>
+              </div>
+            </div>
+
+    {/* Right: Tooltip Section */}
+    <TooltipProvider>
+      <Tooltip>
+        <TooltipTrigger>
+          <div className="flex-shrink-0">
+            <img 
+              src={mentorImage.src.toString()}
+              alt="Mentor" 
+              className="rounded-full w-20 h-20 border-yellow-400 p-2"
+            />
+          </div>
+          <Badge className="bg-yellow-100 text-yellow-800 hover:text-yellow-900 font-bold">
+            Vimal Sir
+          </Badge>
+        </TooltipTrigger>
+        <TooltipContent className="w-64">
+          <p>Vimal sir is a public speaker...</p>
+        </TooltipContent>
+      </Tooltip>
+    </TooltipProvider>
+  </div>
+</AccordionTrigger>
 
             {/* Main Accordion Content with Sub-Accordions */}
             <AccordionContent>
