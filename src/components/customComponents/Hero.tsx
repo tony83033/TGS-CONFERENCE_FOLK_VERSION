@@ -105,7 +105,7 @@
 import React, { useState } from 'react';
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Play } from "lucide-react";
-import tgsHeroImage from "../../app/public/assets/tgsHeroImg.jpg"
+import tgsHeroImage from "../../app/public/assets/TGS-home-page1.jpg"
 import HeroImage from "../../app/public/assets/TGS-home-text.png"
 
 const Hero = () => {
@@ -114,25 +114,39 @@ const Hero = () => {
   return (
     <div className="relative h-screen w-full overflow-hidden">
       {/* Background Image with exact overlay */}
-      <div 
+      {/* <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url(${tgsHeroImage.src.toString()})`
         }}
       >
-        <div className="absolute inset-0 bg-[#000000]/75" />
-      </div>
+        <div className="absolute inset-0 bg-[]/75" />
+      </div> */}
+
+
+
+<div 
+  className="absolute inset-0 bg-cover bg-center"
+  style={{
+    backgroundImage: `url(${tgsHeroImage.src})`,
+    height: "100%",   // Set height to fill container
+    width: "100%",    // Set width to fill container
+  }}
+>
+  <div className="absolute inset-0 " /> {/* Overlay */}
+</div>
 
       {/* Main Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 -mt-16">
         {/* Title - Now replaced with HeroImage */}
-        <div className="">
+        {/* <div className="">
           <img
             src={HeroImage.src} 
             alt="The Annual Marketing Conference"
-            className="max-w-full h-96"
+            // className="max-w-full h-auto"
+             className="max-w-full h-auto aspect-w-12 aspect-h-6"
           />
-        </div>
+        </div> */}
 
         {/* Play Button Section with adjusted spacing */}
         <div className="-mt-6 flex flex-col items-center gap-6">
