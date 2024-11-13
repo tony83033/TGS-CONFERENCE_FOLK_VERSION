@@ -5,8 +5,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Clock } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import { Card } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
+import technologyImage from "../../../app/public/assets/docker.png"
+import mentorImage from "../../../app/public/assets/mentor.jpeg"
 
 const CourseSchedule = () => {
   const courseData = [
@@ -37,78 +40,126 @@ const CourseSchedule = () => {
   ];
 
   return (
-    <Card className="max-w-3xl mx-auto p-6 shadow-lg">
-      <div className="relative mb-8">
-        {/* Top section with images and title */}
-        <div className="flex items-center justify-between mb-6">
-          {/* Mentor image */}
-          <div className="relative">
-            <img 
-              src="/api/placeholder/48/48" 
-              alt="Mentor" 
-              className="rounded-full border-2 border-blue-500"
-            />
-            <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></div>
-          </div>
-          
-          {/* Tech image */}
-          <img 
-            src="/api/placeholder/48/48" 
-            alt="Technology" 
-            className="rounded-full border-2 border-blue-500"
-          />
-        </div>
-
-        {/* Title and time */}
-        <div className="text-center mb-4">
-          <h1 className="text-2xl font-bold text-blue-600 mb-2">
-            Universe of Kubernetes
-          </h1>
-          <div className="flex items-center justify-center text-gray-600 gap-1">
-            <Clock className="w-4 h-4" />
-            <span className="text-sm font-medium">10:00 AM</span>
-          </div>
-        </div>
-      </div>
-
-      {/* Enhanced Accordion */}
-      <Accordion type="single" collapsible className="space-y-4">
-        {courseData.map((item, index) => (
-          <AccordionItem 
-            key={item.id} 
-            value={item.id}
-            className="border rounded-lg bg-white shadow-sm hover:shadow-md transition-shadow"
-          >
-            <AccordionTrigger className="px-4 py-3">
-              <div className="flex items-center gap-4">
-                <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-medium">
-                  {index + 1}
+    <Card className="max-w-3xl mx-auto shadow-lg rounded-xl border border-gray-200">
+      <div className="p-6">
+        {/* Main Accordion */}
+        <Accordion type="single" collapsible className="space-y-2">
+          <AccordionItem value="main" className="border-none">
+            {/* Header section as Accordion Trigger */}
+            <AccordionTrigger className="p-0 hover:no-underline">
+              <div className="flex w-full items-start">
+                {/* Left section with mentor image and timestamp */}
+                <div className="flex flex-col items-start">
+                  <img 
+                    src={technologyImage.src.toString()}
+                    alt="Mentor" 
+                    className="rounded-full w-12 h-12 mb-2"
+                  />
+                  <span className="inline-block px-3 py-1 bg-blue-50 text-blue-600 rounded-lg text-sm">
+                    10:00 AM
+                  </span>
                 </div>
-                <div className="text-left">
-                  <h3 className="font-semibold text-gray-900">{item.title}</h3>
-                  <p className="text-sm text-gray-500">{item.description}</p>
+                
+                {/* Center title */}
+                <h1 className="text-2xl font-semibold text-blue-500 flex-1 text-center">
+                  Universe of Kubernetes
+                </h1>
+
+                {/* Right tech image */}
+                <div className="flex-shrink-0">
+                  <img 
+                    src={mentorImage.src.toString()}
+                    alt="Technology" 
+                    className="rounded-full w-12 h-12"
+                  />
                 </div>
               </div>
             </AccordionTrigger>
-            <AccordionContent className="px-4 py-3">
-              {item.subItems ? (
-                <ul className="space-y-2">
-                  {item.subItems.map((subItem, i) => (
-                    <li key={i} className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
-                      <span className="text-gray-700">{subItem}</span>
-                    </li>
+
+            {/* Main Accordion Content with Sub-Accordions */}
+            <AccordionContent>
+              <div className="mt-8">
+                <Accordion type="single" collapsible className="space-y-2">
+                  {courseData.map((item, index) => (
+                    <AccordionItem 
+                      key={item.id} 
+                      value={item.id}
+                      className="border border-gray-100 rounded-lg data-[state=open]:bg-gray-50"
+                    >
+                      <AccordionTrigger className="px-4 py-4 hover:no-underline">
+                        <div className="flex items-center gap-4 w-full">
+                          <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-medium">
+                            {index + 1}
+                          </div>
+                          <div className="text-left flex-1">
+                            <h3 className="font-semibold text-gray-900">{item.title}</h3>
+                            <p className="text-sm text-gray-500">{item.description}</p>
+                          </div>
+                          <ChevronDown className="h-5 w-5 text-gray-500 transform transition-transform duration-200" />
+                        </div>
+                      </AccordionTrigger>
+                      <AccordionContent className="px-16 py-3">
+                        {item.subItems ? (
+                          <ul className="space-y-3">
+                            {item.subItems.map((subItem, i) => (
+                              <li key={i} className="flex items-center gap-2">
+                                <div className="w-4 h-4 rounded-full bg-green-400 flex items-center justify-center">
+                                  <div className="w-2 h-2 rounded-full bg-white"></div>
+                                </div>
+                                <span className="text-gray-700">{subItem}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        ) : (
+                          <div className="text-gray-600">
+                            Content will be revealed during the session.
+                          </div>
+                        )}
+                      </AccordionContent>
+                    </AccordionItem>
                   ))}
-                </ul>
-              ) : (
-                <p className="text-gray-600">
-                  Detailed content for this section will be revealed during the session.
-                </p>
-              )}
+                </Accordion>
+              </div>
             </AccordionContent>
           </AccordionItem>
-        ))}
-      </Accordion>
+        </Accordion>
+
+        {/* Guest Lecture Section */}
+        <div className="mt-8">
+          <Separator className="mb-6" />
+          <div className="flex items-start gap-4">
+            <div className="flex flex-col items-center">
+              <div className="relative">
+                <img 
+                  src="/api/placeholder/48/48" 
+                  alt="Guest Lecturer" 
+                  className="rounded-full w-12 h-12 border-2 border-yellow-400"
+                />
+                <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></div>
+              </div>
+              <span className="mt-2 px-3 py-1 bg-yellow-50 text-yellow-700 rounded-lg text-sm font-medium">
+                11:30 AM
+              </span>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-lg font-semibold text-gray-900">
+                Special Guest Lecture
+              </h3>
+              <p className="text-sm text-gray-500 mt-1">
+                Advanced Kubernetes Security Patterns & Best Practices
+              </p>
+              <div className="flex items-center gap-2 mt-2">
+                <span className="px-2 py-1 bg-yellow-100 text-yellow-700 rounded text-xs font-medium">
+                  Guest Speaker
+                </span>
+                <span className="text-sm text-gray-500">
+                  45 min session
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </Card>
   );
 };
