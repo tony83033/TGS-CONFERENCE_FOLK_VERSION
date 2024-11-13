@@ -133,17 +133,17 @@ const MentorProfile = () => {
         {/* Right Column - Content */}
         <div className="space-y-8">
           <div className="space-y-6">
-            <h1 className="text-3xl font-bold text-gray-900">
-              Man behind this <span className="text-[#ff0000]">Initiative</span>
+            <h1 className="text-3xl font-bold text-white">
+              Man behind this <span className="text-red-600">Initiative</span>
             </h1>
             <div className="space-y-4 text-black-800">
-              <p className="leading-relaxed font-bold">
+              <p className="leading-relaxed font-bold text-white">
                 Vimal sir is a public speaker and YouTuber who co-founded Think School, with Paras Kothari, an education startup that generated 4+ Billion video impressions in 24 months.
               </p>
-              <p className="leading-relaxed">
+              <p className="leading-relaxed text-white">
                 Vimal sir has helped 27000+ students improve their communication to become effective public speakers, great salespeople, YouTubers and successful business people.
               </p>
-              <p className="leading-relaxed">
+              <p className="leading-relaxed text-white">
                 Vimal sir's dedication to education has earned him the title of "Insightful Education Creator of the Year 2023" at the Global Startup Summit 2023. His vision is to make the Indian youth more employable by helping them learn practical and fundamental skills in life.
               </p>
             </div>
@@ -163,8 +163,8 @@ const MentorProfile = () => {
           </div>
 
           {/* Enhanced Featured Section */}
-          <div className="border border-gray-200 rounded-xl p-6 shadow-sm bg-white/50 backdrop-blur-sm">
-            <p className="text-gray-800 font-medium mb-6 font-bold">Companies served</p>
+          <div className="border border-gray-200 rounded-xl p-6 shadow-sm bg-white backdrop-blur-sm">
+            <p className="text-white font-medium mb-6 font-bold">Companies served</p>
             <div className="grid grid-cols-1 gap-8">
               <MentorFeatured />
             </div>
