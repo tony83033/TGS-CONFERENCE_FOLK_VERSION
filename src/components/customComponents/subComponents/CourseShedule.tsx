@@ -448,7 +448,7 @@ const CourseCard = () => {
             </div>
           </div>
           <div className="flex-shrink-0">
-            <TooltipProvider>
+            {/* <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger>
                   <img 
@@ -461,7 +461,7 @@ const CourseCard = () => {
                   <p>Guest speaker is a cybersecurity expert...</p>
                 </TooltipContent>
               </Tooltip>
-            </TooltipProvider>
+            </TooltipProvider> */}
           </div>
         </div>
       </div>
