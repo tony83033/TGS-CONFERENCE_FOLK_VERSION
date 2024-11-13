@@ -19,6 +19,7 @@ interface ImageData {
   alt: string
 }
 
+<<<<<<< HEAD
 const galleryImages = [
   { src: Event1Image.src.toString(), alt: "Gallery Image 1" },
   { src: Event2Image.src.toString(), alt: "Gallery Image 2" },
@@ -31,6 +32,17 @@ const galleryImages = [
   { src: Event9Image.src.toString(), alt: "Gallery Image 9" },
   // { src: Event10Image.src.toString(), alt: "Gallery Image 10" },
 ];
+=======
+const galleryImages: ImageData[] = [
+//   { src: "/../../app/public/assets/cityCards/Mumbai.jpg", alt: "Gallery Image 1" },
+  { src: "/../../app/public/assets/cityCards", alt: "Gallery Image 2" },
+  { src: "/../../app/public/assets/cityCards", alt: "Gallery Image 3" },
+  { src: "/../../app/public/assets/cityCards", alt: "Gallery Image 4" },
+  { src: "/../../app/public/assets/cityCards", alt: "Gallery Image 5" },
+  { src: "/../../app/public/assets/cityCards", alt: "Gallery Image 6" },
+  { src: "/../../app/public/assets/cityCards", alt: "Gallery Image 7" },
+]
+>>>>>>> d99480d71f828d48c8a4073dcf0c03a841ef89de
 
 export default function GalleryCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0)
