@@ -7,11 +7,13 @@ import MentorProfile from "@/components/customComponents/Mentor";
 import PricingComponent from "@/components/customComponents/PricingTickets";
 import Faq from "@/components/customComponents/Faq";
 import Levels from "@/components/customComponents/Levels";
+import EventSchedule from "@/components/customComponents/Shedule";
 export default function Home() {
   return (
    <>
    <Hero></Hero>
    <About></About>
+   <EventSchedule></EventSchedule>
    <CityCardGrid></CityCardGrid>
    <MentorProfile></MentorProfile>
    <Levels></Levels>
