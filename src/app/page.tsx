@@ -9,11 +9,13 @@ import Faq from "@/components/customComponents/Faq";
 import Testimonials from "@/components/customComponents/CourseTestimonials"
 import Levels from "@/components/customComponents/Levels";
 import CapstoneProject from "@/components/customComponents/CapstoneProject";
+import EventSchedule from "@/components/customComponents/Shedule";
 export default function Home() {
   return (
    <>
    <Hero></Hero>
    <About></About>
+   <EventSchedule></EventSchedule>
    <CityCardGrid></CityCardGrid>
    <MentorProfile></MentorProfile>
    <Levels></Levels>
