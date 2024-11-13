@@ -10,6 +10,7 @@ import Testimonials from "@/components/customComponents/CourseTestimonials"
 import Levels from "@/components/customComponents/Levels";
 import CapstoneProject from "@/components/customComponents/CapstoneProject";
 import EventSchedule from "@/components/customComponents/Shedule";
+import TrainingCertificate from "@/components/customComponents/Cert";
 export default function Home() {
   return (
    <>
@@ -18,6 +19,7 @@ export default function Home() {
    <EventSchedule></EventSchedule>
    <CityCardGrid></CityCardGrid>
    <MentorProfile></MentorProfile>
+   <TrainingCertificate></TrainingCertificate>
    <Levels></Levels>
    {/* <GalleryCarousel></GalleryCarousel> */}
    <Faq></Faq>
