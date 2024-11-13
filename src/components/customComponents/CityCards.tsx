@@ -34,6 +34,17 @@ const cities: CityCardProps[] = [
     backgroundImage: chennai,
     overlayColor: "from-blue-500/60", // Example color
   },
+  {
+    city: "Gurugram",
+    backgroundImage: mumbai,
+    overlayColor: "from-pink-500/60", // Example color
+  },
+  {
+    city: "Mumbai",
+    backgroundImage: mumbai,
+    overlayColor: "from-pink-500/60", // Example color
+  },
+
 ]
 
 const events = [
@@ -48,7 +59,7 @@ export default function CityCardGrid() {
 
   return (
     <div className="p-8">
-      <div className="max-w-6xl mx-auto p-6 lg:px-8 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"> {/* Three cards per row */}
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"> {/* Three cards per row */}
         {cities.map((city, index) => (
           <div
             key={index}
@@ -84,10 +95,10 @@ export default function CityCardGrid() {
                 </ul>
               </div>
               <button
-                className={`mt-4 py-2 px-4 w-full border  text-white font-semibold rounded-lg transition-all duration-300 ${
+                className={`mt-4 py-2 px-4 w-full border text-white font-semibold rounded-lg transition-all duration-300 ${
                   hoveredIndex === index
-                    ? 'bg-red-600 border-white'
-                    : 'border-transparent bg-red-500 hover:bg-white/20'
+                    ? 'bg-white/20 border-white'
+                    : 'border-transparent bg-white/10 hover:bg-white/20'
                 }`}
               >
                 PARTICIPATE
