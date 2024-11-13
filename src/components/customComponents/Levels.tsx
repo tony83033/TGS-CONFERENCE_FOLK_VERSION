@@ -23,10 +23,10 @@ export default function Levels() {
   return (
     <div className="w-full max-w-3xl mx-auto px-4 py-12">
       <div className="text-center mb-16">
-        <h2 className="text-2xl md:text-3xl font-bold">
+        <h2 className="text-2xl md:text-3xl font-bold text-white">
           Your Journey to becoming a{" "}
           <span className="relative">
-            Master Communicator
+            Master of  Tech
             <span className="absolute bottom-0 left-0 w-full h-1 bg-orange-500" />
           </span>
         </h2>
