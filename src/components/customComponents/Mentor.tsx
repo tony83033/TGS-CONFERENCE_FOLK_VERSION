@@ -8,14 +8,14 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
-import MentorFeatured from './subComponents/MentorFeatured';
-import mentor1 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-1.jpeg";
+import MentorFeatured from './subComponents/MentorFeatured'
+import mentor7 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-1.jpeg";
 
 import mentor3 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-3.jpeg";
 import mentor4 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-4.jpeg";
 import mentor5 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-5.jpeg";
 import mentor6 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-6.jpeg";
-import mentor7 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-7.jpeg";
+import mentor1 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-7.jpeg";
 import mentor8 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-8.jpeg";
 import mentor9 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-9.jpeg";
 import mentor10 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-10.jpeg";
@@ -134,7 +134,7 @@ const MentorProfile = () => {
         <div className="space-y-8">
           <div className="space-y-6">
             <h1 className="text-3xl font-bold text-gray-900">
-              Meet your <span className="text-[#ff0000]">Mentor</span>
+              Man behind this <span className="text-[#ff0000]">Initiative</span>
             </h1>
             <div className="space-y-4 text-black-800">
               <p className="leading-relaxed font-bold">
@@ -164,7 +164,7 @@ const MentorProfile = () => {
 
           {/* Enhanced Featured Section */}
           <div className="border border-gray-200 rounded-xl p-6 shadow-sm bg-white/50 backdrop-blur-sm">
-            <p className="text-gray-800 font-medium mb-6 font-bold">Featured In</p>
+            <p className="text-gray-800 font-medium mb-6 font-bold">Companies served</p>
             <div className="grid grid-cols-1 gap-8">
               <MentorFeatured />
             </div>
