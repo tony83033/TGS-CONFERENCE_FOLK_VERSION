@@ -8,6 +8,7 @@ import PricingComponent from "@/components/customComponents/PricingTickets";
 import Faq from "@/components/customComponents/Faq";
 import Testimonials from "@/components/customComponents/CourseTestimonials"
 import Levels from "@/components/customComponents/Levels";
+import CapstoneProject from "@/components/customComponents/CapstoneProject";
 export default function Home() {
   return (
    <>
@@ -18,6 +19,7 @@ export default function Home() {
    <Levels></Levels>
    {/* <GalleryCarousel></GalleryCarousel> */}
    <Faq></Faq>
+   <CapstoneProject></CapstoneProject>
    
    
    <PricingComponent></PricingComponent>
