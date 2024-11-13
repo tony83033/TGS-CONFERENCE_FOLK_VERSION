@@ -16,7 +16,7 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10 max-w-6xl">
           {/* About The Event */}
           <div className="space-y-4 text-center">
-            <h2 className="text-4xl font-bold text-white">About The Event</h2>
+            <h2 className="text-4xl font-bold text-white">About The TGS</h2>
             <p className="text-gray-300 leading-relaxed">
               Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet
               accusamus 
