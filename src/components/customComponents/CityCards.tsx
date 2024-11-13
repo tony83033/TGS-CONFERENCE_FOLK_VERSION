@@ -10,25 +10,41 @@ import hyderabad from "../../app/public/assets/cityCards/hyderabad.jpg"
 interface CityCardProps {
   city: string
   backgroundImage: string | StaticImageData
+  overlayColor: string // New property for dynamic overlay color
 }
 
 const cities: CityCardProps[] = [
   {
     city: "Mumbai",
     backgroundImage: mumbai,
+    overlayColor: "from-pink-500/60", // Example color
   },
   {
     city: "Bangalore",
     backgroundImage: bangalore,
+    overlayColor: "from-purple-500/60", // Example color
   },
   {
     city: "Hyderabad",
     backgroundImage: hyderabad,
+    overlayColor: "from-yellow-500/60", // Example color
   },
   {
     city: "Chennai",
-    backgroundImage: chennai, // Use the imported image directly here
+    backgroundImage: chennai,
+    overlayColor: "from-blue-500/60", // Example color
   },
+  {
+    city: "Gurugram",
+    backgroundImage: mumbai,
+    overlayColor: "from-pink-500/60", // Example color
+  },
+  {
+    city: "Mumbai",
+    backgroundImage: mumbai,
+    overlayColor: "from-pink-500/60", // Example color
+  },
+
 ]
 
 const events = [
@@ -43,7 +59,7 @@ export default function CityCardGrid() {
 
   return (
     <div className="p-8">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"> {/* Three cards per row */}
         {cities.map((city, index) => (
           <div
             key={index}
@@ -60,7 +76,8 @@ export default function CityCardGrid() {
                 className="rounded-lg"
               />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/80 to-transparent" />
+            {/* Add the dynamic pink overlay */}
+            <div className={`absolute inset-0 bg-gradient-to-t ${city.overlayColor} to-transparent`} />
             <div className="relative h-full flex flex-col justify-between p-6 text-white">
               <div>
                 <h2 className="text-3xl font-extrabold mb-4">

@@ -31,6 +31,14 @@ const EventSchedule = () => {
         >
           Day 2
         </button>
+        <button
+          onClick={() => setActiveDay(2)}
+          className={`px-16 py-3 rounded-full text-white font-medium transition-colors ${
+            activeDay === 2 ? 'bg-[#0A1150]' : 'bg-[#FF1F62]'
+          }`}
+        >
+          Day 3
+        </button>
       </div>
 
       {/* Description text */}
