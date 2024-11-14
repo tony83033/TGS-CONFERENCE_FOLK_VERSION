@@ -2,10 +2,10 @@
 
 import { useState } from 'react'
 import Image, { StaticImageData } from 'next/image'
-import chennai from "../../app/public/assets/cityCards/chennai.png"
-import mumbai from "../../app/public/assets/cityCards/Mumbai.jpg"
-import bangalore from "../../app/public/assets/cityCards/bangalore.jpg"
-import hyderabad from "../../app/public/assets/cityCards/hyderabad.jpg"
+import chennai from "../../app/public/assets/cityCards/Chennai.jpg"
+import mumbai from "../../app/public/assets/cityCards/Mumbai1.jpg"
+import bangalore from "../../app/public/assets/cityCards/bangalore1.jpg"
+import hyderabad from "../../app/public/assets/cityCards/hyderabad1.jpg"
 
 interface CityCardProps {
   city: string
@@ -59,7 +59,7 @@ export default function CityCardGrid() {
 
   return (
     <div className="p-8">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"> {/* Three cards per row */}
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"> {/* Three cards per row */}
         {cities.map((city, index) => (
           <div
             key={index}
