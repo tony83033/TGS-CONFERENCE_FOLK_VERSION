@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { CircleDot, Mic, LightbulbIcon } from 'lucide-react'
+import { CircleDot, Mic, LightbulbIcon, ShieldCheck } from 'lucide-react'
 
 export default function Levels() {
   const levels = [
@@ -18,6 +18,11 @@ export default function Levels() {
       description: "People will remember you, trust you, respect you and will extend a hand of friendship towards you upfront!",
       icon: LightbulbIcon,
     },
+    {
+      title: "Clever to Confident",
+      description: "At this level, you will confidently lead conversations, win people over with your charisma, and truly master the art of communication!",
+      icon: ShieldCheck, // New icon for the 4th level
+    },
   ]
 
   return (
@@ -26,7 +31,7 @@ export default function Levels() {
         <h2 className="text-2xl md:text-3xl font-bold text-white">
           Your Journey to becoming a{" "}
           <span className="relative">
-            Master of  Tech
+            Master of Tech
             <span className="absolute bottom-0 left-0 w-full h-1 bg-orange-500" />
           </span>
         </h2>

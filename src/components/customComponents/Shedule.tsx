@@ -42,7 +42,7 @@ const EventSchedule = () => {
       </div>
 
       {/* Description text */}
-      <p className="text-center text-gray-700 italic max-w-3xl mx-auto">
+      <p className="text-center text-white italic max-w-3xl mx-auto ">
         Freedom from guilt, permission granted without restriction, and freedom from corruption allow for relief and satisfaction. His needs demand integrity; he wishes to work with diligence and transparency
       </p>
     </div>
