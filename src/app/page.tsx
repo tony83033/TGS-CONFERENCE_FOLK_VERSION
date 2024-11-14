@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Hero from "@/components/customComponents/Hero";
 import CityCardGrid from "@/components/customComponents/CityCards";
-import GalleryCarousel from "@/components/customComponents/Gallery";
+import Carousel from "@/components/customComponents/Carousel"
 import About from "@/components/customComponents/About";
 import MentorProfile from "@/components/customComponents/Mentor";
 import PricingComponent from "@/components/customComponents/PricingTickets";
@@ -21,10 +21,12 @@ export default function Home() {
    <MentorProfile></MentorProfile>
    <TrainingCertificate></TrainingCertificate>
    <Levels></Levels>
-   {/* <GalleryCarousel></GalleryCarousel> */}
+   
+   <Carousel></Carousel>
    <Faq></Faq>
    <CapstoneProject></CapstoneProject>
    
+
    
    <PricingComponent></PricingComponent>
    <Testimonials></Testimonials>
