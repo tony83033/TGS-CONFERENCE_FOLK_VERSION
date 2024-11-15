@@ -140,7 +140,7 @@ const FaqAccordion: React.FC = () => {
   }
 
   return (
-    <div className="w-4xl max-w-4xl mx-auto my-8 p-6 bg-white rounded-lg shadow-md">
+    <div className="w-4xl max-w-4xl mx-auto my-8 p-6 bg-[#ffffff] bg-opacity-90 rounded-lg shadow-md">
       <h2 className="text-2xl font-semibold text-center mb-2 text-blue-800">Frequently Asked Questions</h2>
       {/* <p className="text-base text-blue-600 text-center mb-6"></p> */}
       {faqData.map((item, index) => (
