@@ -59,7 +59,7 @@ export default function CityCardGrid() {
 
   return (
     <div className="p-8">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"> {/* Three cards per row */}
+      <div className="w-4/5 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12"> {/* Three cards per row */}
         {cities.map((city, index) => (
           <div
             key={index}
