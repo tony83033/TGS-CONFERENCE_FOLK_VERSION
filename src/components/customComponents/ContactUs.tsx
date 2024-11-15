@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/Input"
-import { Textarea } from "@/components/ui/TextArea"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { Home, Phone, Mail } from 'lucide-react'
 
