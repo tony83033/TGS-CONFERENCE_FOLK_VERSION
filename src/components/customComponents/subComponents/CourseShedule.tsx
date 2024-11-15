@@ -315,7 +315,8 @@ const CourseCard = () => {
     <div className="space-y-6">
       {/* Map over course data to generate course cards */}
       {courseData.map((course, courseIndex) => (
-        <Card key={course.id} className="max-w-3xl mx-auto shadow-lg rounded-xl border border-gray-200">
+        <Card key={course.id} className="max-w-3xl mx-auto shadow-lg rounded-xl border border-gray-200 bg-[#A9A9A9]"> 
+        {/* F1F1F1 */}
           <div className="p-6">
             {/* Accordion for each course */}
             <Accordion type="single" collapsible className="space-y-2">
@@ -392,7 +393,7 @@ const CourseCard = () => {
                                 <h3 className="font-semibold text-gray-900">{section.subheading}</h3>
                                 <p className="text-sm text-gray-500">{section.points.join(', ')}</p>
                               </div>
-                              <ChevronDown className="h-5 w-5 text-gray-500 transform transition-transform duration-200" />
+                              {/* <ChevronDown className="h-5 w-5 text-gray-500 transform transition-transform duration-200" /> */}
                             </div>
                           </AccordionTrigger>
                           <AccordionContent className="px-16 py-3">

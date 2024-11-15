@@ -11,6 +11,7 @@ import Levels from "@/components/customComponents/Levels";
 import CapstoneProject from "@/components/customComponents/CapstoneProject";
 import EventSchedule from "@/components/customComponents/Shedule";
 import TrainingCertificate from "@/components/customComponents/Cert";
+import ContactUs from "@/components/customComponents/ContactUs"
 export default function Home() {
   return (
    <>
@@ -30,6 +31,7 @@ export default function Home() {
    
    <PricingComponent></PricingComponent>
    <Testimonials></Testimonials>
+   <ContactUs></ContactUs>
    </>
   );
 }
