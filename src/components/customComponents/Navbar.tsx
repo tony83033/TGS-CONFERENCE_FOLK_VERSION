@@ -5,7 +5,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, List } from 'lucide-react'; // Importing icons from lucide-react, you can replace with other icons if needed
-import LOGO from "../../app/public/assets/TGS.png"
+import LOGO from "../../app/public/assets/TGS.svg"
 
 // Utility function to conditionally combine classes (similar to `shadcn-utils`' `cn` function)
 function cn(...classes: string[]): string {
@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
         {/* Logo */}
         <a href="http://localhost:3000" className="flex items-center space-x-2">
           <img
-                  src={LOGO.toString()} 
+                  src={LOGO.src.toString()} 
                   
                   width={112} 
                   height={64} 

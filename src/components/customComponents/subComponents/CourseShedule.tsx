@@ -315,7 +315,7 @@ const CourseCard = () => {
     <div className="space-y-6">
       {/* Map over course data to generate course cards */}
       {courseData.map((course, courseIndex) => (
-        <Card key={course.id} className="max-w-3xl mx-auto shadow-lg rounded-xl border border-gray-200 bg-[#A9A9A9]"> 
+        <Card key={course.id} className="max-w-3xl mx-auto shadow-lg rounded-xl border border-gray-200 bg-[#494F52]"> 
         {/* F1F1F1 */}
           <div className="p-6">
             {/* Accordion for each course */}
