@@ -10,7 +10,7 @@ export default function Component() {
       <div className="container mx-auto max-w-6xl">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#FFFF00] mb-4">
             Contact Us
           </h1>
           <p className="text-gray-300 max-w-3xl mx-auto">
