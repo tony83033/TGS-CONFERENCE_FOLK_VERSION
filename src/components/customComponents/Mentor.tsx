@@ -164,7 +164,7 @@ const MentorProfile = () => {
 
           {/* Enhanced Featured Section */}
           <div className="border border-gray-200 rounded-xl p-6 shadow-sm bg-white backdrop-blur-sm">
-            <p className="text-white font-medium mb-6 font-bold">Companies served</p>
+            <p className="text-black font-medium mb-6 font-bold">Companies served</p>
             <div className="grid grid-cols-1 gap-8">
               <MentorFeatured />
             </div>
