@@ -129,15 +129,18 @@ export default function Component() {
       <div className="flex flex-wrap gap-4 justify-center mb-8">
         {cities.map((city) => (
           <Button
-            key={city}
-            onClick={() => setSelectedCity(city)}
-            variant={selectedCity === city ? "default" : "outline"}
-            className={`px-6 py-2 rounded-full ${
-              selectedCity === city ? 'bg-white text-black' : 'bg-transparent text-white border-white'
-            }`}
-          >
-            {city}
-          </Button>
+          key={city}
+          onClick={() => setSelectedCity(city)}
+          variant={selectedCity === city ? "default" : "outline"}
+          className={`px-6 py-2 rounded-full transition-transform transform ${
+            selectedCity === city
+              ? "bg-white text-black hover:text-black hover:bg-white"
+              : "bg-transparent text-white border-white hover:bg-white hover:text-black"
+          }`}
+        >
+          {city}
+        </Button>
+        
         ))}
       </div>
 
