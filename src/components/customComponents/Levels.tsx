@@ -2,23 +2,23 @@ import React from 'react';
 import { Card, CardHeader, CardContent } from '@/components/ui/card';
 import { MoveDown } from 'lucide-react';
 
-const TimelineStage = ({ number, type, title, description }:any) => (
-  <div className="relative">
-    <Card className="bg-zinc-900 border-none mb-8 relative z-10">
-      <CardHeader className="space-y-1">
-        <p className="text-sm text-teal-400">Stage {number}: {type}</p>
-        <h3 className="text-xl font-semibold text-white">{title}</h3>
-      </CardHeader>
-      <CardContent>
-        <p className="text-gray-300">{description}</p>
-        <div className="flex justify-center mt-4">
-          <div className="w-8 h-8 rounded-full border border-orange-500 flex items-center justify-center">
-            <MoveDown className="w-4 h-4 text-orange-500" />
-          </div>
+const TimelineStage = ({ number, type, title, description }:any) => (<div className="relative">
+  <Card className="bg-zinc-900 border-none mb-8 relative z-10">
+    <CardHeader className="space-y-1">
+      <p className="text-sm text-teal-400">Stage {number}: {type}</p>
+      <h3 className="text-xl font-semibold text-white">{title}</h3>
+    </CardHeader>
+    <CardContent>
+      <p className="text-gray-300">{description}</p>
+      <div className="flex justify-center mt-4">
+        <div className="w-12 h-12 rounded-full border border-orange-500 flex items-center justify-center p-3">
+          <MoveDown className="w-8 h-8 text-orange-500 font-bold transition-all duration-300 ease-in-out transform shadow-lg" />
         </div>
-      </CardContent>
-    </Card>
-  </div>
+      </div>
+    </CardContent>
+  </Card>
+</div>
+
 );
 
 const Levels = () => {
