@@ -116,7 +116,7 @@ export default function Component() {
           {/* Content */}
           <div>
           <h1 className="text-4xl font-bold mb-4">
-  Master Capstone Projects in <span className="text-emerald-400">Cloud DevOps</span>
+  Master Capstone Projects in <span className="text-[#ff0000]">Cloud DevOps</span>
 </h1>
 <p className="text-xl mb-6">
   Develop secure, observable, and scalable application deployments. From designing microservices and optimizing containers to setting up GitOps workflows and monitoring with Grafana, these projects will elevate your DevOps expertise to production-grade standards.
@@ -145,37 +145,7 @@ export default function Component() {
             ))}
           </div>
 
-          {/* <div className="grid md:grid-cols-3 gap-6">
-            <Card className="bg-[#252b43] border-none">
-              <CardContent className="p-6">
-                <h3 className="text-lg font-semibold mb-2">Practice Platform</h3>
-                <p className="text-gray-300 mb-4">Use our practice platform to hone your coding skills and light up the leaderboard!</p>
-                <Button className="bg-cyan-500 hover:bg-cyan-600">
-                  Start practice
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-[#252b43] border-none">
-              <CardContent className="p-6">
-                <h3 className="text-lg font-semibold mb-2">Interview Prep</h3>
-                <p className="text-gray-300 mb-4">Need help with an interview? These developer-friendly resources will help you land that dream job!</p>
-                <Button className="bg-cyan-500 hover:bg-cyan-600">
-                  Start prep
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-[#252b43] border-none">
-              <CardContent className="p-6">
-                <h3 className="text-lg font-semibold mb-2">Hackathons</h3>
-                <p className="text-gray-300 mb-4">Participate in hackathons and hiring challenges to showcase your coding skills and win cool prizes.</p>
-                <Button className="bg-cyan-500 hover:bg-cyan-600">
-                  Join a challenge
-                </Button>
-              </CardContent>
-            </Card>
-          </div> */}
+          
         </div>
       </div>
     </div>
