@@ -11,47 +11,69 @@ interface CityCardProps {
   city: string
   backgroundImage: string | StaticImageData
   overlayColor: string // New property for dynamic overlay color
+  events: string[] // City-specific events
 }
 
 const cities: CityCardProps[] = [
-  {
-    city: "Mumbai",
-    backgroundImage: mumbai,
-    overlayColor: "from-pink-500/60", // Example color
-  },
+
+
   {
     city: "Bangalore",
     backgroundImage: bangalore,
     overlayColor: "from-purple-500/60", // Example color
+    events: [
+      "Hands-on Training with a Capstone Project",
+      "Meet Mr. Vimal Daga in Person",
+      "Network with Professionals from Leading Companies",
+      "Gain Industry Insights & Discuss Real Use Cases with Experts",
+      "Opportunity to Get Hired by Engaging with Talent Acquisition Heads",
+    ]
   },
+  {
+    city: "Mumbai",
+    backgroundImage: mumbai,
+    overlayColor: "from-pink-500/60", // Example color
+    events: [
+      "Mumbai Tech Talk",
+      "Networking Gala",
+      "Developer Workshop",
+      "City Startup Meetup"
+    ]
+  },
+ 
   {
     city: "Hyderabad",
     backgroundImage: hyderabad,
     overlayColor: "from-yellow-500/60", // Example color
+    events: [
+      "Tech Innovations Forum",
+      "Leadership Panel",
+      "Cloud Computing Workshop",
+      "Networking Dinner"
+    ]
   },
   {
     city: "Chennai",
     backgroundImage: chennai,
     overlayColor: "from-blue-500/60", // Example color
+    events: [
+      "Chennai Cybersecurity Meetup",
+      "Blockchain Bootcamp",
+      "Digital Transformation Conference",
+      "Women in Tech Luncheon"
+    ]
   },
   {
     city: "Gurugram",
     backgroundImage: mumbai,
     overlayColor: "from-pink-500/60", // Example color
-  },
-  {
-    city: "Mumbai",
-    backgroundImage: mumbai,
-    overlayColor: "from-pink-500/60", // Example color
-  },
-
-]
-
-const events = [
-  "MULTI-TRACK CONFERENCE",
-  "ROUNDTABLE MEETINGS",
-  "CEO CONCLAVE",
-  "WORLD LEADERS DINNER",
+    events: [
+      "Tech Expo",
+      "Innovators Summit",
+      "AI & Robotics Meetup",
+      "Career Advancement Workshop"
+    ]
+  }
 ]
 
 export default function CityCardGrid() {
@@ -63,7 +85,7 @@ export default function CityCardGrid() {
         {cities.map((city, index) => (
           <div
             key={index}
-            className="relative overflow-hidden rounded-lg shadow-xl transition-transform duration-500 transform hover:scale-105 h-[400px] group"
+            className="relative overflow-hidden rounded-lg shadow-xl transition-transform duration-500 transform hover:scale-105 h-[500px] group"
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
@@ -76,7 +98,7 @@ export default function CityCardGrid() {
                 className="rounded-lg"
               />
             </div>
-            {/* Add the dynamic pink overlay */}
+            {/* Add the dynamic color overlay */}
             <div className={`absolute inset-0 bg-gradient-to-t ${city.overlayColor} to-transparent`} />
             <div className="relative h-full flex flex-col justify-between p-6 text-white">
               <div>
@@ -86,7 +108,7 @@ export default function CityCardGrid() {
                   TGS
                 </h2>
                 <ul className="space-y-2">
-                  {events.map((event, eventIndex) => (
+                  {city.events.map((event, eventIndex) => (
                     <li key={eventIndex} className="flex items-center gap-2">
                       <span className="text-lg">•</span>
                       {event}
