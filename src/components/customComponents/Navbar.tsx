@@ -59,8 +59,7 @@ const Navbar: React.FC = () => {
             <li><a href="#schedule" className="text-white hover:text-blue-600">Agenda </a></li>
             <li><a href="#venue" className="text-white hover:text-blue-600">Cities on Tour
             </a></li>
-            <li><a href="#hotels" className="text-white hover:text-blue-600">Participate Now
-            </a></li>
+           
             <li><a href="#gallery" className="text-white hover:text-blue-600">Gallery</a></li>
        
             <li><a href="#contact" className="text-white hover:text-blue-600">Contact</a></li>
@@ -77,7 +76,8 @@ const Navbar: React.FC = () => {
 
         {/* Call to Action Button */}
         <a href="#buy-tickets" className="hidden lg:block bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700">
-          Buy Tickets
+        Participate Now
+
         </a>
       </div>
 
