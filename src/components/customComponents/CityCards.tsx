@@ -91,7 +91,7 @@ export default function CityCardGrid() {
                 <h2 className="text-3xl font-extrabold mb-4">
                   {city.city}
                   <br />
-                  TGS
+                  TGS <span className="text-sm">(स्वागत आहे 🙏)</span>
                 </h2>
                 <ul className="space-y-2">
                   {events.map((event, eventIndex) => (
