@@ -91,7 +91,7 @@ export default function Component() {
         <h2 className="text-white text-md">
           HEAR IT FROM THEM
         </h2>
-        <h2 className="text-white text-3xl font-bold mb-10 mt-2">Ambitious People ❤️ Linux World</h2>
+        <h2 className="text-white text-3xl font-bold mb-10 mt-2">Ambitious People ❤️ <span className="text-[#ff0000]" >Linux World</span></h2>
         
         <div className="columns-2 md:columns-3 gap-6 space-y-4">
           {posts.map((post) => (

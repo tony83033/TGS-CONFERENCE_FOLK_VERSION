@@ -22,9 +22,9 @@ export default function Component() {
           {/* Left content remains the same */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl font-bold tracking-tight text-white">Get Certified</h1>
+              <h1 className="text-4xl font-bold tracking-tight text-white">Get <span className="text-[#ff0000]">Certified</span> & Recognised</h1>
               <p className="text-lg text-muted-foreground text-white">
-                Yes! You will be <span className="text-red-500">certified</span> for this training once you submit the task given, if any
+              Yes !...........once you complete the    <span className="text-[#ffff00]">Capstone Project</span>  towards the end
               </p>
             </div>
           

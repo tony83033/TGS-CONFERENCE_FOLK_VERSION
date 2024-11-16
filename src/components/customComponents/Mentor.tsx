@@ -120,12 +120,12 @@ const MentorProfile = () => {
             <div className="flex items-center gap-3 mb-3">
               <div className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></div>
               <span className="text-blue-800 text-sm font-medium bg-blue-100/50 px-3 py-1 rounded-full">
-                Technologist and Technology Motivational
+              Internationally Recognised Industry Expert
               </span>
             </div>
             <div className="space-y-1 pl-5">
-              <h2 className="text-2xl font-bold text-gray-900">Vimal Daga</h2>
-              <p className="text-gray-600 font-medium">Founder of LinuxWorld</p>
+              <h2 className="text-2xl font-bold text-gray-900">Mr. Vimal Daga</h2>
+              <p className="text-gray-600 font-medium">Founder of LinuxWorld | #13 | IIEC | JAZBAA </p>
             </div>
           </div>
         </div>
@@ -133,20 +133,27 @@ const MentorProfile = () => {
         {/* Right Column - Content */}
         <div className="space-y-8">
           <div className="space-y-6">
-            <h1 className="text-3xl font-bold text-white">
-              Man behind this <span className="text-red-600">Initiative</span>
+            <h1 className="text-3xl font-bold text-white  leading-extra-tight -mb-4">
+            The Visionary Behind <span className="text-red-600">TGS</span> (The Growth String)
             </h1>
             <div className="space-y-4 text-black-800">
-              <p className="leading-relaxed font-bold text-white">
-                Vimal sir is a public speaker and YouTuber who co-founded Think School, with Paras Kothari, an education startup that generated 4+ Billion video impressions in 24 months.
-              </p>
-              <p className="leading-relaxed text-white">
-                Vimal sir has helped 27000+ students improve their communication to become effective public speakers, great salespeople, YouTubers and successful business people.
-              </p>
-              <p className="leading-relaxed text-white">
-                Vimal sir's dedication to education has earned him the title of "Insightful Education Creator of the Year 2023" at the Global Startup Summit 2023. His vision is to make the Indian youth more employable by helping them learn practical and fundamental skills in life.
-              </p>
-            </div>
+
+  <ul className="space-y-2 list-disc pl-5 text-white -mb-3">
+    <li className="leading-relaxed text-sm leading-tight">22+ Years of Rich Industry Experience</li>
+    <li className="leading-relaxed text-sm leading-tight">World Record Holder</li>
+    <li className="leading-relaxed text-sm leading-tight">Two-Time TEDx Speaker</li>
+    <li className="leading-relaxed text-sm leading-tight">Senior Principal IT Consultant</li>
+    <li className="leading-relaxed text-sm leading-tight">Philanthropist</li>
+    
+  </ul>
+  <p className="text-white text-md -mb-6">
+      Mr. Vimal Daga, the driving force behind TGS, is on an exclusive India Tour, visiting cities across the country to re-invent technical training. His mission is not only to provide hands-on learning but to bring together industry expert interactions, real-world capstone projects, and valuable industry insights—all in one place.
+    </p>
+    <p className="text-white">
+      He firmly believes that networking and collaboration are the key to personal and professional growth, and this tour is designed to foster both. His vision of “Making India, Future Ready” goes beyond skills training—it’s about creating a thriving ecosystem where learners and professionals can collaborate, innovate, and succeed together.
+    </p>
+</div>
+
           </div>
 
           {/* Social Stats with Counter */}
@@ -164,7 +171,7 @@ const MentorProfile = () => {
 
           {/* Enhanced Featured Section */}
           <div className="border border-gray-200 rounded-xl p-6 shadow-sm bg-white backdrop-blur-sm">
-            <p className="text-black font-medium mb-6 font-bold">Companies served</p>
+            <p className="text-black font-medium mb-6 font-bold bg">Companies benefited with his trainings & consultancy</p>
             <div className="grid grid-cols-1 gap-8">
               <MentorFeatured />
             </div>

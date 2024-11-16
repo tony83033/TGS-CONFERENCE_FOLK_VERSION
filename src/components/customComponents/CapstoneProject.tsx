@@ -1,8 +1,3 @@
-
-
-
-
-
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import {
@@ -67,8 +62,8 @@ export default function Component() {
   ]
 
   return (
-    <div className=" bg-[#1a1f36] text-white p-6">
-      <div className="max-w-6xl mx-auto">
+    <div className=" bg-[#1a1f36] text-white p-4">
+      <div className="max-w-6xl mx-auto h-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* World Map with Avatars */}
           <div className="relative aspect-[4/3] hidden lg:block">
@@ -115,10 +110,10 @@ export default function Component() {
 
           {/* Content */}
           <div>
-          <h1 className="text-4xl font-bold mb-4">
+          <h1 className="text-3xl font-bold mb-2">
   Master Capstone Projects in <span className="text-[#ff0000]">Cloud DevOps</span>
 </h1>
-<p className="text-xl mb-6">
+<p className="text-md mb-6">
   Develop secure, observable, and scalable application deployments. From designing microservices and optimizing containers to setting up GitOps workflows and monitoring with Grafana, these projects will elevate your DevOps expertise to production-grade standards.
 </p>
 
@@ -128,9 +123,9 @@ export default function Component() {
           </div>
         </div>
 
-        <div className="mt">
-          <h2 className="text-3xl font-bold mb-8 text-center">
-            Capstone Project: <span className="text-emerald-400">Secure, Observable, and Scalable</span> Application Deployment
+        <div className="-mt-12">
+          <h2 className="text-2xl font-bold mb-8 text-center">
+            Capstone Project: <span className="text-[#ffff00]">Secure, Observable, and Scalable</span> Application Deployment
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -138,7 +133,7 @@ export default function Component() {
               <Card key={index} className="bg-[#252b43] border-none">
                 <CardContent className="p-6">
                   <div className="mb-4 text-cyan-400">{step.icon}</div>
-                  <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
+                  <h3 className="text-lg font-semibold mb-2 text-white">{step.title}</h3>
                   <p className="text-gray-300 text-sm">{step.description}</p>
                 </CardContent>
               </Card>
