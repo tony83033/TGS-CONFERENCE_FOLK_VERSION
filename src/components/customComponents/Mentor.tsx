@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import MentorFeatured from './subComponents/MentorFeatured'
 import mentor7 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-1.jpeg";
-
+import { CircleCheck } from 'lucide-react';
 import mentor3 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-3.jpeg";
 import mentor4 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-4.jpeg";
 import mentor5 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-5.jpeg";
@@ -138,18 +138,18 @@ const MentorProfile = () => {
             </h1>
             <div className="space-y-4 text-black-800">
 
-            <ul className="grid grid-cols-2 gap-y-2 list-disc pl-5 text-white -mb-3">
-  <li className="leading-relaxed text-sm leading-tight">World Record Holder</li>
-  <li className="leading-relaxed text-sm leading-tight">Two-Time TEDx Speaker</li>
-  <li className="leading-relaxed text-sm leading-tight">Senior Principal IT Consultant</li>
-  <li className="leading-relaxed text-sm leading-tight">Philanthropist</li>
-  <li className="leading-relaxed text-sm leading-tight">22+ Years of Rich Industry Experience</li>
+            <ul className="grid grid-cols-2 gap-y-2 list-disc pl-5 text-white -mb-3 list-none">
+  <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 m-2' />World Record Holder</li>
+  <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 m-2' />Two-Time TEDx Speaker</li>
+  <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 m-2' />Senior Principal IT Consultant</li>
+  <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 m-2' />Philanthropist</li>
+  <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 m-2' />22+ Years of Rich Experience</li>
 </ul>
 
-  <p className="text-white text-md -mb-6">
+  <p className="text-white text-md -mb-6 pl-6">
       Mr. Vimal Daga, the driving force behind TGS, is on an exclusive India Tour, visiting cities across the country to re-invent technical training. His mission is not only to provide hands-on learning but to bring together industry expert interactions, real-world capstone projects, and valuable industry insights—all in one place.
     </p>
-    <p className="text-white">
+    <p className="text-white pl-6">
       He firmly believes that networking and collaboration are the key to personal and professional growth, and this tour is designed to foster both. His vision of “Making India, Future Ready” goes beyond skills training—it’s about creating a thriving ecosystem where learners and professionals can collaborate, innovate, and succeed together.
     </p>
 </div>
