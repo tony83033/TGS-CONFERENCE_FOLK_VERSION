@@ -56,44 +56,13 @@ const Navbar: React.FC = () => {
         <nav className="hidden lg:flex space-x-6">
           <ul className="flex space-x-4">
             <li><a href="#hero" className="text-white hover:text-blue-600">Home</a></li>
-            <li><a href="#schedule" className="text-white hover:text-blue-600">Schedule</a></li>
-            <li><a href="#venue" className="text-white hover:text-blue-600">Venue</a></li>
-            <li><a href="#hotels" className="text-white hover:text-blue-600">Hotels</a></li>
+            <li><a href="#schedule" className="text-white hover:text-blue-600">Agenda </a></li>
+            <li><a href="#venue" className="text-white hover:text-blue-600">Cities on Tour
+            </a></li>
+            <li><a href="#hotels" className="text-white hover:text-blue-600">Participate Now
+            </a></li>
             <li><a href="#gallery" className="text-white hover:text-blue-600">Gallery</a></li>
-            <li className="relative">
-              <button
-                className="text-white hover:text-blue-600 flex items-center space-x-1"
-                onClick={() => setDropdownOpen(!isDropdownOpen)}
-              >
-                <span>Dropdown</span>
-                <ChevronDown className="h-4 w-4" />
-              </button>
-              {isDropdownOpen && (
-                <ul className="absolute left-0 mt-2 bg-white shadow-md rounded-lg">
-                  <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Dropdown 1</a></li>
-                  <li className="relative">
-                    <button
-                      className="block px-4 py-2 hover:bg-gray-100 w-full text-left"
-                      onClick={() => setDeepDropdownOpen(!isDeepDropdownOpen)}
-                    >
-                      Deep Dropdown <ChevronDown className="inline h-4 w-4 ml-1" />
-                    </button>
-                    {isDeepDropdownOpen && (
-                      <ul className="absolute left-full top-0 mt-0 ml-1 bg-white shadow-md rounded-lg">
-                        <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Deep Dropdown 1</a></li>
-                        <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Deep Dropdown 2</a></li>
-                        <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Deep Dropdown 3</a></li>
-                        <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Deep Dropdown 4</a></li>
-                        <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Deep Dropdown 5</a></li>
-                      </ul>
-                    )}
-                  </li>
-                  <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Dropdown 2</a></li>
-                  <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Dropdown 3</a></li>
-                  <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Dropdown 4</a></li>
-                </ul>
-              )}
-            </li>
+       
             <li><a href="#contact" className="text-white hover:text-blue-600">Contact</a></li>
           </ul>
         </nav>
