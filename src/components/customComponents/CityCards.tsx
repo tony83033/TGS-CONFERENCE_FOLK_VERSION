@@ -7,7 +7,7 @@ import mumbai from "../../app/public/assets/cityCards/Mumbai1.jpg"
 import bangalore from "../../app/public/assets/cityCards/bangalore1.jpg"
 import hyderabad from "../../app/public/assets/cityCards/hyderabad1.jpg"
 import indiaFlag from "../../app/public/assets/indiaFlag.png"  // Placeholder path for the India flag image
-
+import { BadgeCheck } from 'lucide-react';
 
 interface CityCardProps {
   city: string
@@ -96,7 +96,7 @@ export default function CityCardGrid() {
                 <ul className="space-y-2">
                   {events.map((event, eventIndex) => (
                     <li key={eventIndex} className="flex items-center gap-2 text-sm">
-                      <span className="text-lg">•</span>
+                      <span className="text-lg"> <BadgeCheck  className='inline text-sm'/></span>
                       {event}
                     </li>
                   ))}
