@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import aboutBg from "../../app/public/assets/aboutBg.jpg"
 import { Quote } from 'lucide-react';
 import { CheckCheck,CircleCheckBig  } from 'lucide-react';
+import { Ampersand } from 'lucide-react';
 const About = () => {
   return (
     <div className="relative w-full bg-slate-900 py-16">
@@ -25,8 +26,8 @@ const About = () => {
 
           {/* WHERE */}
           <div className="space-y-4 text-center">
-            <h3 className="text-2xl font-bold text-white"><CircleCheckBig  className='inline m-2 text-green-400'/>Learning</h3>
-            <h3 className="text-2xl font-bold text-white"><CircleCheckBig  className='inline m-2 text-green-400'/>Pearning</h3>
+            <h3 className="text-2xl font-bold text-white"><CircleCheckBig  className='inline m-2 text-green-400'/>Learning <Ampersand className='inline' /> Prepares </h3>
+            {/* <h3 className="text-2xl font-bold text-white"><CircleCheckBig  className='inline m-2 text-green-400'/>Pearning</h3> */}
 
             <h2 className="text-2xl font-bold text-white"> you for real-world challenges & connects you directly with experts and peers <Quote className='inline mt-2 text-red-500'/></h2>
 

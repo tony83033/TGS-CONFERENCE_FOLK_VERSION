@@ -17,7 +17,7 @@ interface CityCardProps {
 
 const cities: CityCardProps[] = [
   {
-    city: "Bangaluru",
+    city: "Bengaluru",
     backgroundImage: mumbai,
     overlayColor: "from-pink-500/60", // Example color
   },
