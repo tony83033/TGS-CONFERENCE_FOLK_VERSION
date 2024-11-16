@@ -138,14 +138,14 @@ const MentorProfile = () => {
             </h1>
             <div className="space-y-4 text-black-800">
 
-  <ul className="space-y-2 list-disc pl-5 text-white -mb-3">
-    <li className="leading-relaxed text-sm leading-tight">22+ Years of Rich Industry Experience</li>
-    <li className="leading-relaxed text-sm leading-tight">World Record Holder</li>
-    <li className="leading-relaxed text-sm leading-tight">Two-Time TEDx Speaker</li>
-    <li className="leading-relaxed text-sm leading-tight">Senior Principal IT Consultant</li>
-    <li className="leading-relaxed text-sm leading-tight">Philanthropist</li>
-    
-  </ul>
+            <ul className="grid grid-cols-2 gap-y-2 list-disc pl-5 text-white -mb-3">
+  <li className="leading-relaxed text-sm leading-tight">World Record Holder</li>
+  <li className="leading-relaxed text-sm leading-tight">Two-Time TEDx Speaker</li>
+  <li className="leading-relaxed text-sm leading-tight">Senior Principal IT Consultant</li>
+  <li className="leading-relaxed text-sm leading-tight">Philanthropist</li>
+  <li className="leading-relaxed text-sm leading-tight">22+ Years of Rich Industry Experience</li>
+</ul>
+
   <p className="text-white text-md -mb-6">
       Mr. Vimal Daga, the driving force behind TGS, is on an exclusive India Tour, visiting cities across the country to re-invent technical training. His mission is not only to provide hands-on learning but to bring together industry expert interactions, real-world capstone projects, and valuable industry insights—all in one place.
     </p>
@@ -157,11 +157,11 @@ const MentorProfile = () => {
           </div>
 
           {/* Social Stats with Counter */}
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-3 gap-4 ">
             {socialStats.map((stat, index) => (
-              <div key={index} className="bg-blue-50 rounded-xl p-4 text-center border border-blue-100 shadow-sm hover:shadow-md transition-all duration-200">
-                <div className="flex justify-center mb-3">{stat.icon}</div>
-                <div className="font-bold text-xl text-gray-900">
+              <div key={index} className="bg-blue-50 rounded-xl p-2 text-center border border-blue-100 shadow-sm hover:shadow-md transition-all duration-200 -mb-2">
+                <div className="flex justify-center mb-2">{stat.icon}</div>
+                <div className="font-bold text-md text-gray-900">
                   {useCounter(stat.targetCount, 2000, isVisible).toLocaleString()}+
                 </div>
                 <div className="text-gray-600 text-sm font-medium">{stat.label}</div>
@@ -170,8 +170,8 @@ const MentorProfile = () => {
           </div>
 
           {/* Enhanced Featured Section */}
-          <div className="border border-gray-200 rounded-xl p-6 shadow-sm bg-white backdrop-blur-sm">
-            <p className="text-black font-medium mb-6 font-bold bg">Companies benefited with his trainings & consultancy</p>
+          <div className="border border-gray-200 rounded-xl p-4 shadow-sm bg-white backdrop-blur-sm">
+            <p className="text-black text-sm  mb-2  font-bold bg">Companies benefited with his trainings & consultancy</p>
             <div className="grid grid-cols-1 gap-8">
               <MentorFeatured />
             </div>
