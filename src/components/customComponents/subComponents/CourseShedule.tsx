@@ -338,8 +338,8 @@ const CourseCard = () => {
                     {/* Title and Description */}
                     <div className="flex-1">
                       <div className='text-left'>
-                        <h3 className="text-lg font-semibold text-gray-900">{course.title}</h3>
-                        <p className="text-sm text-gray-500 mt-1">{course.description}</p>
+                        <h3 className="text-lg font-semibold text-white">{course.title}</h3>
+                        <p className="text-sm text-white">{course.description}</p>
                       </div>
                       <div className="flex items-center gap-2 mt-2">
                         <span className="px-2 py-1 bg-yellow-100 text-yellow-700 rounded text-xs font-medium">
@@ -390,8 +390,8 @@ const CourseCard = () => {
                                 {sectionIndex + 1}
                               </div>
                               <div className="text-left flex-1">
-                                <h3 className="font-semibold text-gray-900">{section.subheading}</h3>
-                                <p className="text-sm text-gray-700">{section.points.join(', ')}</p>
+                                <h3 className="font-semibold text-white text-lg">{section.subheading}</h3>
+                                <p className="text-sm text-white">{section.points.join(', ')}</p>
                               </div>
                               {/* <ChevronDown className="h-5 w-5 text-gray-500 transform transition-transform duration-200" /> */}
                             </div>
@@ -403,7 +403,7 @@ const CourseCard = () => {
                                   <div className="w-4 h-4 rounded-full bg-green-400 flex items-center justify-center">
                                     <div className="w-2 h-2 rounded-full bg-white"></div>
                                   </div>
-                                  <span className="text-gray-700">{point}</span>
+                                  <span className="text-black">{point}</span>
                                 </li>
                               ))}
                             </ul>
@@ -433,10 +433,10 @@ const CourseCard = () => {
             </span>
           </div>
           <div className="flex-1">
-            <h3 className="text-lg font-semibold text-gray-900">
+            <h3 className="text-lg font-semibold text-white">
               Special Guest Lecture
             </h3>
-            <p className="text-sm text-gray-500 mt-1">
+            <p className="text-sm text-black mt-1">
               Advanced Kubernetes Security Patterns & Best Practices
             </p>
             <div className="flex items-center gap-2 mt-2">
