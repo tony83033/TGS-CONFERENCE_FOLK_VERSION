@@ -11,7 +11,7 @@ const EventSchedule = () => {
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Title with underline decoration */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl font-bold text-[#FFFF00] mb-2">The Growth String Experience : Kubernetes Edition</h1>
+          <h1 className="text-3xl font-bold text-[#FFFF00] mb-2"><span className="text-[#ff0000]" >The Growth String </span>Experience : Kubernetes Edition</h1>
           <div className="h-1 w-16 bg-red-500 mx-auto"></div>
         </div>
 
@@ -51,7 +51,7 @@ const EventSchedule = () => {
 
         {/* Description text */}
         <p className="text-center text-white italic max-w-3xl mx-auto">
-          Freedom from guilt, permission granted without restriction, and freedom from corruption allow for relief and satisfaction. His needs demand integrity; he wishes to work with diligence and transparency.
+        Everything About Kubernetes : An Experience Beyond Learning 
         </p>
       </div>
       <CourseSchedule />

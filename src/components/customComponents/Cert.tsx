@@ -22,8 +22,8 @@ export default function Component() {
           {/* Left content remains the same */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl font-bold tracking-tight text-white">Get <span className="text-[#ff0000]">Certified</span> & Recognised</h1>
-              <p className="text-lg text-muted-foreground text-white">
+              <h1 className="text-3xl font-bold tracking-tight text-white">Get <span className="text-[#ff0000]">Certified</span> & Recognised</h1>
+              <p className="text-md text-muted-foreground text-white">
               Yes !...........once you complete the    <span className="text-[#ffff00]">Capstone Project</span>  towards the end
               </p>
             </div>

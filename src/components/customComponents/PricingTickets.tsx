@@ -208,7 +208,7 @@ interface CityPricing {
 }
 
 export default function Component() {
-  const [selectedCity, setSelectedCity] = useState('Mumbai');
+  const [selectedCity, setSelectedCity] = useState('Bangaluru');
 
   const cityPricing: CityPricing = {
     Mumbai: [
@@ -228,7 +228,7 @@ export default function Component() {
         features: ["FREE SUPPORT 24/7", "DATABASES DOWNLOAD", "MAINTENANCE EMAIL", "UNLIMITED TRAFFIC"],
       },
     ],
-    Bangalore: [
+    Bangaluru: [
       {
         name: "STARTER",
         price: 12.99,
@@ -316,12 +316,12 @@ export default function Component() {
   };
 
   const cities = [
-    { name: 'Mumbai', image: Mumbai.src.toString() },
-    { name: 'Bangalore', image: Bangalore.src.toString() },
+    { name: 'Bangaluru', image: Mumbai.src.toString() },
+    { name: 'Pune', image: Bangalore.src.toString() },
     { name: 'Hyderabad', image: Mumbai.src.toString() },
-    { name: 'Chennai', image: Mumbai.src.toString() },
     { name: 'Gurugram', image: Mumbai.src.toString() },
-    { name: 'Pune', image: Mumbai.src.toString() },
+    { name: 'Mumbai', image: Mumbai.src.toString() },
+    { name: 'Chennai', image: Mumbai.src.toString() },
   ];
 
   return (

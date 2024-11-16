@@ -10,10 +10,10 @@ export default function Component() {
       <div className="container mx-auto max-w-6xl">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#FFFF00] mb-4">
+          <h1 className="text-3xl md:text-3xl font-bold text-[#FFFF00] mb-2">
             Contact Us
           </h1>
-          <p className="text-gray-300 max-w-3xl mx-auto">
+          <p className="text-gray-300 max-w-3xl mx-auto text-sm">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </p>
         </div>

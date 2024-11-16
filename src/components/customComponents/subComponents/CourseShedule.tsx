@@ -345,7 +345,7 @@ const CourseCard = () => {
                         <span className="px-2 py-1 bg-yellow-100 text-yellow-700 rounded text-xs font-medium">
                           vimal sir
                         </span>
-                        <span className="text-sm text-gray-500">
+                        <span className="text-sm text-green-200">
                           45 min session
                         </span>
                       </div>
@@ -389,8 +389,8 @@ const CourseCard = () => {
                               <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-medium">
                                 {sectionIndex + 1}
                               </div>
-                              <div className="text-left flex-1">
-                                <h3 className="font-semibold text-white text-lg">{section.subheading}</h3>
+                              <div className="text-left flex-1 ">
+                                <h3 className="font-semibold text-white text-lg ">{section.subheading}</h3>
                                 <p className="text-sm text-white">{section.points.join(', ')}</p>
                               </div>
                               {/* <ChevronDown className="h-5 w-5 text-gray-500 transform transition-transform duration-200" /> */}
@@ -403,7 +403,7 @@ const CourseCard = () => {
                                   <div className="w-4 h-4 rounded-full bg-green-400 flex items-center justify-center">
                                     <div className="w-2 h-2 rounded-full bg-white"></div>
                                   </div>
-                                  <span className="text-black">{point}</span>
+                                  <span className="text-green-400">{point}</span>
                                 </li>
                               ))}
                             </ul>
@@ -436,14 +436,14 @@ const CourseCard = () => {
             <h3 className="text-lg font-semibold text-white">
               Special Guest Lecture
             </h3>
-            <p className="text-sm text-black mt-1">
+            <p className="text-sm text-white mt-1">
               Advanced Kubernetes Security Patterns & Best Practices
             </p>
             <div className="flex items-center gap-2 mt-2">
               <span className="px-2 py-1 bg-yellow-100 text-yellow-700 rounded text-xs font-medium">
                 Guest Speaker
               </span>
-              <span className="text-sm text-gray-500">
+              <span className="text-sm text-green-200">
                 1 hour session
               </span>
             </div>
