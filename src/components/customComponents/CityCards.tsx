@@ -72,7 +72,7 @@ export default function CityCardGrid() {
         {cities.map((city, index) => (
           <div
             key={index}
-            className="relative overflow-hidden rounded-lg shadow-xl transition-transform duration-500 transform hover:scale-105 h-[425px] group"
+            className="relative overflow-hidden rounded-lg shadow-xl transition-transform duration-500 transform hover:scale-105 h-[460px] group"
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
