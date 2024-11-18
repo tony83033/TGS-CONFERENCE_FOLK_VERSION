@@ -1,14 +1,16 @@
+
+
+
 "use client";
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
-import Mumbai from "../../../src/app/public/assets/cityCards/Mumbai.jpg"
-import Pune from "../../../src/app/public/assets/cityCards/pune1.jpg"
-import Hyderabad from "../../../src/app/public/assets/cityCards/hyderabad.jpg"
-import Bengaluru from "../../../src/app/public/assets/cityCards/bangalore.jpg"
-import Gurugram from "../../../src/app/public/assets/cityCards/gurgaon1.jpg"
-import Chennai from "../../../src/app/public/assets/cityCards/Chennai.jpg"
-
+import Mumbai from "../../../src/app/public/assets/cityCards/Mumbai.jpg";
+import Pune from "../../../src/app/public/assets/cityCards/pune1.jpg";
+import Hyderabad from "../../../src/app/public/assets/cityCards/hyderabad.jpg";
+import Bengaluru from "../../../src/app/public/assets/cityCards/bangalore.jpg";
+import Gurugram from "../../../src/app/public/assets/cityCards/gurgaon1.jpg";
+import Chennai from "../../../src/app/public/assets/cityCards/Chennai.jpg";
 
 interface PricingTier {
   name: string;
@@ -21,7 +23,7 @@ interface CityPricing {
 }
 
 export default function Component() {
-  const [selectedCity, setSelectedCity] = useState('Bangaluru');
+  const [selectedCity, setSelectedCity] = useState('Bengaluru'); // Fixed typo here
 
   const cityPricing: CityPricing = {
     Mumbai: [
@@ -41,7 +43,7 @@ export default function Component() {
         features: ["FREE SUPPORT 24/7", "DATABASES DOWNLOAD", "MAINTENANCE EMAIL", "UNLIMITED TRAFFIC"],
       },
     ],
-    Bangaluru: [
+    Bengaluru: [ // Fixed city name here as well
       {
         name: "STARTER",
         price: 12.99,
@@ -130,8 +132,6 @@ export default function Component() {
 
   const cities = [
     { name: 'Bengaluru', image: Bengaluru.src.toString() },
-
-    
     { name: 'Pune', image: Pune.src.toString() },
     { name: 'Hyderabad', image: Hyderabad.src.toString() },
     { name: 'Gurugram', image: Gurugram.src.toString() },
@@ -148,17 +148,9 @@ export default function Component() {
             key={city.name}
             onClick={() => setSelectedCity(city.name)}
             variant={selectedCity === city.name ? "default" : "outline"}
-            className={`px-6 py-2 rounded-full transition-transform transform flex items-center justify-center ${
-              selectedCity === city.name
-                ? "bg-white text-black hover:text-black hover:bg-white"
-                : "bg-transparent text-white border-white hover:bg-white hover:text-black"
-            }`}
+            className={`px-6 py-2 rounded-full transition-transform transform flex items-center justify-center ${selectedCity === city.name ? "bg-white text-black hover:text-black hover:bg-white" : "bg-transparent text-white border-white hover:bg-white hover:text-black"}`}
           >
-            <img
-              src={city.image}
-              alt={city.name}
-              className="w-6 h-6 mr-2 rounded-full " // Adjust the image size as needed
-            />
+            <img src={city.image} alt={city.name} className="w-6 h-6 mr-2 rounded-full " />
             {city.name}
           </Button>
         ))}
@@ -166,13 +158,13 @@ export default function Component() {
 
       {/* Pricing Cards */}
       <div className="flex flex-col md:flex-row gap-8 items-stretch justify-center">
-        {cityPricing[selectedCity].map((tier, index) => {
+        {cityPricing[selectedCity]?.map((tier, index) => {
           const gradientStyle = {
             background: index === 0
               ? 'radial-gradient(ellipse at top, #1FE1B4, #19B890)'
               : index === 1
               ? 'radial-gradient(ellipse at top, #B06AB3, #4568DC)'
-              : 'radial-gradient(ellipse at top, #FF5858, #F09819)'
+              : 'radial-gradient(ellipse at top, #FF5858, #F09819)',
           };
 
           return (
@@ -195,7 +187,7 @@ export default function Component() {
                 </CardContent>
                 <CardFooter className="p-6 pt-0 flex items-center justify-center">
                   <Button className="w-full bg-black hover:bg-gray-800 text-white rounded-[8px] py-3 text-base font-semibold">
-                  Participate Now
+                    Participate Now
                   </Button>
                 </CardFooter>
               </div>
