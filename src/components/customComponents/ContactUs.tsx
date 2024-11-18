@@ -6,7 +6,7 @@ import { Home, Phone, Mail } from 'lucide-react'
 
 export default function Component() {
   return (
-    <div className="min-h-screen bg-zinc-900 px-4 py-12">
+    <div className=" bg-zinc-900 px-4 py-12">
       <div className="container mx-auto max-w-6xl">
         {/* Header Section */}
         <div className="text-center mb-12">
