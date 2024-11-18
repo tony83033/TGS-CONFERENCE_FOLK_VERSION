@@ -106,12 +106,7 @@ const MentorProfile = () => {
                   <img src={image} alt={`Mentor Image ${index + 1}`} className="w-full h-full object-cover" />
                 </SwiperSlide>
               ))}
-              {/* <button className="swiper-button-prev absolute left-4 top-1/2 z-10 -translate-y-1/2 bg-white/90 p-2 rounded-full shadow-md hover:bg-white transition-all duration-200">
-                <ChevronLeft className="w-2 h-2 text-gray-800" />
-              </button> */}
-              {/* <button className="swiper-button-next absolute right-4 top-1/2 z-10 -translate-y-1/2 bg-white/90 p-2 rounded-full shadow-md hover:bg-white transition-all duration-200">
-                <ChevronRight className="w-5 h-5 text-gray-800" />
-              </button> */}
+
             </Swiper>
           </div>
 
@@ -132,13 +127,13 @@ const MentorProfile = () => {
 
         {/* Right Column - Content */}
         <div className="space-y-8">
-          <div className="space-y-6">
+          <div className="space-y-6 -mb-3">
             <h1 className="text-3xl font-bold text-white  leading-extra-tight -mb-4">
             The Visionary Behind <span className="text-red-600">TGS</span> (The Growth String)
             </h1>
             <div className="space-y-4 text-black-800">
 
-            <ul className="grid grid-cols-2 gap-y-2 list-disc pl-5 text-white -mb-3 list-none">
+            <ul className="grid grid-cols-2 gap-y-2 list-disc pl-5 text-white -mb-1 list-none">
   <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> World Record Holder</li>
   <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 ml-2 ' /> Two-Time TEDx Speaker</li>
   <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> Senior Principal IT Consultant</li>
@@ -160,8 +155,8 @@ const MentorProfile = () => {
           <div className="grid grid-cols-3 gap-4 ">
             {socialStats.map((stat, index) => (
               <div key={index} className="bg-blue-50 rounded-xl p-2 text-center border border-blue-100 shadow-sm hover:shadow-md transition-all duration-200 -mb-2">
-                <div className="flex justify-center mb-2">{stat.icon}</div>
-                <div className="font-bold text-md text-gray-900">
+                <div className="flex justify-center  ">{stat.icon}</div>
+                <div className="font-bold text-md text-gray-900 ">
                   {useCounter(stat.targetCount, 2000, isVisible).toLocaleString()}+
                 </div>
                 <div className="text-gray-600 text-sm font-medium">{stat.label}</div>

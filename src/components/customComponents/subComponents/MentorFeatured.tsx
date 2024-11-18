@@ -63,7 +63,7 @@ const MentorFeatured = () => {
                 <Image 
                   src={logo.src} 
                   alt={logo.alt} 
-                  width={112} 
+                  width={112}   
                   height={64} 
                   objectFit="contain" 
                 />
@@ -75,7 +75,7 @@ const MentorFeatured = () => {
         <div className="inline-flex items-center animate-scroll w-max" aria-hidden="true">
           {logos.map((logo, index) => (
             <div key={`duplicate-${index}`} className="mx-4 w-32 flex-shrink-0">
-              <div className="w-28 h-16 flex items-center justify-center">
+              <div className="w-28 h-12 flex items-center justify-center">
                 <Image 
                   src={logo.src} 
                   alt={logo.alt} 
