@@ -13,6 +13,7 @@ export default function Component() {
           <h1 className="text-3xl md:text-3xl font-bold text-[#FFFF00] mb-2">
             Contact Us
           </h1>
+          <div className="h-1 w-48 bg-red-500 mb-2 mx-auto"></div>
           <p className="text-gray-300 max-w-3xl mx-auto text-sm">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </p>
