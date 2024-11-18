@@ -139,14 +139,14 @@ const MentorProfile = () => {
             <div className="space-y-4 text-black-800">
 
             <ul className="grid grid-cols-2 gap-y-2 list-disc pl-5 text-white -mb-3 list-none">
-  <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 m-2' />World Record Holder</li>
-  <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 m-2' />Two-Time TEDx Speaker</li>
-  <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 m-2' />Senior Principal IT Consultant</li>
-  <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 m-2' />Philanthropist</li>
-  <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 m-2' />22+ Years of Rich Experience</li>
+  <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> World Record Holder</li>
+  <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 ml-2 ' /> Two-Time TEDx Speaker</li>
+  <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> Senior Principal IT Consultant</li>
+  <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> Philanthropist</li>
+  <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> 22+ Years of Rich Experience</li>
 </ul>
 
-  <p className="text-white text-md -mb-6 pl-6">
+  <p className="text-white text-md -mb-2 pl-6">
       Mr. Vimal Daga, the driving force behind TGS, is on an exclusive India Tour, visiting cities across the country to re-invent technical training. His mission is not only to provide hands-on learning but to bring together industry expert interactions, real-world capstone projects, and valuable industry insights—all in one place.
     </p>
     <p className="text-white pl-6">
