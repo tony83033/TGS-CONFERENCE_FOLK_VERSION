@@ -78,7 +78,7 @@ const Levels = () => {
   ];
 
   return (
-    <div className="relative max-w-2xl mx-auto p-6 bg-black/95 min-h-screen">
+    <div className="relative max-w-2xl mx-auto p-6 bg-black/95 ">
       {/* Background grid pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.05)_1px,transparent_1px)] bg-[size:50px_50px] -z-20" />
       

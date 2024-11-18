@@ -61,7 +61,7 @@ export default function CityCardGrid() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
   return (
-    <div className="p-8">
+    <div className="p-8 max-w-6xl mx-auto">
       {/* Title Section */}
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold text-[#FFFFFF] mb-2 mt-6"><span className="text-[#ff0000]">Mr. Vimal Daga</span> on India <Image src={indiaFlag} alt="India Flag" width={40} height={30} className="inline-block" /> Tour</h1>
