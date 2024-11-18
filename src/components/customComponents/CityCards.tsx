@@ -89,7 +89,7 @@ export default function CityCardGrid() {
             <div className={`absolute inset-0 bg-gradient-to-t ${city.overlayColor} to-transparent`} />
             <div className="relative h-full flex flex-col justify-between p-6 text-white">
               <div>
-                <h2 className="text-3xl font-extrabold mb-4">
+                <h2 className="text-3xl font-extrabold mb-8">
                   {city.city}
                   <br />
                   TGS <span className="text-sm">(स्वागत आहे 🙏)</span>
@@ -105,9 +105,13 @@ export default function CityCardGrid() {
               </div>
               {/* Conditional rendering based on city name */}
               {city.city === "Bengaluru" ? (
-                <div className="mt-4 py-2 px-4 w-full hover:border text-white font-semibold rounded-lg bg-white/10 hover:bg-white/20 text-center">
+               
+               <a href=""><div className="mt-4 py-2 px-4 w-full hover:border text-white font-semibold rounded-lg bg-white/10 hover:bg-white/20 text-center  leading-none">
                   10th - 12th Jan, 2025
+                  <br/>
+                  <span className="text-[10px] bg-[#ff0000]">(Venue will be announced soon...)</span>
                 </div>
+                </a>
               ) : (
                 <button
                   className={`mt-4 py-2 px-4 w-full border text-white font-semibold rounded-lg transition-all duration-300 ${
