@@ -38,7 +38,7 @@ const TimelineStage = ({ number, type, title, description, position }: {
   <div className="relative">
     <BackgroundShape position={position} />
     <Card className="bg-zinc-900 border-none mb-16 relative z-10">
-      <CardHeader className="space-y-1">
+      <CardHeader className="space-y-4">
         <p className="text-sm text-teal-400">Stage {number}: {type}</p>
         <h3 className="text-xl font-semibold text-white">{title}</h3>
       </CardHeader>
@@ -120,7 +120,7 @@ const Levels = () => {
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.05)_1px,transparent_1px)] bg-[size:50px_50px] -z-20" />
       
       {/* Vertical dashed line */}
-      <div className="absolute left-1/2 top-0 bottom-0 w-px border-l-2 border-dashed border-gray-500 -translate-x-1/2" />
+      <div className="absolute left-1/2 top-10 bottom-20 w-px border-l-2 border-dashed border-gray-500 -translate-x-1/2" />
 
       
       {/* Timeline stages */}
