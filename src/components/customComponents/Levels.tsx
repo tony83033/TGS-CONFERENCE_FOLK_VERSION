@@ -98,7 +98,7 @@ const Levels = () => {
     },
     {
       number: 6,
-      type: "A Lifetime of Support and Opportunities",
+      type: "Join the Elite TGS Community",
       title: "A Lifetime of Support and Opportunities",
       description: "Become a member of the TGS community after attending an event. Enjoy lifelong perks, including free tech support, networking with peers across India, exclusive job opportunities, and a platform dedicated to your ongoing growth.",
       position: 'right' as const
@@ -109,7 +109,8 @@ const Levels = () => {
    
        <>
         <div className="flex items-center justify-center w-full mx-auto mt-12">
-        <h2 className="text-3xl  font-bold text-[#ffff00] text-center">Our Story in Frames</h2>
+        <h2 className="text-3xl  font-bold text-[#ffff00] text-center">3 Days Tech Journey at a Glance
+        </h2>
 
       </div>
       <div className="h-1 w-48 bg-red-500 mb-6 mx-auto"></div>
