@@ -73,12 +73,19 @@ const config: Config = {
   				to: {
   					height: '0'
   				}
-  			}
+  			},
+			  'widen-narrow': {
+				'0%': { transform: 'scaleX(0)', opacity: '0' },
+				'50%': { transform: 'scaleX(1)', opacity: '1' },
+				'100%': { transform: 'scaleX(0)', opacity: '0' },
+			  },
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
-  		}
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+			'widen-narrow': 'widen-narrow 3s ease-in-out infinite',
+  		},
+		
   	}
   },
   plugins: [require("tailwindcss-animate")],

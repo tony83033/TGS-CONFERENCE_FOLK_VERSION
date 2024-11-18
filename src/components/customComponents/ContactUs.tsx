@@ -30,9 +30,11 @@ export default function Component() {
               <div>
                 <h3 className="text-cyan-400 text-xl font-semibold mb-1">Address</h3>
                 <p className="text-white">
-                  4671 Sugar Camp Road,<br />
-                  Owatonna, Minnesota,<br />
-                  55060
+                  
+                 Krishna Tower, Plot No. 5,<br />
+                 Gopalpura Bypass Rd,<br />
+                 Gopal Pura Mode, Jaipur, <br />
+                 Rajasthan 302015
                 </p>
               </div>
             </div>
