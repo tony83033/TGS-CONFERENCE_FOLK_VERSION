@@ -11,19 +11,10 @@ const Hero = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   console.log(tgsHeroImage)
   return (
-    <div className="relative h-screen w-full overflow-hidden">
-      {/* Background Image with exact overlay */}
-      {/* <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url(${tgsHeroImage.src.toString()})`
-        }}
-      >
-        <div className="absolute inset-0 bg-[]/75" />
-      </div> */}
+    <div className="relative h-screen w-full overflow-hidden max-w-7xl mx-auto ">
+    
 
-
-
+    
 <div 
   className="absolute inset-0 bg-cover bg-center"
   style={{

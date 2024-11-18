@@ -61,7 +61,7 @@ export default function CityCardGrid() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
   return (
-    <div className="p-8 max-w-6xl mx-auto">
+    <div className="p-8 max-w-7xl mx-auto">
       {/* Title Section */}
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold text-[#FFFFFF] mb-2 mt-6"><span className="text-[#ff0000]">Mr. Vimal Daga</span> on India <Image src={indiaFlag} alt="India Flag" width={40} height={30} className="inline-block" /> Tour</h1>
@@ -104,7 +104,7 @@ export default function CityCardGrid() {
                 </ul>
               </div>
               {/* Conditional rendering based on city name */}
-              {city.city === "Bangaluru" ? (
+              {city.city === "Bengaluru" ? (
                 <div className="mt-4 py-2 px-4 w-full hover:border text-white font-semibold rounded-lg bg-white/10 hover:bg-white/20 text-center">
                   10th - 12th Jan, 2025
                 </div>
