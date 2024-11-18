@@ -35,9 +35,9 @@ const TimelineStage = ({ number, type, title, description, position }: {
       </CardHeader>
       <CardContent>
         <p className="text-gray-300">{description}</p>
-        <div className="flex justify-center mt-4">
-          <div className="w-12 h-12 rounded-full border border-orange-500 flex items-center justify-center p-3 hover:bg-orange-500/10 transition-all duration-300">
-            <MoveDown className="w-8 h-8 text-orange-500 font-bold transition-all duration-300 ease-in-out transform hover:translate-y-1" />
+        <div className="flex justify-center mt-2">
+          <div className="w-8 h-8 rounded-full border border-orange-500 flex items-center justify-center p-2 hover:bg-orange-500/10 transition-all duration-300">
+            <MoveDown className="w-4 h-4 text-orange-500 font-bold transition-all duration-300 ease-in-out transform hover:translate-y-1" />
           </div>
         </div>
       </CardContent>
