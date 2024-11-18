@@ -28,15 +28,27 @@ import { ChevronDown } from 'lucide-react';
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import technologyImage from "../../../app/public/assets/docker.png";
+import k8sImage from "../../../app/public/assets/k8s.png";
+import istioImage from "../../../app/public/assets/istio.svg"
+import argoImage from "../../../app/public/assets/argo.png"
+import grafanaImage from "../../../app/public/assets/grafana.svg"
+import trivy from "../../../app/public/assets/Trivy--Streamline-Simple-Icons.png"
 import mentorImage from "../../../app/public/assets/mentor.jpeg";
 import { Badge } from "@/components/ui/badge";
 
 // Sample JSON data
-const courseData = [
+
+
+
+
+// Main Component
+const CourseCard = () => {
+  const courseData = [
     {
       "id": "course1",
       "title": "World of Docker Containers",
       "description": "Go Deep in Containers - Step by Step",
+      "imageSrc": `${technologyImage.src.toString()}`,
       "sections": [
         {
           "subheading": "Know what really Containers are / Why it launch in < 1 sec ? It's Just a Process",
@@ -82,6 +94,7 @@ const courseData = [
       "id": "course2",
       "title": "Universe of Kubernetes",
       "description": "Kubernetes Fundamentals and Advanced Concepts",
+      "imageSrc": `${k8sImage.src.toString()}`,
       "sections": [
         {
           "subheading": "Kubernetes Fundamentals",
@@ -149,6 +162,7 @@ const courseData = [
       "id": "course3",
       "title": "Istio Service Mesh / Kiali",
       "description": "Introduction to Service Mesh and Traffic Management with Istio",
+      "imageSrc": `${istioImage.src.toString()}`,
       "sections": [
         {
           "subheading": "Introduction to Service Mesh",
@@ -189,6 +203,7 @@ const courseData = [
       "id": "course4",
       "title": "Argo CD for GitOps",
       "description": "Continuous Deployment with GitOps and Argo CD",
+      "imageSrc": `${argoImage.src.toString()}`,
       "sections": [
         {
           "subheading": "Introduction to GitOps",
@@ -229,6 +244,7 @@ const courseData = [
       "id": "course5",
       "title": "Prometheus & Grafana",
       "description": "Monitoring and Observability with Prometheus and Grafana",
+      "imageSrc": `${grafanaImage.src.toString()}`,
       "sections": [
         {
           "subheading": "Introduction to Monitoring and Observability",
@@ -258,6 +274,7 @@ const courseData = [
       "id": "course6",
       "title": "DevSecOps Tools - Trivy / Falco / AquaSec / ELK",
       "description": "Security in Development and Operations with DevSecOps",
+      "imageSrc": `${trivy.src.toString()}`,
       "sections": [
         {
           "subheading": "Introduction to DevSecOps",
@@ -307,16 +324,12 @@ const courseData = [
       ]
     }
   ];
-  
-
-// Main Component
-const CourseCard = () => {
   return (
     <div className="space-y-6">
       {/* Map over course data to generate course cards */}
       {courseData.map((course, courseIndex) => (
-        <Card key={course.id} className="max-w-3xl mx-auto shadow-lg rounded-xl border border-gray-200 bg-[#494F52]"> 
-        {/* F1F1F1 */}
+        <Card key={course.id} className="max-w-3xl mx-auto shadow-lg rounded-xl border border-gray-200 bg-[#494F52]">
+          {/* F1F1F1 */}
           <div className="p-6">
             {/* Accordion for each course */}
             <Accordion type="single" collapsible className="space-y-2">
@@ -325,9 +338,9 @@ const CourseCard = () => {
                   <div className="flex w-full items-start gap-4">
                     {/* Left: Technology Image */}
                     <div className="flex flex-col items-center">
-                      <img 
-                        src={technologyImage.src.toString()}
-                        alt="technology"
+                      <img
+                        src={course.imageSrc.toString()} // Use dynamic image source from JSON
+                        alt={course.title} // Use course title as alt text for better accessibility
                         className="rounded-full w-12 h-12 mb-2"
                       />
                       <span className="inline-block px-3 py-1 bg-blue-50 text-blue-600 rounded-lg text-sm">
@@ -343,7 +356,7 @@ const CourseCard = () => {
                       </div>
                       <div className="flex items-center gap-2 mt-2">
                         <span className="px-2 py-1 bg-yellow-100 text-yellow-700 rounded text-xs font-medium">
-                          vimal sir
+                          Mr.vimal Daga
                         </span>
                         <span className="text-sm text-green-200">
                           45 min session
@@ -355,19 +368,19 @@ const CourseCard = () => {
                     <TooltipProvider>
                       <Tooltip>
                         <TooltipTrigger>
-                          <div className="flex-shrink-0">
-                            <img 
+                          <div className="flex-shrink-0 items-center">
+                            <img
                               src={mentorImage.src.toString()}
-                              alt="Mentor" 
+                              alt="Mentor"
                               className="rounded-full w-20 h-20 border-yellow-400 p-2"
                             />
                           </div>
                           <Badge className="bg-yellow-100 text-yellow-800 hover:text-yellow-900 font-bold">
-                            Vimal Sir
+                            Mr.Vimal Daga
                           </Badge>
                         </TooltipTrigger>
                         <TooltipContent className="w-64">
-                          <p>Vimal sir is a public speaker...</p>
+                          <p>Mr. Vimal sir is a Technologist ...</p>
                         </TooltipContent>
                       </Tooltip>
                     </TooltipProvider>
@@ -396,8 +409,8 @@ const CourseCard = () => {
                               {/* <ChevronDown className="h-5 w-5 text-gray-500 transform transition-transform duration-200" /> */}
                             </div>
                           </AccordionTrigger>
-                          <AccordionContent className="px-16 py-3">
-                            <ul className="space-y-3">
+                          <AccordionContent className="px-16 py-2">
+                            <ul className="space-y-2">
                               {section.points.map((point, pointIndex) => (
                                 <li key={pointIndex} className="flex items-center gap-2">
                                   <div className="w-4 h-4 rounded-full bg-green-400 flex items-center justify-center">
@@ -415,41 +428,41 @@ const CourseCard = () => {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
-              {/* Guest Lecture Section (Static) */}
-      <div className="mt-8">
-        <Separator className="mb-6" />
-        <div className="flex items-start gap-4">
-          <div className="flex flex-col items-center">
-            <div className="relative">
-              <img 
-                src="/api/placeholder/48/48" 
-                alt="Guest Lecturer" 
-                className="rounded-full w-12 h-12 border-2 border-yellow-400"
-              />
-              <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></div>
-            </div>
-            <span className="mt-2 px-3 py-1 bg-yellow-50 text-yellow-700 rounded-lg text-sm font-medium">
-              11:30 AM
-            </span>
-          </div>
-          <div className="flex-1">
-            <h3 className="text-lg font-semibold text-white">
-              Special Guest Lecture
-            </h3>
-            <p className="text-sm text-white mt-1">
-              Advanced Kubernetes Security Patterns & Best Practices
-            </p>
-            <div className="flex items-center gap-2 mt-2">
-              <span className="px-2 py-1 bg-yellow-100 text-yellow-700 rounded text-xs font-medium">
-                Guest Speaker
-              </span>
-              <span className="text-sm text-green-200">
-                1 hour session
-              </span>
-            </div>
-          </div>
-          <div className="flex-shrink-0">
-            {/* <TooltipProvider>
+            {/* Guest Lecture Section (Static) */}
+            <div className="mt-8">
+              <Separator className="mb-6" />
+              <div className="flex items-start gap-4">
+                <div className="flex flex-col items-center">
+                  <div className="relative">
+                    <img
+                      src="/api/placeholder/48/48"
+                      alt="Guest Lecturer"
+                      className="rounded-full w-12 h-12 border-2 border-yellow-400"
+                    />
+                    <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></div>
+                  </div>
+                  <span className="mt-2 px-3 py-1 bg-yellow-50 text-yellow-700 rounded-lg text-sm font-medium">
+                    11:30 AM
+                  </span>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold text-white">
+                    Special Guest Lecture
+                  </h3>
+                  <p className="text-sm text-white mt-1">
+                    Advanced Kubernetes Security Patterns & Best Practices
+                  </p>
+                  <div className="flex items-center gap-2 mt-2">
+                    <span className="px-2 py-1 bg-yellow-100 text-yellow-700 rounded text-xs font-medium">
+                      Guest Speaker
+                    </span>
+                    <span className="text-sm text-green-200">
+                      1 hour session
+                    </span>
+                  </div>
+                </div>
+                <div className="flex-shrink-0">
+                  {/* <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger>
                   <img 
@@ -463,14 +476,14 @@ const CourseCard = () => {
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider> */}
-          </div>
-        </div>
-      </div>
+                </div>
+              </div>
+            </div>
           </div>
         </Card>
       ))}
 
-    
+
     </div>
   );
 };
