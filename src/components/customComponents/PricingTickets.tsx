@@ -27,22 +27,41 @@ export default function Component() {
   const [selectedCity, setSelectedCity] = useState('Bengaluru'); // Fixed typo here
 
   const cityPricing: CityPricing = {
-    Mumbai: [
+    Mumbai: [ // Fixed city name here as well
       {
         name: "Early Bird offer",
         price: 15.99,
         features: ["Exclusive Hands-On Training with Mr Vimal Daga", "Real-World Case Studies", "Capstone Project integrating all your learnings", "Networking Opportunities with peers from top tech companies ", "Skill Validated Certificate", "Lifetime TGS Community Access", "Chance to engage with Hiring Managers", "Comprehensive Learning Resources"],
       },
       {
-        name: "PRO",
-        price: 25.99,
-        features: ["FREE SUPPORT 24/7", "DATABASES DOWNLOAD", "MAINTENANCE EMAIL"],
+        name: "Pro",
+        price: 15.99,
+        features: [
+          "Exclusive Hands-On Training with Mr Vimal Daga",
+          "Real-World Case Studies",
+          "Capstone Project integrating all your learnings",
+          "Networking Opportunities with peers from top tech companies",
+          "Skill Validated Certificate",
+          "Lifetime TGS Community Access",
+          "Chance to engage with Hiring Managers",
+          "Comprehensive Learning Resources"
+        ]
       },
       {
-        name: "PREMIUM",
-        price: 35.99,
-        features: ["FREE SUPPORT 24/7", "DATABASES DOWNLOAD", "MAINTENANCE EMAIL", "UNLIMITED TRAFFIC"],
-      },
+        name: "Group Discount",
+        price: 15.99,
+        features: [
+          "Exclusive Hands-On Training with Mr Vimal Daga",
+          "Real-World Case Studies",
+          "Capstone Project integrating all your learnings",
+          "Networking Opportunities with peers from top tech companies",
+          "Skill Validated Certificate",
+          "Lifetime TGS Community Access",
+          "Chance to engage with Hiring Managers",
+          "Comprehensive Learning Resources"
+        ]
+      }
+      
     ],
     Bengaluru: [ // Fixed city name here as well
       {
@@ -51,83 +70,178 @@ export default function Component() {
         features: ["Exclusive Hands-On Training with Mr Vimal Daga", "Real-World Case Studies", "Capstone Project integrating all your learnings", "Networking Opportunities with peers from top tech companies ", "Skill Validated Certificate", "Lifetime TGS Community Access", "Chance to engage with Hiring Managers", "Comprehensive Learning Resources"],
       },
       {
-        name: "BUSINESS",
-        price: 22.99,
-        features: ["PRIORITY SUPPORT", "20GB STORAGE", "API ACCESS"],
+        name: "Pro",
+        price: 15.99,
+        features: [
+          "Exclusive Hands-On Training with Mr Vimal Daga",
+          "Real-World Case Studies",
+          "Capstone Project integrating all your learnings",
+          "Networking Opportunities with peers from top tech companies",
+          "Skill Validated Certificate",
+          "Lifetime TGS Community Access",
+          "Chance to engage with Hiring Managers",
+          "Comprehensive Learning Resources"
+        ]
       },
       {
-        name: "ENTERPRISE",
-        price: 32.99,
-        features: ["24/7 SUPPORT", "UNLIMITED STORAGE", "API ACCESS", "CUSTOM SOLUTIONS"],
-      },
+        name: "Group Discount",
+        price: 15.99,
+        features: [
+          "Exclusive Hands-On Training with Mr Vimal Daga",
+          "Real-World Case Studies",
+          "Capstone Project integrating all your learnings",
+          "Networking Opportunities with peers from top tech companies",
+          "Skill Validated Certificate",
+          "Lifetime TGS Community Access",
+          "Chance to engage with Hiring Managers",
+          "Comprehensive Learning Resources"
+        ]
+      }
+      
     ],
-    Hyderabad: [
+    Hyderabad: [ // Fixed city name here as well
       {
-        name: "LITE",
-        price: 14.99,
-        features: ["EMAIL SUPPORT", "BASIC FEATURES"],
+        name: "Early Bird offer",
+        price: 15.99,
+        features: ["Exclusive Hands-On Training with Mr Vimal Daga", "Real-World Case Studies", "Capstone Project integrating all your learnings", "Networking Opportunities with peers from top tech companies ", "Skill Validated Certificate", "Lifetime TGS Community Access", "Chance to engage with Hiring Managers", "Comprehensive Learning Resources"],
       },
       {
-        name: "PLUS",
-        price: 24.99,
-        features: ["PRIORITY SUPPORT", "ADVANCED FEATURES", "ANALYTICS"],
+        name: "Pro",
+        price: 15.99,
+        features: [
+          "Exclusive Hands-On Training with Mr Vimal Daga",
+          "Real-World Case Studies",
+          "Capstone Project integrating all your learnings",
+          "Networking Opportunities with peers from top tech companies",
+          "Skill Validated Certificate",
+          "Lifetime TGS Community Access",
+          "Chance to engage with Hiring Managers",
+          "Comprehensive Learning Resources"
+        ]
       },
       {
-        name: "MAX",
-        price: 34.99,
-        features: ["24/7 SUPPORT", "ALL FEATURES", "ANALYTICS", "CUSTOM REPORTS"],
-      },
+        name: "Group Discount",
+        price: 15.99,
+        features: [
+          "Exclusive Hands-On Training with Mr Vimal Daga",
+          "Real-World Case Studies",
+          "Capstone Project integrating all your learnings",
+          "Networking Opportunities with peers from top tech companies",
+          "Skill Validated Certificate",
+          "Lifetime TGS Community Access",
+          "Chance to engage with Hiring Managers",
+          "Comprehensive Learning Resources"
+        ]
+      }
+      
     ],
-    Chennai: [
+    Chennai: [ // Fixed city name here as well
       {
-        name: "ESSENTIAL",
-        price: 13.99,
-        features: ["COMMUNITY SUPPORT", "CORE FEATURES"],
+        name: "Early Bird offer",
+        price: 15.99,
+        features: ["Exclusive Hands-On Training with Mr Vimal Daga", "Real-World Case Studies", "Capstone Project integrating all your learnings", "Networking Opportunities with peers from top tech companies ", "Skill Validated Certificate", "Lifetime TGS Community Access", "Chance to engage with Hiring Managers", "Comprehensive Learning Resources"],
       },
       {
-        name: "ADVANCED",
-        price: 23.99,
-        features: ["EMAIL SUPPORT", "ADVANCED FEATURES", "REAL-TIME UPDATES"],
+        name: "Pro",
+        price: 15.99,
+        features: [
+          "Exclusive Hands-On Training with Mr Vimal Daga",
+          "Real-World Case Studies",
+          "Capstone Project integrating all your learnings",
+          "Networking Opportunities with peers from top tech companies",
+          "Skill Validated Certificate",
+          "Lifetime TGS Community Access",
+          "Chance to engage with Hiring Managers",
+          "Comprehensive Learning Resources"
+        ]
       },
       {
-        name: "ULTIMATE",
-        price: 33.99,
-        features: ["PREMIUM SUPPORT", "ALL FEATURES", "REAL-TIME UPDATES", "PRIORITY ACCESS"],
-      },
+        name: "Group Discount",
+        price: 15.99,
+        features: [
+          "Exclusive Hands-On Training with Mr Vimal Daga",
+          "Real-World Case Studies",
+          "Capstone Project integrating all your learnings",
+          "Networking Opportunities with peers from top tech companies",
+          "Skill Validated Certificate",
+          "Lifetime TGS Community Access",
+          "Chance to engage with Hiring Managers",
+          "Comprehensive Learning Resources"
+        ]
+      }
+      
     ],
-    Gurugram: [
+    Gurugram: [ // Fixed city name here as well
       {
-        name: "BASIC",
-        price: 16.99,
-        features: ["BASIC SUPPORT", "STANDARD FEATURES"],
+        name: "Early Bird offer",
+        price: 15.99,
+        features: ["Exclusive Hands-On Training with Mr Vimal Daga", "Real-World Case Studies", "Capstone Project integrating all your learnings", "Networking Opportunities with peers from top tech companies ", "Skill Validated Certificate", "Lifetime TGS Community Access", "Chance to engage with Hiring Managers", "Comprehensive Learning Resources"],
       },
       {
-        name: "STANDARD",
-        price: 26.99,
-        features: ["BUSINESS SUPPORT", "PREMIUM FEATURES", "ANALYTICS"],
+        name: "Pro",
+        price: 15.99,
+        features: [
+          "Exclusive Hands-On Training with Mr Vimal Daga",
+          "Real-World Case Studies",
+          "Capstone Project integrating all your learnings",
+          "Networking Opportunities with peers from top tech companies",
+          "Skill Validated Certificate",
+          "Lifetime TGS Community Access",
+          "Chance to engage with Hiring Managers",
+          "Comprehensive Learning Resources"
+        ]
       },
       {
-        name: "PREMIUM",
-        price: 36.99,
-        features: ["DEDICATED SUPPORT", "ALL FEATURES", "ANALYTICS", "WHITE LABEL"],
-      },
+        name: "Group Discount",
+        price: 15.99,
+        features: [
+          "Exclusive Hands-On Training with Mr Vimal Daga",
+          "Real-World Case Studies",
+          "Capstone Project integrating all your learnings",
+          "Networking Opportunities with peers from top tech companies",
+          "Skill Validated Certificate",
+          "Lifetime TGS Community Access",
+          "Chance to engage with Hiring Managers",
+          "Comprehensive Learning Resources"
+        ]
+      }
+      
     ],
-    Pune: [
+    Pune:[ // Fixed city name here as well
       {
-        name: "STARTER",
-        price: 11.99,
-        features: ["COMMUNITY SUPPORT", "BASIC ACCESS"],
+        name: "Early Bird offer",
+        price: 15.99,
+        features: ["Exclusive Hands-On Training with Mr Vimal Daga", "Real-World Case Studies", "Capstone Project integrating all your learnings", "Networking Opportunities with peers from top tech companies ", "Skill Validated Certificate", "Lifetime TGS Community Access", "Chance to engage with Hiring Managers", "Comprehensive Learning Resources"],
       },
       {
-        name: "GROWTH",
-        price: 21.99,
-        features: ["BUSINESS SUPPORT", "FULL ACCESS", "ANALYTICS"],
+        name: "Pro",
+        price: 15.99,
+        features: [
+          "Exclusive Hands-On Training with Mr Vimal Daga",
+          "Real-World Case Studies",
+          "Capstone Project integrating all your learnings",
+          "Networking Opportunities with peers from top tech companies",
+          "Skill Validated Certificate",
+          "Lifetime TGS Community Access",
+          "Chance to engage with Hiring Managers",
+          "Comprehensive Learning Resources"
+        ]
       },
       {
-        name: "SCALE",
-        price: 31.99,
-        features: ["PREMIUM SUPPORT", "UNLIMITED ACCESS", "ANALYTICS", "CUSTOM INTEGRATION"],
-      },
+        name: "Group Discount",
+        price: 15.99,
+        features: [
+          "Exclusive Hands-On Training with Mr Vimal Daga",
+          "Real-World Case Studies",
+          "Capstone Project integrating all your learnings",
+          "Networking Opportunities with peers from top tech companies",
+          "Skill Validated Certificate",
+          "Lifetime TGS Community Access",
+          "Chance to engage with Hiring Managers",
+          "Comprehensive Learning Resources"
+        ]
+      }
+      
     ],
   };
 
@@ -178,9 +292,9 @@ export default function Component() {
 <Card key={tier.name} className="w-full md:w-[280px] flex flex-col h-[450px] border-0 rounded-[32px] overflow-hidden shadow-none -mb-8">
   <CardHeader className="bg-white p-6 flex flex-col items-center justify-center h-[60px]">
     <h3 className="text-[24px] font-bold text-center -mb-2 ">{tier.name}</h3>
-    <span className="text-sm text-[#FF6347] font-semibold animate-widen-narrow">
+    <span className="text-xs text-[#FF6347] font-semibold animate-widen-narrow">
       {tier.name === "Early Bird offer" ? "(Applicable till 30th Nov, 2024)" :
-        tier.name === "PRO" ? "Most Popular" : "Exclusive Offer"}
+        tier.name === "PRO" ? "Most Popular" : "(Applicable for a team of 3 or above)"}
     </span>
   </CardHeader>
   <div className="flex-grow flex flex-col justify-between" style={gradientStyle}>
@@ -194,7 +308,12 @@ export default function Component() {
     </CardContent>
     <CardFooter className="p-6 pt-0 flex items-center justify-center">
       <Button className="w-full bg-black hover:bg-gray-800 text-white rounded-[8px] py-3 text-base font-semibold">
-        Participate Now
+        
+        <span className="text-sm text-[#ffffff] font-semibold">
+      {tier.name === "Early Bird offer" ? "INR 8,400 + Taxes" :
+        tier.name === "Pro" ? "INR 10,400 + Taxes" : "Connect with our TGS Team"
+        }
+    </span>
       </Button>
     </CardFooter>
   </div>
