@@ -247,7 +247,7 @@ export default function CityCardGrid() {
               </div>
               {/* Conditional rendering based on city name */}
               {city.city === "Bengaluru" ? (
-                <a href=""><div className="mt-4 py-2 px-4 w-full hover:border text-white font-semibold rounded-lg bg-white/10 hover:bg-white/20 text-center  leading-none">
+                <a href=""><div className="mt-4 py-2 px-4 w-full hover:border text-white font-semibold rounded-lg bg-white/40 hover:bg-white/70 hover:text-black text-center  leading-none">
                   10th - 12th Jan, 2025
                   <br/>
                   <span className="text-[10px] bg-[#ff0000]">(Venue will be announced soon...)</span>
