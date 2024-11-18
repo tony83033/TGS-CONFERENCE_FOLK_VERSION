@@ -370,7 +370,7 @@ const MentorProfile = () => {
 
           {/* Enhanced Featured Section */}
           <div className="border border-gray-200 rounded-xl p-4 shadow-sm bg-white backdrop-blur-sm">
-            <p className="text-black text-sm mb-2">About the Mentor</p>
+            <p className="text-black text-sm mb-2">Companies benefited with his trainings & consultancy</p>
             <MentorFeatured />
           </div>
         </div>
