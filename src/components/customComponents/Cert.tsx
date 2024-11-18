@@ -24,7 +24,7 @@ export default function Component() {
             <div className="space-y-4">
               <h1 className="text-3xl font-bold tracking-tight text-white">Get <span className="text-[#ff0000]">Certified</span> & Recognised</h1>
               <p className="text-md text-muted-foreground text-white">
-              Yes ! You will  be certified  once you complete the <span className="text-[#ffff00]">Capstone Project</span>  towards the end
+              Yes ! You will  be certified  once you complete the <span className="text-[#ffff00]">Capstone Project</span>  towards the end.
               </p>
             </div>
           
@@ -39,7 +39,7 @@ export default function Component() {
                 <div className="space-y-2">
                   <h3 className="text-xl font-semibold text-white">Official and verified:</h3>
                   <p className="text-muted-foreground text-white">
-                    Receive an instructor signed certificate with institution&apos;s logo to verify your achievements and increase your job prospects
+                    Receive an instructor signed certificate with institution&apos;s logo to verify your achievements and increase your job prospects.
                   </p>
                 </div>
               </div>
@@ -69,7 +69,7 @@ export default function Component() {
                 <div className="space-y-2">
                   <h3 className="text-xl font-semibold text-white">Enhances Credibility</h3>
                   <p className="text-muted-foreground text-white">
-                    Use your certificate to enhance your professional credibility and stand out among your peers as an expert
+                    Use your certificate to enhance your professional credibility and stand out among your peers as an expert.
                   </p>
                 </div>
               </div>
@@ -84,7 +84,7 @@ export default function Component() {
                 <div className="space-y-2">
                   <h3 className="text-xl font-semibold text-white">Increase potential opportunities</h3>
                   <p className="text-muted-foreground text-white">
-                    By showcasing your achieved skill set using your certificate, attracting the employer for the desired job opportunities becomes easy
+                    By showcasing your achieved skill set using your certificate, attracting the employer for the desired job opportunities becomes easy.
                   </p>
                 </div>
               </div>
