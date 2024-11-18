@@ -91,7 +91,7 @@ export default function GalleryCarousel() {
 
   return (
     <div className="flex flex-col items-center">
-      <h2 className="text-3xl font-bold text-[#ffff00] text-center mb-8 mt-12">Gallery</h2>
+      <h2 className="text-3xl font-bold text-[#ffff00] text-center mb-8 mt-12">Our Story in Frames</h2>
 
       <div className="relative w-full max-w-6xl flex overflow-hidden justify-center">
         <div className="flex transition-transform duration-500 ease-in-out">
