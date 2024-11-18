@@ -1,12 +1,21 @@
 import React from 'react';
 import { Card, CardHeader, CardContent } from '@/components/ui/card';
 import { MoveDown } from 'lucide-react';
+import moveDown from "../../app/public/assets/MoveDown.svg"
 import EventImage from "../../app/public/assets/event-gallery/event-gallery-1.jpg"
+import EventImage2 from "../../app/public/assets/event-gallery/event-gallery-2.jpg"
+import EventImage3 from "../../app/public/assets/event-gallery/event-gallery-3.jpg"
 // Background shapes component
 const BackgroundShape = ({ position }: { position: 'left' | 'right' }) => (
   <div className={`absolute -z-10 opacity-80 hover:opacity-100 blur-sm ${position === 'left' ? '-left-20' : '-right-20'} w-[300px]`}>
     {position === 'left' ? (
-      <div className="w-full h-[200px] bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-3xl transform -rotate-12" />
+      <div className="w-full h-[200px] bg-gradient-to-br  to-purple-500/20 rounded-3xl transform -rotate-12" >
+             <img 
+          src={EventImage.src.toString()}
+          alt="Background shape"
+          className="w-full h-full object-cover"
+        />
+        </div>
     ) : (
       <div className="w-full h-[200px] rounded-3xl transform -rotate-12 overflow-hidden">
         <img 
@@ -36,8 +45,13 @@ const TimelineStage = ({ number, type, title, description, position }: {
       <CardContent>
         <p className="text-gray-300 text-sm">{description}</p>
         <div className="flex justify-center mt-2">
-          <div className="w-8 h-8 rounded-full border border-orange-500 flex items-center justify-center p-2 hover:bg-orange-500/10 transition-all duration-300">
-            <MoveDown className="w-4 h-4 text-orange-500 font-bold transition-all duration-300 ease-in-out transform hover:translate-y-1" />
+          <div className="w-8 h-8 rounded-full bg-orange-500/10  flex items-center justify-center p-2 hover:bg-orange-500/10 transition-all duration-300">
+            {/* <moveDown className="w-4 h-4 text-orange-500 font-bold transition-all duration-300 ease-in-out transform hover:translate-y-1" /> */}
+            <img
+                        src={moveDown.src.toString()} // Use dynamic image source from JSON
+                        alt={`move down`} // Use course title as alt text for better accessibility
+                        className="w-full h-full text-orange-500 font-bold transition-all duration-300 ease-in-out transform hover:translate-y-1"
+                      />
           </div>
         </div>
       </CardContent>
