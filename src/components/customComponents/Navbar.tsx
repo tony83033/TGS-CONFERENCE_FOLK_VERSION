@@ -5,7 +5,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, List } from 'lucide-react'; // Importing icons from lucide-react, you can replace with other icons if needed
-import LOGO from "../../app/public/assets/TGS.svg"
+import LOGO from "../../app/public/assets/Asset 9@33.33x.png"
 
 // Utility function to conditionally combine classes (similar to `shadcn-utils`' `cn` function)
 function cn(...classes: string[]): string {
