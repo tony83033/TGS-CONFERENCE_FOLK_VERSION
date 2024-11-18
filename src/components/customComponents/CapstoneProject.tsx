@@ -11,6 +11,11 @@ import {
 } from "lucide-react"
 import Image from "next/image"
 import Docker from "../../app/public/assets/docker.png"
+import k8sImage from "../../app/public/assets/k8s.png";
+import istioImage from "../../app/public/assets/istio.svg"
+import argoImage from "../../app/public/assets/argo.png"
+import grafanaImage from "../../app/public/assets/grafana.svg"
+import Linux from "../../app/public/assets/linux.png"
 
 export default function Component() {
   const steps = [
@@ -54,11 +59,11 @@ export default function Component() {
 
   const avatars = [
     { src: Docker, alt: "User 1", top: "25%", left: "10%" },
-    { src: Docker, alt: "User 2", top: "30%", left: "40%" },
-    { src: Docker, alt: "User 3", top: "60%", left: "30%" },
-    { src: Docker, alt: "User 4", top: "50%", left: "70%" },
-    { src: Docker, alt: "User 5", top: "35%", left: "90%" },
-    { src: Docker, alt: "User 6", top: "60%", left: "12%" },
+    { src: k8sImage, alt: "User 2", top: "30%", left: "40%" },
+    { src: istioImage, alt: "User 3", top: "60%", left: "30%" },
+    { src: argoImage, alt: "User 4", top: "50%", left: "70%" },
+    { src: grafanaImage, alt: "User 5", top: "35%", left: "90%" },
+    { src: Linux, alt: "User 6", top: "60%", left: "12%" },
   ]
 
   return (

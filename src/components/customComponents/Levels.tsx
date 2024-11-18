@@ -109,11 +109,11 @@ const Levels = () => {
    
        <>
         <div className="flex items-center justify-center w-full mx-auto mt-12">
-        <h2 className="text-3xl  font-bold text-[#ffff00] text-center">3 Days Tech Journey at a Glance
+        <h2 className="text-3xl  font-bold text-[#ffff00] text-center"> <span className='text-[#ff0000]'>3 Days Tech Journey </span> <span className='text-[#FFFF00]'> at a Glance </span>
         </h2>
 
       </div>
-      <div className="h-1 w-48 bg-red-500 mb-6 mx-auto"></div>
+      <div className="h-1 w-16 bg-red-500 mt-2 mx-auto"></div>
     <div className="relative max-w-2xl mx-auto p-6 bg-black/95 ">
 
       {/* Background grid pattern */}
