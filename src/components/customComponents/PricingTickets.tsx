@@ -2,8 +2,13 @@
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
-import Mumbai from "../../../src/app/public/assets/cityIcons/mumbai-icon.png"
-import Bangalore from "../../../src/app/public/assets/cityIcons/banglore-icon.png"
+import Mumbai from "../../../src/app/public/assets/cityCards/Mumbai.jpg"
+import Pune from "../../../src/app/public/assets/cityCards/pune1.jpg"
+import Hyderabad from "../../../src/app/public/assets/cityCards/hyderabad.jpg"
+import Bengaluru from "../../../src/app/public/assets/cityCards/bangalore.jpg"
+import Gurugram from "../../../src/app/public/assets/cityCards/gurgaon1.jpg"
+import Chennai from "../../../src/app/public/assets/cityCards/Chennai.jpg"
+
 
 interface PricingTier {
   name: string;
@@ -124,12 +129,14 @@ export default function Component() {
   };
 
   const cities = [
-    { name: 'Bangaluru', image: Mumbai.src.toString() },
-    { name: 'Pune', image: Bangalore.src.toString() },
-    { name: 'Hyderabad', image: Mumbai.src.toString() },
-    { name: 'Gurugram', image: Mumbai.src.toString() },
+    { name: 'Bengaluru', image: Bengaluru.src.toString() },
+
+    
+    { name: 'Pune', image: Pune.src.toString() },
+    { name: 'Hyderabad', image: Hyderabad.src.toString() },
+    { name: 'Gurugram', image: Gurugram.src.toString() },
     { name: 'Mumbai', image: Mumbai.src.toString() },
-    { name: 'Chennai', image: Mumbai.src.toString() },
+    { name: 'Chennai', image: Chennai.src.toString() },
   ];
 
   return (
@@ -150,7 +157,7 @@ export default function Component() {
             <img
               src={city.image}
               alt={city.name}
-              className="w-6 h-6 mr-2 " // Adjust the image size as needed
+              className="w-6 h-6 mr-2 rounded-full " // Adjust the image size as needed
             />
             {city.name}
           </Button>
