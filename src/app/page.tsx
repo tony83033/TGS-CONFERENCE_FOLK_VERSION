@@ -12,6 +12,7 @@ import CapstoneProject from "@/components/customComponents/CapstoneProject";
 import EventSchedule from "@/components/customComponents/Shedule";
 import TrainingCertificate from "@/components/customComponents/Cert";
 import ContactUs from "@/components/customComponents/ContactUs"
+import TGSAboutSection from "@/components/NewAbout";
 export default function Home() {
   return (
    <>
@@ -22,7 +23,7 @@ export default function Home() {
    <MentorProfile></MentorProfile>
    <TrainingCertificate></TrainingCertificate>
    <Levels></Levels>
-   
+   <TGSAboutSection></TGSAboutSection>
    <Carousel></Carousel>
    <Faq></Faq>
    <CapstoneProject></CapstoneProject>
