@@ -44,20 +44,11 @@ import { Badge } from "@/components/ui/badge";
 // Main Component
 const CourseCard = () => {
   const courseData = [
-    //  day 1 schedule
     {
       "id": "course1",
       "title": "World of Docker Containers",
       "description": "Go Deep in Containers - Step by Step",
       "imageSrc": `${technologyImage.src.toString()}`,
-      "time":"09:00 AM",
-      "duration":"150",
-      "guestImage":"",
-      "guestName":"",
-      "guestSessionTopic":"",
-      "guestSessionDesc":"",
-      "guestTime":"11:30 AM",
-      "guestSessionDuration":"20",
       "sections": [
         {
           "subheading": "Know what really Containers are / Why it launch in < 1 sec ? It's Just a Process",
@@ -104,14 +95,6 @@ const CourseCard = () => {
       "title": "Universe of Kubernetes",
       "description": "Kubernetes Fundamentals and Advanced Concepts",
       "imageSrc": `${k8sImage.src.toString()}`,
-      "time":"12:50 PM",
-      "duration":"210",
-      "guestImage":"",
-      "guestName":"",
-      "guestSessionTopic":"",
-      "guestSessionDesc":"",
-      "guestTime":"4:20 PM",
-      "guestSessionDuration":"20",
       "sections": [
         {
           "subheading": "Kubernetes Fundamentals",
@@ -180,14 +163,6 @@ const CourseCard = () => {
       "title": "Istio Service Mesh / Kiali",
       "description": "Introduction to Service Mesh and Traffic Management with Istio",
       "imageSrc": `${istioImage.src.toString()}`,
-      "time":"4:40 PM",
-      "duration":"96",
-      "guestImage":"",
-      "guestName":"",
-      "guestSessionTopic":"",
-      "guestSessionDesc":"",
-      "guestTime":"6:16 PM",
-      "guestSessionDuration":"20",
       "sections": [
         {
           "subheading": "Introduction to Service Mesh",
@@ -224,9 +199,130 @@ const CourseCard = () => {
         }
       ]
     },
-   
-   
-   
+    {
+      "id": "course4",
+      "title": "Argo CD for GitOps",
+      "description": "Continuous Deployment with GitOps and Argo CD",
+      "imageSrc": `${argoImage.src.toString()}`,
+      "sections": [
+        {
+          "subheading": "Introduction to GitOps",
+          "points": [
+            "Overview of GitOps principles, benefits, and key concepts"
+          ]
+        },
+        {
+          "subheading": "Setting Up Argo CD",
+          "points": [
+            "Installing Argo CD on a Kubernetes cluster",
+            "Connecting Argo CD with Git repositories"
+          ]
+        },
+        {
+          "subheading": "Application Deployment with Argo CD",
+          "points": [
+            "Syncing applications, managing application lifecycle",
+            "Multi-environment configurations"
+          ]
+        },
+        {
+          "subheading": "Argo CD Configuration and Management",
+          "points": [
+            "Customizing configurations, defining project structure",
+            "Automating Rollbacks and Syncing Strategies"
+          ]
+        },
+        {
+          "subheading": "Integrating Argo CD with CI/CD Pipelines",
+          "points": [
+            "Jenkins integration"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "course5",
+      "title": "Prometheus & Grafana",
+      "description": "Monitoring and Observability with Prometheus and Grafana",
+      "imageSrc": `${grafanaImage.src.toString()}`,
+      "sections": [
+        {
+          "subheading": "Introduction to Monitoring and Observability",
+          "points": [
+            "Introduction to Prometheus and Grafana",
+            "Setting Up Prometheus",
+            "Installing Prometheus, configuring targets, scraping metrics",
+            "Customizing Prometheus configurations and data retention"
+          ]
+        },
+        {
+          "subheading": "Grafana Basics",
+          "points": [
+            "Setting up Grafana, connecting with Prometheus",
+            "Building basic dashboards for visualizing data"
+          ]
+        },
+        {
+          "subheading": "Kubernetes Monitoring",
+          "points": [
+            "Monitoring Kubernetes nodes, pods, and services with Prometheus and Grafana"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "course6",
+      "title": "DevSecOps Tools - Trivy / Falco / AquaSec / ELK",
+      "description": "Security in Development and Operations with DevSecOps",
+      "imageSrc": `${trivy.src.toString()}`,
+      "sections": [
+        {
+          "subheading": "Introduction to DevSecOps",
+          "points": [
+            "Evolution of DevSecOps, key principles, and benefits",
+            "Integrating security within the CI/CD pipeline"
+          ]
+        },
+        {
+          "subheading": "Security in Development and CI/CD Pipelines",
+          "points": [
+            "Common vulnerabilities and security tools for CI/CD",
+            "Code scanning tool Trivy"
+          ]
+        },
+        {
+          "subheading": "Container Security",
+          "points": [
+            "Docker security scanning tools and practices",
+            "Kubernetes security with tools like Falco and Aqua Security"
+          ]
+        },
+        {
+          "subheading": "Monitoring and Auditing Security",
+          "points": [
+            "Centralized logging and monitoring with ELK, security audits"
+          ]
+        },
+        {
+          "subheading": "Automating Compliance and Vulnerability Patching",
+          "points": [
+            "Automating compliance checks, vulnerability patching tools, and workflows"
+          ]
+        },
+        {
+          "subheading": "Best Practices in DevSecOps",
+          "points": [
+            "Building a culture of security, best practices, and continuous improvement"
+          ]
+        },
+        {
+          "subheading": "Capstone Use Cases / Project",
+          "points": [
+            "Secure, Observable, and Scalable Application Deployment"
+          ]
+        }
+      ]
+    }
   ];
   return (
     <div className="space-y-6">
@@ -244,7 +340,7 @@ const CourseCard = () => {
               />
               <span className="inline-block px-3 py-1 bg-blue-50 text-blue-600 rounded-lg text-sm">
                 {/* time should be dynamically display from json. TODO  */}
-               {course.time}
+                10:00 AM 
 
               </span>
             </div>
@@ -261,7 +357,7 @@ const CourseCard = () => {
                 </span>
                 <span className="text-sm text-green-200">
                   {/* sessin duration should be dynamically display from json TODO*/}
-                        {`${course.duration}`} min session
+                  45 min session
                 </span>
               </div>
             </div>
@@ -323,58 +419,6 @@ const CourseCard = () => {
                 </AccordionItem>
               ))}
             </Accordion>
-            <div className="mt-8">
-              <Separator className="mb-6" />
-              <div className="flex items-start gap-4">
-                <div className="flex flex-col items-center">
-                  <div className="relative">
-                    <img
-                      src="/api/placeholder/48/48"
-                      alt="Guest Lecturer"
-                      className="rounded-full w-12 h-12 border-2 border-yellow-400"
-                    />
-                    <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></div>
-                  </div>
-                  <span className="mt-2 px-3 py-1 bg-yellow-50 text-yellow-700 rounded-lg text-sm font-medium">
-                    {/* session timing should display from json dynamic TODO */}
-                   {course.guestTime}
-                  </span>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-white">
-                    Special Guest Lecture
-                  </h3>
-                  <p className="text-sm text-white mt-1">
-                    Advanced Kubernetes Security Patterns & Best Practices
-                  </p>
-                  <div className="flex items-center gap-2 mt-2">
-                    <span className="px-2 py-1 bg-yellow-100 text-yellow-700 rounded text-xs font-medium">
-                      Guest Speaker
-                    </span>
-                    <span className="text-sm text-green-200">
-                      {/* session durating should be dynamic from json TODO */}
-                  {course.guestSessionDuration}  min session
-                    </span>
-                  </div>
-                </div>
-                <div className="flex-shrink-0">
-                  {/* <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger>
-                  <img 
-                    src={mentorImage.src.toString()} 
-                    alt="Guest Lecturer" 
-                    className="rounded-full w-20 h-20 border-yellow-400 p-2"
-                  />
-                </TooltipTrigger>
-                <TooltipContent className="w-64">
-                  <p>Guest speaker is a cybersecurity expert...</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider> */}
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </Card>

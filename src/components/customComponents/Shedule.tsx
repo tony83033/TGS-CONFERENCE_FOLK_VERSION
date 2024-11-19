@@ -2,7 +2,8 @@
 "use client";
 import React, { useState } from "react";
 import CourseSchedule from "./subComponents/CourseShedule";
-
+import CourseCardDay2 from "./subComponents/CourseSheduleDay2";
+import CourseCardDay3 from "./subComponents/CoursesSheduleDay3";
 const EventSchedule = () => {
   const [activeDay, setActiveDay] = useState(1);
 
@@ -54,7 +55,9 @@ const EventSchedule = () => {
         Everything About Kubernetes : An Experience Beyond Learning 
         </p>
       </div>
-      <CourseSchedule />
+      {activeDay === 1 && <CourseSchedule />}
+      {activeDay === 2 && <CourseCardDay2 />}
+      {activeDay === 3 && <CourseCardDay3 />}
     </>
   );
 };

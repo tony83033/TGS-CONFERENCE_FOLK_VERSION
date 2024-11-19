@@ -42,191 +42,160 @@ import { Badge } from "@/components/ui/badge";
 
 
 // Main Component
-const CourseCard = () => {
+const CourseCardDay2 = () => {
   const courseData = [
     //  day 1 schedule
+
+  
     {
-      "id": "course1",
-      "title": "World of Docker Containers",
-      "description": "Go Deep in Containers - Step by Step",
-      "imageSrc": `${technologyImage.src.toString()}`,
-      "time":"09:00 AM",
-      "duration":"150",
-      "guestImage":"",
-      "guestName":"",
-      "guestSessionTopic":"",
-      "guestSessionDesc":"",
-      "guestTime":"11:30 AM",
-      "guestSessionDuration":"20",
-      "sections": [
-        {
-          "subheading": "Know what really Containers are / Why it launch in < 1 sec ? It's Just a Process",
-          "points": [
-            "Introduction to Docker and containerization basics",
-            "Installing Docker and first Docker run",
-            "Managing Docker containers (start, stop, remove, inspect)",
-            "Manage Multiple Containers"
-          ]
-        },
-        {
-          "subheading": "Docker Image Building - Dockerfile",
-          "points": [
-            "Building Docker images",
-            "FROM (best practices from security vulnerabilities)",
-            "ADD / COPY",
-            "CMD / ENTRYPOINT / RUN",
-            "EXPOSE",
-            "ENV / WORKDIR / ARG",
-            "HEALTHCHECK / ONBUILD"
-          ]
-        },
-        {
-          "subheading": "Working with Docker Volumes and Networks",
-          "points": [
-            "Storage persistence with Docker Volumes",
-            "Networking in Docker, linking containers"
-          ]
-        },
-        {
-          "subheading": "Advanced Docker Concepts",
-          "points": [
-            "Image layering, optimization, and security best practices",
-            "Multi-stage builds and working with Docker Registries",
-            "Multi Tier App Container App Deployment: Docker Compose",
-            "Docker Security - Docker Scout / Trivy",
-            "Understanding Docker security, best practices, and vulnerability scanning tools"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "course2",
-      "title": "Universe of Kubernetes",
-      "description": "Kubernetes Fundamentals and Advanced Concepts",
-      "imageSrc": `${k8sImage.src.toString()}`,
-      "time":"12:50 PM",
+      // DAY 2 schedule 
+      "id": "course4",
+      "title": "Argo CD for GitOps",
+      "description": "Continuous Deployment with GitOps and Argo CD",
+      "imageSrc": `${argoImage.src.toString()}`,
+      "time":"09:00 PM",
       "duration":"210",
       "guestImage":"",
       "guestName":"",
       "guestSessionTopic":"",
       "guestSessionDesc":"",
-      "guestTime":"4:20 PM",
+      "guestTime":"12:30 PM",
       "guestSessionDuration":"20",
       "sections": [
         {
-          "subheading": "Kubernetes Fundamentals",
+          "subheading": "Introduction to GitOps",
           "points": [
-            "Introduction to Kubernetes, core concepts, and architecture",
-            "Setting up Kubernetes clusters",
-            "Working with Pods, Deployments, and Services",
-            "Understanding Pods, ReplicaSets, Deployments"
+            "Overview of GitOps principles, benefits, and key concepts"
           ]
         },
         {
-          "subheading": "Networking: Services, Ingress, Load Balancing",
+          "subheading": "Setting Up Argo CD",
           "points": [
-            "Services, Ingress, Load Balancing"
+            "Installing Argo CD on a Kubernetes cluster",
+            "Connecting Argo CD with Git repositories"
           ]
         },
         {
-          "subheading": "Deployment Strategies",
+          "subheading": "Application Deployment with Argo CD",
           "points": [
-            "Rolling Update",
-            "Canary Deployment",
-            "Blue Green"
+            "Syncing applications, managing application lifecycle",
+            "Multi-environment configurations"
           ]
         },
         {
-          "subheading": "Storage and Configuration Management",
+          "subheading": "Argo CD Configuration and Management",
           "points": [
-            "Volumes, Persistent Volumes, Persistent Volume Claims",
-            "ConfigMaps and Secrets"
+            "Customizing configurations, defining project structure",
+            "Automating Rollbacks and Syncing Strategies"
           ]
         },
         {
-          "subheading": "Scaling, Rolling Updates, and Rollbacks",
+          "subheading": "Integrating Argo CD with CI/CD Pipelines",
           "points": [
-            "Horizontal Pod Autoscaling, managing updates, rollbacks"
-          ]
-        },
-        {
-          "subheading": "Kubernetes Security",
-          "points": [
-            "RBAC, Network Policies, and Security Contexts"
-          ]
-        },
-        {
-          "subheading": "Advanced Kubernetes Networking",
-          "points": [
-            "Service Mesh basics, Istio overview, and setup"
-          ]
-        },
-        {
-          "subheading": "Monitoring and Logging",
-          "points": [
-            "Prometheus and Grafana integration with Kubernetes"
-          ]
-        },
-        {
-          "subheading": "CI/CD with Kubernetes",
-          "points": [
-            "Integrating Jenkins and Argo CD for GitOps in Kubernetes"
+            "Jenkins integration"
           ]
         }
       ]
     },
     {
-      "id": "course3",
-      "title": "Istio Service Mesh / Kiali",
-      "description": "Introduction to Service Mesh and Traffic Management with Istio",
-      "imageSrc": `${istioImage.src.toString()}`,
-      "time":"4:40 PM",
-      "duration":"96",
+      "id": "course5",
+      "title": "Prometheus & Grafana",
+      "description": "Monitoring and Observability with Prometheus and Grafana",
+      "imageSrc": `${grafanaImage.src.toString()}`,
+      "time":"1:50 PM",
+      "duration":"130",
       "guestImage":"",
       "guestName":"",
       "guestSessionTopic":"",
       "guestSessionDesc":"",
-      "guestTime":"6:16 PM",
+      "guestTime":"4:00 PM",
       "guestSessionDuration":"20",
       "sections": [
         {
-          "subheading": "Introduction to Service Mesh",
+          "subheading": "Introduction to Monitoring and Observability",
           "points": [
-            "What is Service Mesh? Benefits and Use Cases",
-            "Introduction to Istio, core components"
+            "Introduction to Prometheus and Grafana",
+            "Setting Up Prometheus",
+            "Installing Prometheus, configuring targets, scraping metrics",
+            "Customizing Prometheus configurations and data retention"
           ]
         },
         {
-          "subheading": "Installing and Configuring Istio",
+          "subheading": "Grafana Basics",
           "points": [
-            "Setting up Istio on a Kubernetes cluster",
-            "Istio control plane and data plane"
+            "Setting up Grafana, connecting with Prometheus",
+            "Building basic dashboards for visualizing data"
           ]
         },
         {
-          "subheading": "Traffic Management in Istio",
+          "subheading": "Kubernetes Monitoring",
           "points": [
-            "Virtual Services, Destination Rules, and Gateway configuration",
-            "Traffic splitting, mirroring, and fault injection"
-          ]
-        },
-        {
-          "subheading": "Observability in Istio - Kiali",
-          "points": [
-            "Distributed tracing, metrics, and logging"
-          ]
-        },
-        {
-          "subheading": "Advanced Istio Features",
-          "points": [
-            "Rate limiting, circuit breaking, advanced traffic shaping"
+            "Monitoring Kubernetes nodes, pods, and services with Prometheus and Grafana"
           ]
         }
       ]
     },
-   
-   
-   
+    {
+      "id": "course6",
+      "title": "DevSecOps Tools - Trivy / Falco / AquaSec / ELK",
+      "description": "Security in Development and Operations with DevSecOps",
+      "imageSrc": `${trivy.src.toString()}`,
+      "time":"4:20 PM",
+      "duration":"180",
+      "guestImage":"",
+      "guestName":"",
+      "guestSessionTopic":"",
+      "guestSessionDesc":"",
+      "guestTime":"6:20 PM",
+      "guestSessionDuration":"20",
+      "sections": [
+        {
+          "subheading": "Introduction to DevSecOps",
+          "points": [
+            "Evolution of DevSecOps, key principles, and benefits",
+            "Integrating security within the CI/CD pipeline"
+          ]
+        },
+        {
+          "subheading": "Security in Development and CI/CD Pipelines",
+          "points": [
+            "Common vulnerabilities and security tools for CI/CD",
+            "Code scanning tool Trivy"
+          ]
+        },
+        {
+          "subheading": "Container Security",
+          "points": [
+            "Docker security scanning tools and practices",
+            "Kubernetes security with tools like Falco and Aqua Security"
+          ]
+        },
+        {
+          "subheading": "Monitoring and Auditing Security",
+          "points": [
+            "Centralized logging and monitoring with ELK, security audits"
+          ]
+        },
+        {
+          "subheading": "Automating Compliance and Vulnerability Patching",
+          "points": [
+            "Automating compliance checks, vulnerability patching tools, and workflows"
+          ]
+        },
+        {
+          "subheading": "Best Practices in DevSecOps",
+          "points": [
+            "Building a culture of security, best practices, and continuous improvement"
+          ]
+        },
+        {
+          "subheading": "Capstone Use Cases / Project",
+          "points": [
+            "Secure, Observable, and Scalable Application Deployment"
+          ]
+        }
+      ]
+    }
   ];
   return (
     <div className="space-y-6">
@@ -384,4 +353,4 @@ const CourseCard = () => {
   );
 };
 
-export default CourseCard;
+export default CourseCardDay2;

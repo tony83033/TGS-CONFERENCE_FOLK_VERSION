@@ -42,191 +42,72 @@ import { Badge } from "@/components/ui/badge";
 
 
 // Main Component
-const CourseCard = () => {
+const CourseCardDay3 = () => {
   const courseData = [
     //  day 1 schedule
+
+  
     {
-      "id": "course1",
-      "title": "World of Docker Containers",
-      "description": "Go Deep in Containers - Step by Step",
-      "imageSrc": `${technologyImage.src.toString()}`,
-      "time":"09:00 AM",
-      "duration":"150",
+      // DAY 2 schedule 
+      "id": "course4",
+      "title": "Capstone Use Cases / Project :Secure, Observable, and Scalable Application Deployment",
+      "description": "Continuous Deployment with GitOps and Argo CD",
+      "imageSrc": `${argoImage.src.toString()}`,
+      "time":"09:00 PM",
+      "duration":"180",
       "guestImage":"",
       "guestName":"",
       "guestSessionTopic":"",
       "guestSessionDesc":"",
-      "guestTime":"11:30 AM",
+      "guestTime":"12:30 PM",
       "guestSessionDuration":"20",
       "sections": [
         {
-          "subheading": "Know what really Containers are / Why it launch in < 1 sec ? It's Just a Process",
+          "subheading": "Define microservices (frontend, API, database) and set up Git repositories with branching strategies.",
           "points": [
-            "Introduction to Docker and containerization basics",
-            "Installing Docker and first Docker run",
-            "Managing Docker containers (start, stop, remove, inspect)",
-            "Manage Multiple Containers"
+
           ]
         },
         {
-          "subheading": "Docker Image Building - Dockerfile",
+          "subheading": "Create and optimize Dockerfiles, test containers, and push to a container registry.",
           "points": [
-            "Building Docker images",
-            "FROM (best practices from security vulnerabilities)",
-            "ADD / COPY",
-            "CMD / ENTRYPOINT / RUN",
-            "EXPOSE",
-            "ENV / WORKDIR / ARG",
-            "HEALTHCHECK / ONBUILD"
+
           ]
         },
         {
-          "subheading": "Working with Docker Volumes and Networks",
+          "subheading": "Set up a Kubernetes cluster, deploy services with manifests, and configure autoscaling/load balancing.",
           "points": [
-            "Storage persistence with Docker Volumes",
-            "Networking in Docker, linking containers"
+
           ]
         },
         {
-          "subheading": "Advanced Docker Concepts",
+          "subheading": "Implement GitOps via Argo CD for continuous deployment, with auto-sync and rollback features.",
           "points": [
-            "Image layering, optimization, and security best practices",
-            "Multi-stage builds and working with Docker Registries",
-            "Multi Tier App Container App Deployment: Docker Compose",
-            "Docker Security - Docker Scout / Trivy",
-            "Understanding Docker security, best practices, and vulnerability scanning tools"
+
           ]
-        }
+        },
+        {
+          "subheading": "Set up Prometheus for metrics collection, create Grafana dashboards, and configure alerting.",
+          "points": [
+
+          ]
+        },
+        {
+            "subheading": "Scan Docker images with Trivy, manage secrets securely, and enforce RBAC policies.",
+            "points": [
+  
+            ]
+          },
+          {
+            "subheading": "Automate build, test, and deployment stages using CI/CD tools like Jenkins with Argo CD integration.",
+            "points": [
+  
+            ]
+          }
       ]
     },
-    {
-      "id": "course2",
-      "title": "Universe of Kubernetes",
-      "description": "Kubernetes Fundamentals and Advanced Concepts",
-      "imageSrc": `${k8sImage.src.toString()}`,
-      "time":"12:50 PM",
-      "duration":"210",
-      "guestImage":"",
-      "guestName":"",
-      "guestSessionTopic":"",
-      "guestSessionDesc":"",
-      "guestTime":"4:20 PM",
-      "guestSessionDuration":"20",
-      "sections": [
-        {
-          "subheading": "Kubernetes Fundamentals",
-          "points": [
-            "Introduction to Kubernetes, core concepts, and architecture",
-            "Setting up Kubernetes clusters",
-            "Working with Pods, Deployments, and Services",
-            "Understanding Pods, ReplicaSets, Deployments"
-          ]
-        },
-        {
-          "subheading": "Networking: Services, Ingress, Load Balancing",
-          "points": [
-            "Services, Ingress, Load Balancing"
-          ]
-        },
-        {
-          "subheading": "Deployment Strategies",
-          "points": [
-            "Rolling Update",
-            "Canary Deployment",
-            "Blue Green"
-          ]
-        },
-        {
-          "subheading": "Storage and Configuration Management",
-          "points": [
-            "Volumes, Persistent Volumes, Persistent Volume Claims",
-            "ConfigMaps and Secrets"
-          ]
-        },
-        {
-          "subheading": "Scaling, Rolling Updates, and Rollbacks",
-          "points": [
-            "Horizontal Pod Autoscaling, managing updates, rollbacks"
-          ]
-        },
-        {
-          "subheading": "Kubernetes Security",
-          "points": [
-            "RBAC, Network Policies, and Security Contexts"
-          ]
-        },
-        {
-          "subheading": "Advanced Kubernetes Networking",
-          "points": [
-            "Service Mesh basics, Istio overview, and setup"
-          ]
-        },
-        {
-          "subheading": "Monitoring and Logging",
-          "points": [
-            "Prometheus and Grafana integration with Kubernetes"
-          ]
-        },
-        {
-          "subheading": "CI/CD with Kubernetes",
-          "points": [
-            "Integrating Jenkins and Argo CD for GitOps in Kubernetes"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "course3",
-      "title": "Istio Service Mesh / Kiali",
-      "description": "Introduction to Service Mesh and Traffic Management with Istio",
-      "imageSrc": `${istioImage.src.toString()}`,
-      "time":"4:40 PM",
-      "duration":"96",
-      "guestImage":"",
-      "guestName":"",
-      "guestSessionTopic":"",
-      "guestSessionDesc":"",
-      "guestTime":"6:16 PM",
-      "guestSessionDuration":"20",
-      "sections": [
-        {
-          "subheading": "Introduction to Service Mesh",
-          "points": [
-            "What is Service Mesh? Benefits and Use Cases",
-            "Introduction to Istio, core components"
-          ]
-        },
-        {
-          "subheading": "Installing and Configuring Istio",
-          "points": [
-            "Setting up Istio on a Kubernetes cluster",
-            "Istio control plane and data plane"
-          ]
-        },
-        {
-          "subheading": "Traffic Management in Istio",
-          "points": [
-            "Virtual Services, Destination Rules, and Gateway configuration",
-            "Traffic splitting, mirroring, and fault injection"
-          ]
-        },
-        {
-          "subheading": "Observability in Istio - Kiali",
-          "points": [
-            "Distributed tracing, metrics, and logging"
-          ]
-        },
-        {
-          "subheading": "Advanced Istio Features",
-          "points": [
-            "Rate limiting, circuit breaking, advanced traffic shaping"
-          ]
-        }
-      ]
-    },
-   
-   
-   
+  
+ 
   ];
   return (
     <div className="space-y-6">
@@ -384,4 +265,4 @@ const CourseCard = () => {
   );
 };
 
-export default CourseCard;
+export default CourseCardDay3;
