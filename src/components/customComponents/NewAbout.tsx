@@ -17,11 +17,11 @@ const TGSAboutSection = () => {
       <div className="max-w-6xl mx-auto space-y-12 relative z-10">
         {/* Enhanced Header Section */}
         <div className="text-center space-y-6 backdrop-blur-sm p-8 rounded-2xl">
-          <h1 className="text-3xl md:text-3xl font-bold relative text-white">
-             <span className='text-[#ebff00]'> TGS</span> - The Growth String Initiative        
+          <h1 className="text-3xl md:text-3xl font-bold relative text-white -mb-4">
+             <span className='text-[#ebff00]'>About TGS</span> - The Growth String Initiative        
           </h1>
           <div className="h-1 w-16 bg-red-500 mx-auto"></div>
-          <p className="text-xl">
+          <p className="text-xl ">
             <span className="text-white  drop-shadow-[0_0_15px_rgba(255,255,0,0.3)]">
               Your Launchpad to Mastery Across Technologies!
             </span>
@@ -107,11 +107,11 @@ const TGSAboutSection = () => {
               content: "Engage in practical, real-world training with immediate application."
             },
             {
-              title: "DevOps Pipeline",
+              title: "Capstone Project",
               content: "Build an end-to-end DevOps pipeline through collaborative projects."
             },
             {
-              title: "Networking",
+              title: "Networking & Collaboration",
               content: "Connect with industry speakers and build career-shaping relationships."
             }
           ].map((feature, index) => (
