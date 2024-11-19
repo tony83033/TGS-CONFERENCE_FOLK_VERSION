@@ -1,12 +1,12 @@
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
-import { Home, Phone, Mail } from 'lucide-react'
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Home, Phone, Mail } from "lucide-react";
 
 export default function Component() {
   return (
-    <div className=" bg-zinc-900 px-4 py-12">
+    <div className="bg-zinc-900 px-4 py-12">
       <div className="container mx-auto max-w-6xl">
         {/* Header Section */}
         <div className="text-center mb-12">
@@ -15,7 +15,9 @@ export default function Component() {
           </h1>
           <div className="h-1 w-16 bg-red-500 mb-2 mx-auto"></div>
           <p className="text-gray-300 max-w-3xl mx-auto text-sm">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
           </p>
         </div>
 
@@ -30,11 +32,13 @@ export default function Component() {
               <div>
                 <h3 className="text-cyan-400 text-xl font-semibold mb-1">Address</h3>
                 <p className="text-white">
-                  
-                 Krishna Tower, Plot No. 5,<br />
-                 Gopalpura Bypass Rd,<br />
-                 Gopal Pura Mode, Jaipur, <br />
-                 Rajasthan 302015
+                  Krishna Tower, Plot No. 5,
+                  <br />
+                  Gopalpura Bypass Rd,
+                  <br />
+                  Gopal Pura Mode, Jaipur,
+                  <br />
+                  Rajasthan 302015
                 </p>
               </div>
             </div>
@@ -45,7 +49,12 @@ export default function Component() {
               </div>
               <div>
                 <h3 className="text-cyan-400 text-xl font-semibold mb-1">Phone</h3>
-                <p className="text-white">+91 97733 53561</p>
+                <a href="tel:+919773353561" className="text-white hover:underline">
+                  +91 9773353561,
+                </a> <br/>
+                <a href="tel:+919829105960" className="text-white hover:underline">
+                +91 9829105960
+                </a>
               </div>
             </div>
 
@@ -55,7 +64,9 @@ export default function Component() {
               </div>
               <div>
                 <h3 className="text-cyan-400 text-xl font-semibold mb-1">Email</h3>
-                <p className="text-white">preeti@lwindia.com</p>
+                <a href="mailto:preeti@lwindia.com" className="text-white hover:underline">
+                  preeti@lwindia.com
+                </a>
               </div>
             </div>
           </div>
@@ -83,24 +94,32 @@ export default function Component() {
                   <Input
                     id="email"
                     type="email"
-                    className="border-1  border-b border-zinc-200 rounded-none px-0 py-2 focus-visible:ring-0 focus-visible:border-zinc-900 text-white"
+                    className="border-1 border-b border-zinc-200 rounded-none px-0 py-2 focus-visible:ring-0 focus-visible:border-zinc-900 text-white"
                   />
                 </div>
                 <div className="space-y-2">
-                  
+                  <label htmlFor="phone" className="text-sm font-medium text-white">
+                    WhatsApp No.
+                  </label>
+                  <Input
+                    id="whatsapp"
+                    type="number"
+                    className="border-1 border-b border-zinc-200 rounded-none px-0 py-2 focus-visible:ring-0 focus-visible:border-zinc-900 text-white"
+                  />
+                </div>
+                <div className="space-y-2">
                   <Textarea
                     id="message"
                     className="min-h-[100px] border-0 border-b border-zinc-200 rounded-none px-0 py-2 focus-visible:ring-0 focus-visible:border-zinc-900 resize-none text-white"
-  placeholder="Type your message"                />
+                    placeholder="Type your message"
+                  />
                 </div>
-                <Button className="w-full bg-cyan-400 hover:bg-cyan-500 text-white">
-                  Send
-                </Button>
+                <Button className="w-full bg-cyan-400 hover:bg-cyan-500 text-white">Send</Button>
               </form>
             </CardContent>
           </Card>
         </div>
       </div>
     </div>
-  )
+  );
 }
