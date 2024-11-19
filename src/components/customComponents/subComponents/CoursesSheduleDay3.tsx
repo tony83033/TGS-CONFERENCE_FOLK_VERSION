@@ -35,6 +35,7 @@ import grafanaImage from "../../../app/public/assets/grafana.svg"
 import trivy from "../../../app/public/assets/Trivy--Streamline-Simple-Icons.png"
 import mentorImage from "../../../app/public/assets/mentor.jpeg";
 import { Badge } from "@/components/ui/badge";
+import ProjectImage from "../../../app/public/assets/project.png"
 
 // Sample JSON data
 
@@ -48,11 +49,11 @@ const CourseCardDay3 = () => {
 
   
     {
-      // DAY 2 schedule 
+      // DAY 3 schedule 
       "id": "course4",
       "title": "Capstone Use Cases / Project :Secure, Observable, and Scalable Application Deployment",
       "description": "Continuous Deployment with GitOps and Argo CD",
-      "imageSrc": `${argoImage.src.toString()}`,
+      "imageSrc": `${ProjectImage.src.toString()}`,
       "time":"09:00 PM",
       "duration":"180",
       "guestImage":"",
@@ -204,58 +205,7 @@ const CourseCardDay3 = () => {
                 </AccordionItem>
               ))}
             </Accordion>
-            <div className="mt-8">
-              <Separator className="mb-6" />
-              <div className="flex items-start gap-4">
-                <div className="flex flex-col items-center">
-                  <div className="relative">
-                    <img
-                      src="/api/placeholder/48/48"
-                      alt="Guest Lecturer"
-                      className="rounded-full w-12 h-12 border-2 border-yellow-400"
-                    />
-                    <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></div>
-                  </div>
-                  <span className="mt-2 px-3 py-1 bg-yellow-50 text-yellow-700 rounded-lg text-sm font-medium">
-                    {/* session timing should display from json dynamic TODO */}
-                   {course.guestTime}
-                  </span>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-white">
-                    Special Guest Lecture
-                  </h3>
-                  <p className="text-sm text-white mt-1">
-                    Advanced Kubernetes Security Patterns & Best Practices
-                  </p>
-                  <div className="flex items-center gap-2 mt-2">
-                    <span className="px-2 py-1 bg-yellow-100 text-yellow-700 rounded text-xs font-medium">
-                      Guest Speaker
-                    </span>
-                    <span className="text-sm text-green-200">
-                      {/* session durating should be dynamic from json TODO */}
-                  {course.guestSessionDuration}  min session
-                    </span>
-                  </div>
-                </div>
-                <div className="flex-shrink-0">
-                  {/* <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger>
-                  <img 
-                    src={mentorImage.src.toString()} 
-                    alt="Guest Lecturer" 
-                    className="rounded-full w-20 h-20 border-yellow-400 p-2"
-                  />
-                </TooltipTrigger>
-                <TooltipContent className="w-64">
-                  <p>Guest speaker is a cybersecurity expert...</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider> */}
-                </div>
-              </div>
-            </div>
+          
           </div>
         </div>
       </Card>
