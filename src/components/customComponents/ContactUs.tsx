@@ -114,7 +114,7 @@ export default function Component() {
                     placeholder="Type your message"
                   />
                 </div>
-                <Button className="w-full bg-cyan-400 hover:bg-cyan-500 text-white">Send</Button>
+                <Button className="w-full bg-cyan-400 hover:bg-cyan-500 text-white text-lg" style={{ letterSpacing: "2px" }}>Send</Button>
               </form>
             </CardContent>
           </Card>
