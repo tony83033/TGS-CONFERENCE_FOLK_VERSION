@@ -116,15 +116,13 @@ export default function Component() {
           {/* Content */}
           <div>
           <h1 className="text-3xl font-bold mb-2">
-  Master Capstone Projects in <span className="text-[#ebff00]">Cloud DevOps</span>
+  Master Capstone Projects in <span className="text-[#ebff00]">Kubernetes DevOps</span>
 </h1>
 <p className="text-md mb-6">
   Develop secure, observable, and scalable application deployments. From designing microservices and optimizing containers to setting up GitOps workflows and monitoring with Grafana, these projects will elevate your DevOps expertise to production-grade standards.
 </p>
 
-            {/* <Button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-md text-lg">
-              Join now
-            </Button> */}
+      
           </div>
         </div>
 
