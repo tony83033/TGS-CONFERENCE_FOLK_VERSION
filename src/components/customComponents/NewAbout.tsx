@@ -17,13 +17,12 @@ const TGSAboutSection = () => {
       <div className="max-w-6xl mx-auto space-y-12 relative z-10">
         {/* Enhanced Header Section */}
         <div className="text-center space-y-6 backdrop-blur-sm p-8 rounded-2xl">
-          <h1 className="text-3xl md:text-4xl font-bold relative">
-            <span className="text-[#ff0000] drop-shadow-[0_0_25px_rgba(255,0,0,0.3)]">
-              TGS – The Growth String Initiative
-            </span>
+          <h1 className="text-3xl md:text-3xl font-bold relative text-white">
+             <span className='text-[#ebff00]'> TGS</span> - The Growth String Initiative        
           </h1>
+          <div className="h-1 w-16 bg-red-500 mx-auto"></div>
           <p className="text-xl">
-            <span className="text-[#FFFF00] drop-shadow-[0_0_15px_rgba(255,255,0,0.3)]">
+            <span className="text-white  drop-shadow-[0_0_15px_rgba(255,255,0,0.3)]">
               Your Launchpad to Mastery Across Technologies!
             </span>
           </p>

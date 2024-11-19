@@ -15,12 +15,12 @@ type FAQItem = {
 const faqContent: Record<string, FAQItem[]> = {
   curriculum: [
     {
-      question: "What is the Master's in AI & Data Science with Linux World?",
+      question: "What is the format of KubeCon + CloudNativeCon North America 2024 and when will it take place?",
       answer:
-        "This program is an engaging yet rigorous 12-month online program designed specifically for working professionals to develop practical knowledge and skills, establish a professional network, and accelerate entry into data science careers. The certification is awarded by JGU.",
+        "KubeCon + CloudNativeCon North America 2024 will take place in person with keynote live streaming from November 12-15, with November 12 consisting of pre-event programming and November 13-15 being the main conference. The event will deliver content over four days, including keynotes, conference sessions across 10+ tracks, tutorials, and networking options. CNCF-hosted co-located events and WasmCon, which can be attended by purchasing an All-Access pass. WasmCon will take place on Monday, November 11, and Tuesday, November 12. CNCF-hosted co-located events will take place on Tuesday, November 12.",
     },
     {
-      question: "Which topics are going to be covered as part of the Master's in AI & Data Science program?",
+      question: " Is there a virtual component to the event?",
       answer: (
         <ul className="list-disc list-inside mt-2 space-y-1">
           <li>Machine Learning Algorithms</li>
@@ -58,7 +58,7 @@ export default function Faq() {
     <div className="container mx-auto max-w-6xl px-4 py-12">
       {/* Header */}
       <h1 className="sm:text-2xl lg:text-3xl font-bold mb-8 sm:mb-12 text-center sm:text-left">
-       <span className="text-white"> Frequently Asked </span><span className="text-[#ff0000]">Questions</span>
+       <span className="text-white"> Frequently Asked </span><span className="text-[#ebff00]">Questions</span>
       </h1>
 
       {/* Main Grid */}

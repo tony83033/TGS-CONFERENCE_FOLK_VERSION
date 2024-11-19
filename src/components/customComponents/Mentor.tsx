@@ -141,7 +141,7 @@ const MentorProfile = () => {
         <div className="space-y-8">
           <div className="space-y-6 -mb-3">
             <h1 className="text-3xl font-bold text-white leading-extra-tight -mb-4">
-              The Visionary Behind <span className="text-red-600">TGS</span> (The Growth String)
+              The Visionary Behind <span className="text-[#ebff00]">TGS</span> (The Growth String)
             </h1>
             <div className="space-y-4 text-black-800">
               <ul className="grid grid-cols-2 gap-y-2 list-disc pl-5 text-white -mb-1 list-none">

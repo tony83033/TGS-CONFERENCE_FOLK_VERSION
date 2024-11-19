@@ -12,7 +12,7 @@ import CapstoneProject from "@/components/customComponents/CapstoneProject";
 import EventSchedule from "@/components/customComponents/Shedule";
 import TrainingCertificate from "@/components/customComponents/Cert";
 import ContactUs from "@/components/customComponents/ContactUs"
-import TGSAboutSection from "@/components/NewAbout";
+import TGSAboutSection from "@/components/customComponents/NewAbout";
 export default function Home() {
   return (
    <>

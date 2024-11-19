@@ -22,7 +22,7 @@ export default function Component() {
           {/* Left content remains the same */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-3xl font-bold tracking-tight text-white">Get <span className="text-[#ff0000]">Certified</span> & Recognised</h1>
+              <h1 className="text-3xl font-bold tracking-tight text-white">Get <span className="text-[#ebff00]">Certified</span> & Recognised</h1>
               <p className="text-md text-muted-foreground text-white">
               Yes ! You will  be certified  once you complete the <span className="text-[#ffff00]">Capstone Project</span>  towards the end.
               </p>

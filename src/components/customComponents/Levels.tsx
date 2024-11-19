@@ -109,7 +109,7 @@ const Levels = () => {
    
        <>
         <div className="flex items-center justify-center w-full mx-auto mt-12">
-        <h2 className="text-3xl  font-bold text-[#ffff00] text-center"> <span className='text-[#ff0000]'>3 Days Tech Journey </span> <span className='text-[#FFFF00]'> at a Glance </span>
+        <h2 className="text-3xl  font-bold text-[#ffff00] text-center"> <span className='text-white'>3 Days Tech Journey </span> <span className='text-[#ebff00]'> at a Glance </span>
         </h2>
 
       </div>
