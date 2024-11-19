@@ -45,7 +45,7 @@ export default function Component() {
               </div>
               <div>
                 <h3 className="text-cyan-400 text-xl font-semibold mb-1">Phone</h3>
-                <p className="text-white">571-457-2321</p>
+                <p className="text-white">+91 97733 53561</p>
               </div>
             </div>
 
@@ -55,7 +55,7 @@ export default function Component() {
               </div>
               <div>
                 <h3 className="text-cyan-400 text-xl font-semibold mb-1">Email</h3>
-                <p className="text-white">ntamerrwael@mfano.ga</p>
+                <p className="text-white">preeti@lwindia.com</p>
               </div>
             </div>
           </div>
