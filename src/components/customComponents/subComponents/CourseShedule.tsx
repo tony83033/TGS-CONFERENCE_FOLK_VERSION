@@ -261,7 +261,7 @@ const CourseCard = () => {
                 </span>
                 <span className="text-sm text-green-200">
                   {/* sessin duration should be dynamically display from json TODO*/}
-                        {`${course.duration}`} min session
+                        {`${course.duration}`} mins session
                 </span>
               </div>
             </div>
@@ -345,15 +345,15 @@ const CourseCard = () => {
                     Special Guest Lecture
                   </h3>
                   <p className="text-sm text-white mt-1">
-                    Advanced Kubernetes Security Patterns & Best Practices
+                  Announced soon
                   </p>
                   <div className="flex items-center gap-2 mt-2">
                     <span className="px-2 py-1 bg-yellow-100 text-yellow-700 rounded text-xs font-medium">
-                      Guest Speaker
+                    Announced soon
                     </span>
                     <span className="text-sm text-green-200">
                       {/* session durating should be dynamic from json TODO */}
-                  {course.guestSessionDuration}  min session
+                  {course.guestSessionDuration}  mins session
                     </span>
                   </div>
                 </div>

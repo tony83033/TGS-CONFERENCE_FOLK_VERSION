@@ -230,7 +230,7 @@ const CourseCardDay2 = () => {
                 </span>
                 <span className="text-sm text-green-200">
                   {/* sessin duration should be dynamically display from json TODO*/}
-                        {`${course.duration}`} min session
+                        {`${course.duration}`} mins session
                 </span>
               </div>
             </div>
@@ -272,7 +272,7 @@ const CourseCardDay2 = () => {
                         {sectionIndex + 1}
                       </div>
                       <div className="text-left flex-1 ">
-                        <h3 className="font-semibold text-white text-lg">{section.subheading}</h3>
+                        <h3 className="font-semibold text-white text-sm">{section.subheading}</h3>
                         <p className="text-sm text-white">{section.points.join(', ')}</p>
                       </div>
                     </div>
@@ -318,11 +318,11 @@ const CourseCardDay2 = () => {
                   </p>
                   <div className="flex items-center gap-2 mt-2">
                     <span className="px-2 py-1 bg-yellow-100 text-yellow-700 rounded text-xs font-medium">
-                      Guest Speaker
+                    Announced soon
                     </span>
                     <span className="text-sm text-green-200">
                       {/* session durating should be dynamic from json TODO */}
-                  {course.guestSessionDuration}  min session
+                  {course.guestSessionDuration}  mins session
                     </span>
                   </div>
                 </div>
