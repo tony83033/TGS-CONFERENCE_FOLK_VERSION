@@ -301,7 +301,7 @@ export default function Component() {
                 <h3 className="text-[24px] font-bold text-center -mb-2 ">
                   {tier.name}
                 </h3>
-                <span className="text-xs text-[#FF6347] font-semibold">
+                <span className="text-xs text-[#FF6347] font-semibold animate-widen-narrow">
                   {tier.name === "Early Bird offer"
                     ? "(Applicable till 30th Nov, 2024)"
                     : tier.name === "Regular Fees"
