@@ -2,8 +2,8 @@
 
 import * as React from "react"
 import * as AccordionPrimitive from "@radix-ui/react-accordion"
-import { ChevronDown } from "lucide-react"
-
+import { ChevronsDown  } from "lucide-react"
+import moveDown from "../../app/public/assets/MoveDown.svg"
 import { cn } from "@/lib/utils"
 
 const Accordion = AccordionPrimitive.Root
@@ -34,7 +34,16 @@ const AccordionTrigger = React.forwardRef<
       {...props}
     >
       {children}
-      <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
+      <ChevronsDown   />
+      <div className="w-8 h-8 rounded-full bg-orange-500/10  flex items-center justify-center p-2 hover:bg-orange-500/10 transition-all duration-300">
+            {/* <moveDown className="w-4 h-4 text-orange-500 font-bold transition-all duration-300 ease-in-out transform hover:translate-y-1" /> */}
+            <img
+                        src={moveDown.src.toString()} // Use dynamic image source from JSON
+                        alt={`move down`} // Use course title as alt text for better accessibility
+                        className="h-4 w-4 hover:transition-transform duration-200 hover:rotate-180 font-bold shrink-0 transition-transform duration-200" 
+                      />
+          </div>
+      
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
 ))
