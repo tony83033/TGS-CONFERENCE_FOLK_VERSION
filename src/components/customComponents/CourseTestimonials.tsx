@@ -133,7 +133,7 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
   };
 
   return (
-    <Card className="bg-[#ffffff] text-black shadow-md w-full mt-4">
+    <Card className="relative overflow-hidden bg-[#ffffff] text-black shadow-md mb-4 break-inside-avoid">
       <CardHeader className="pb-2">
         <div className="flex items-center space-x-3 sm:space-x-4">
           <Avatar className="h-10 w-10 sm:h-12 sm:w-12">
