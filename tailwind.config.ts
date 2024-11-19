@@ -75,15 +75,16 @@ const config: Config = {
   				}
   			},
 			  'widen-narrow': {
-				'0%': { transform: 'scaleX(0)', opacity: '0' },
-				'50%': { transform: 'scaleX(1)', opacity: '1' },
-				'100%': { transform: 'scaleX(0)', opacity: '0' },
-			  },
+  '0%': { transform: 'scaleX(0.8)', opacity: '0' },
+  '25%': { transform: 'scaleX(1)', opacity: '1' },
+  '75%': { transform: 'scaleX(1)', opacity: '1' },
+  '100%': { transform: 'scaleX(0)', opacity: '1' },
+},
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out',
-			'widen-narrow': 'widen-narrow 3s ease-in-out infinite',
+			'widen-narrow': 'widen-narrow 6s cubic-bezier(0.4, 0, 0.2, 1) infinite',
   		},
 		
   	}
