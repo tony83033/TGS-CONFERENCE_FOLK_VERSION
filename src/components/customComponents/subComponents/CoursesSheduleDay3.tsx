@@ -143,7 +143,7 @@ const CourseCardDay3 = () => {
                 </span>
                 <span className="text-sm text-green-200">
                   {/* sessin duration should be dynamically display from json TODO*/}
-                        {`${course.duration}`} min session
+                        {`${course.duration}`} mins session
                 </span>
               </div>
             </div>
@@ -185,7 +185,7 @@ const CourseCardDay3 = () => {
                         {sectionIndex + 1}
                       </div>
                       <div className="text-left flex-1 ">
-                        <h3 className="font-semibold text-white text-lg">{section.subheading}</h3>
+                        <h3 className="font-semibold text-white text-sm">{section.subheading}</h3>
                         <p className="text-sm text-white">{section.points.join(', ')}</p>
                       </div>
                     </div>

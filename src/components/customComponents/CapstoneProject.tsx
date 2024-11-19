@@ -67,8 +67,8 @@ export default function Component() {
   ]
 
   return (
-    <div className=" bg-[#1a1f36] text-white p-4">
-      <div className="max-w-6xl mx-auto h-full">
+    <div className=" bg-[#1a1f36] text-white mt-0 p-2 pt-0">
+      <div className="max-w-6xl pt-0 mx-auto h-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* World Map with Avatars */}
           <div className="relative aspect-[4/3] hidden lg:block">
