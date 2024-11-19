@@ -33,7 +33,7 @@ const EventSchedule = () => {
             onClick={() => setActiveDay(2)}
             className={`px-16 py-3 rounded-full text-white font-medium transition-colors ${
               activeDay === 2
-                ? "bg-[#ffff00] shadow-lg shadow-[#ffff00]/50 scale-105 text-[#000000] font-extrabold"
+                ? "bg-[#ffffff] shadow-lg shadow-[#00BFFF]/50 scale-105 text-[#000000]"
                 : "bg-[#0A1150] hover:bg-[#4E5A94]"
             }`}
           >
@@ -43,7 +43,7 @@ const EventSchedule = () => {
             onClick={() => setActiveDay(3)}
             className={`px-16 py-3 rounded-full text-white font-medium transition-colors ${
               activeDay === 3
-                ? "bg-[#ff0000] shadow-lg shadow-[#ff0000]/50 scale-105 text-[#000000]"
+                ? "bg-[#ffffff] shadow-lg shadow-[#00BFFF]/50 scale-105 text-[#000000]"
                 : "bg-[#0A1150] hover:bg-[#4E5A94]"
             }`}
           >
