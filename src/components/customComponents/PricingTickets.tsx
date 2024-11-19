@@ -577,9 +577,9 @@ export default function Component() {
 
   return (
     <div className="flex flex-col items-center gap-8 p-8 bg-[#1E1E1E]">
-      <h1 className="text-3xl md:text-3xl -mb-6 font-bold text-[#FFFF00]">
+      <h1 className="text-3xl md:text-3xl -mb-6 font-bold text-white">
         Your Exclusive TGS Pass to Hands-On{" "}
-        <span className="text-[#ff0000]"> Learning and Growth</span>
+        <span className="text-[#ebff00]"> Learning and Growth</span>
       </h1>
       <div className="h-1 w-48 bg-[#ff0000] mb-2 mx-auto"></div>
 

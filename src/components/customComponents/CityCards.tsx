@@ -1,3 +1,4 @@
+
 'use client'
 
 import { useState } from 'react'
@@ -70,8 +71,8 @@ export default function CityCardGrid() {
     <div className="p-8 max-w-7xl mx-auto">
       {/* Title Section */}
       <div className="text-center mb-8">
-        <h1 className="text-3xl font-bold text-[#FFFFFF] mb-2 mt-6"><span className="text-[#ff0000]">Mr. Vimal Daga</span> <span className='text-[#FFFF00]'>  on India</span> <Image src={indiaFlag} alt="India Flag" width={40} height={30} className="inline-block" /> <span className='text-[#FFFF00]'>Tour</span> </h1>
-        <div className="h-1 w-16 bg-red-500 mt-2 mx-auto"></div>
+        <h1 className="text-3xl font-bold text-[#FFFFFF] mb-2 mt-6"><span className="text-[#ebff00]">Mr. Vimal Daga</span> on India <Image src={indiaFlag} alt="India Flag" width={40} height={30} className="inline-block" /> Tour</h1>
+        <div className="h-1 w-48 bg-red-500 mx-auto"></div>
       </div>
 
       <div className="w-4/5 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12"> {/* Three cards per row */}
@@ -121,7 +122,7 @@ export default function CityCardGrid() {
                 <a href=""><div className="mt-4 py-2 px-4 w-full hover:border text-white font-semibold rounded-lg bg-white/10 hover:bg-white/20 text-center  leading-none">
                   Date &
                   <br/>
-                  
+
                   <span className="text-[10px] bg-[#ff0000]">(Venue will be announced soon...)</span>
                 </div>
                 </a>
