@@ -20,7 +20,7 @@ const About = () => {
           {/* About The Event */}
           <div className="space-y-4 text-center">
             <h2 className="text-2xl font-bold text-white"> <Quote className='inline mb-4 rotate-180 text-red-500' /> Its not just about in-person hands-on training</h2>
-            <h2 className="text-2xl font-bold text-white">Its about experiencing a uniquely <span className='text-yellow-400 hover:text-yellow-600 font-bold'>Re-invented </span>  training model that redefines</h2>
+            <h2 className="text-2xl font-bold text-white">Its about experiencing a uniquely <span className='text-[#ebff00] hover:text-yellow-400 font-bold'>Re-invented </span>  training model that redefines</h2>
            
           </div>
 
