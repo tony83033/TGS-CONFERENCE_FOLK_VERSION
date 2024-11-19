@@ -93,7 +93,7 @@ export default function GalleryCarousel() {
     <div className="flex flex-col items-center">
       <h2 className="text-3xl font-bold text-white text-center mb-0 mt-12">Our Story in <span className="text-[#ebff00]">Frames</span></h2>
       <div className="h-1 w-16 bg-red-500 mt-2 mb-2 mx-auto"></div>
-      <div className="relative w-full max-w-6xl flex overflow-hidden justify-center">
+      <div className="relative w-full max-w-6xl flex overflow-hidden justify-center mt-6">
         <div className="flex transition-transform duration-500 ease-in-out">
           {visibleImages.map((image, index) => {
             const isCenter = index === 2; // Center image is the third in visibleImages array
