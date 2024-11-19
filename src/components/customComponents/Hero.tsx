@@ -11,7 +11,7 @@ const Hero = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   console.log(tgsHeroImage)
   return (
-    <div className="relative h-screen w-full overflow-hidden max-w-7xl mx-auto ">
+    <div className="relative h-screen w-full overflow-hidden md:max-w-7xl mx-auto ">
     
 
     
