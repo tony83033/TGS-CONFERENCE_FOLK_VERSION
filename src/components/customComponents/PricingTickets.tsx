@@ -251,11 +251,11 @@ export default function Component() {
 
   return (
     <div className="flex flex-col items-center gap-8 p-8 bg-[#1E1E1E]">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center">
-        Your Exclusive TGS Pass to Hands-On{" "}
-        <span className="text-[#ebff00]">Learning and Growth</span>
+      <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold text-white text-center -mb-4">
+        Your Exclusive TGS Pass to Hands-On
+        <span className="text-[#ebff00]"> Learning and Growth</span>
       </h1>
-      <div className="h-1 w-48 bg-[#ff0000] mb-2 mx-auto"></div>
+      <div className="h-1 w-16 bg-red-500  mb-2 mx-auto"></div>
   
       {/* City Selection Buttons */}
       <div className="flex flex-wrap gap-4 justify-center mb-8">
