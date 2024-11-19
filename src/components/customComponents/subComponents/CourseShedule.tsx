@@ -303,8 +303,8 @@ const CourseCard = () => {
                         {sectionIndex + 1}
                       </div>
                       <div className="text-left flex-1 ">
-                        <h3 className="font-semibold text-white text-lg">{section.subheading}</h3>
-                        <p className="text-sm text-white">{section.points.join(', ')}</p>
+                        <h3 className="font-semibold text-white text-sm">{section.subheading}</h3>
+                        <p className="text-sm  text-white">{section.points.join(', ')}</p>
                       </div>
                     </div>
                   </AccordionTrigger>

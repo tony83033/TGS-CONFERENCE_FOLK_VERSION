@@ -104,7 +104,7 @@ export default function Component() {
     <div className="bg-[#000000] p-4 sm:p-6 mx-auto">
       <div className="max-w-[920px] mx-auto">
         <h2 className="text-white text-sm sm:text-md">HEAR IT FROM THEM</h2>
-        <h2 className="text-white text-2xl sm:text-3xl font-bold mb-6 sm:mb-10 mt-2">Ambitious People ❤️ <span className="text-[#ebff00]">Linux World</span></h2>
+        <h2 className="text-white text-2xl sm:text-3xl font-bold mb-6 sm:mb-10 mt-2">Ambitious People ❤️ <span className="text-[#ebff00]">TGS</span></h2>
 
         <div className="sm:columns-2 lg:columns-3 gap-4 sm:gap-6 space-y-4 sm:space-y-0">
           {posts.map((post) => (
