@@ -17,21 +17,41 @@ export default function Home() {
   return (
    <>
    <Hero></Hero>
-   <About></About>
-   <EventSchedule></EventSchedule>
-   <CityCardGrid></CityCardGrid>
+   <About></About> 
+{/* AGENDA 2 */}
+   <EventSchedule></EventSchedule> 
+   {/* VISIONARY BEHIND TGS 3 */}
    <MentorProfile></MentorProfile>
+   {/* ON  INDIA TOUR 4  */}
+   <CityCardGrid></CityCardGrid>
+{/* TGS PASS 5 */}
+   
+<PricingComponent></PricingComponent>
+{/* LEVES 6 */}
+<Levels></Levels>
+  {/* CAPSTONE PROJECT 7 */}
+  <CapstoneProject></CapstoneProject>
+
+  {/* ABOUT TGS  8 */}
+  <TGSAboutSection></TGSAboutSection>
+
+{/* CERTIFCATE 9 */}
    <TrainingCertificate></TrainingCertificate>
-   <Levels></Levels>
-   <TGSAboutSection></TGSAboutSection>
+   
+{/* GALLARY  10*/}
    <Carousel></Carousel>
+
+{/*  TESTIMONIAL 11 */}
+
+<Testimonials></Testimonials>
+{/* FAQ 12 */}
    <Faq></Faq>
-   <CapstoneProject></CapstoneProject>
+  
    
 
    
-   <PricingComponent></PricingComponent>
-   <Testimonials></Testimonials>
+  {/* CANTACT */}
+   
    <ContactUs></ContactUs>
    </>
   );

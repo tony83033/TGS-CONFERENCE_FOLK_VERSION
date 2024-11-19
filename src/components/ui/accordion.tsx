@@ -34,7 +34,7 @@ const AccordionTrigger = React.forwardRef<
       {...props}
     >
       {children}
-      <ChevronsDown   />
+      {/* <ChevronsDown   /> */}
       <div className="w-8 h-8 rounded-full bg-orange-500/10  flex items-center justify-center p-2 hover:bg-orange-500/10 transition-all duration-300">
             {/* <moveDown className="w-4 h-4 text-orange-500 font-bold transition-all duration-300 ease-in-out transform hover:translate-y-1" /> */}
             <img
