@@ -87,6 +87,19 @@ I am sure Vimal Sir will come up with another in-depth course on DevSecOps soon,
     content: `Vimal Daga sir: A Life-Changing Linux World stands out as the premier platform for not just learning cutting-edge technologies, but also for gaining a deep understanding of life itself. Here, we don't just learn how to code or deploy solutions; we learn how to approach and solve life's challenges with resilience and innovation. Under the mentorship of the world record holder Mr. Vimal Daga, who guides us with unparalleled dedication, we are not just students but problem solvers in the making. With his hands-on approach, he helps us navigate our difficulties, empowering us to overcome obstacles both in the technological world and in our personal lives. At Linux World, the environment is more than just conducive to learning; it's transformative. It's a place where education transcends the traditional boundaries and becomes a holistic experience, shaping not only our careers but our lives as well. This platform truly is a life-changing experience, teaching us not just how to leave a mark in the tech industry, but how to live a fulfilling, solution-oriented life.`,
     timestamp: "3 month ago"
   },
+   {
+    id: 7,
+    author: {
+      name: "Sanchita Agrawal",
+      title: "DevOps Engineer at Genus Power Infrastructure Limited",
+      avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHvkoJDpKyN6w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1664520645818?e=1737590400&v=beta&t=0s-H7cUGZ7347Xo4Zn2GUdJGkO5tlKQjtzNVnJ3mJYw",
+      linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7239134220567130113/?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7239134220567130113%2C7240708775475601408%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287240708775475601408%2Curn%3Ali%3Aactivity%3A7239134220567130113%29"
+    },
+    content: `
+Another amazing informative workshop by vimal sir. It’s always fun learning from you sir. Learned so much of AWS DevOps concepts and how it gets implemented in real-world projects.`,
+    timestamp: "2 month ago"
+  },
+  
 ];
 
   // Show only the first 6 posts when not expanded, otherwise show all posts
