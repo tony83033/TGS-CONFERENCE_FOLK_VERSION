@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Home, Phone, Mail } from "lucide-react";
+import { Circle  } from "lucide-react"; // Import spinner icon
 
 interface Status {
   success: boolean;
@@ -19,6 +20,7 @@ export default function Component() {
   const [whatsappNumber, setWhatsappNumber] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [status, setStatus] = useState<Status | null>(null); // Status can be null or an object
+  const [loading, setLoading] = useState<boolean>(false); // Add loading state
 
   // Step 2: Handle form submission
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -29,6 +31,9 @@ export default function Component() {
       setStatus({ success: false, message: "All fields are required." });
       return;
     }
+
+    // Set loading state to true before submitting
+    setLoading(true);
 
     try {
       // Send POST request to the API
@@ -65,11 +70,14 @@ export default function Component() {
         success: false,
         message: "Something went wrong. Please try again later.",
       });
+    } finally {
+      // Reset loading state after submission (success or failure)
+      setLoading(false);
     }
   };
 
   return (
-    <div className="bg-zinc-900 px-4 py-12">
+    <div className="bg-zinc-900 px-4 py-12" id="contact">
       <div className="container mx-auto max-w-6xl">
         {/* Header Section */}
         <div className="text-center mb-12">
@@ -186,10 +194,15 @@ export default function Component() {
                 </div>
                 <Button
                   type="submit"
-                  className="w-full bg-cyan-400 hover:bg-cyan-500 text-white text-lg"
+                  className={`w-full bg-cyan-400 hover:bg-cyan-500 text-white text-lg ${loading ? "cursor-wait" : ""}`}
                   style={{ letterSpacing: "2px" }}
+                  disabled={loading} // Disable the button while loading
                 >
-                  Send
+                  {loading ? (
+                    <Circle  className="w-5 h-5 animate-spin" /> // Spinner icon
+                  ) : (
+                    "Send"
+                  )}
                 </Button>
               </form>
               {status && (

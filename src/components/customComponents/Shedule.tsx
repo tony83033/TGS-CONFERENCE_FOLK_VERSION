@@ -9,7 +9,7 @@ const EventSchedule = () => {
 
   return (
     <>
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-4xl mx-auto px-4 py-8" id="schedule">
         {/* Title with underline decoration */}
         <div className="text-center mb-12">
           <h1 className="text-3xl font-bold text-[#ebff00] mb-2"><span className="text-white" >The Growth String </span>Experience : Kubernetes Edition</h1>
@@ -20,7 +20,7 @@ const EventSchedule = () => {
         <div className="flex justify-center gap-4 mb-8">
           <button
             onClick={() => setActiveDay(1)}
-            className={`px-16 py-3 rounded-full text-white font-medium transition-colors ${
+            className={`px-16 py-3 rounded-full text-black font-medium transition-colors ${
               activeDay === 1
                
                  ? "bg-[#ffffff] shadow-lg shadow-[#00BFFF]/50 scale-105 text-[#000000]"
@@ -31,7 +31,7 @@ const EventSchedule = () => {
           </button>
           <button
             onClick={() => setActiveDay(2)}
-            className={`px-16 py-3 rounded-full text-white font-medium transition-colors ${
+            className={`px-16 py-3 rounded-full text-black font-medium transition-colors ${
               activeDay === 2
                 ? "bg-[#ffffff] shadow-lg shadow-[#00BFFF]/50 scale-105 text-[#000000]"
                 : "bg-[#0A1150] hover:bg-[#4E5A94]"
@@ -41,7 +41,7 @@ const EventSchedule = () => {
           </button>
           <button
             onClick={() => setActiveDay(3)}
-            className={`px-16 py-3 rounded-full text-white font-medium transition-colors ${
+            className={`px-16 py-3 rounded-full text-black font-medium transition-colors ${
               activeDay === 3
                 ? "bg-[#ffffff] shadow-lg shadow-[#00BFFF]/50 scale-105 text-[#000000]"
                 : "bg-[#0A1150] hover:bg-[#4E5A94]"
