@@ -7,6 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import avatar from "../../../app/public/assets/avatar.png"
 // Dynamic imports for Tooltip components
 const TooltipProvider = dynamic(
   () => import("@/components/ui/tooltip").then((mod) => mod.TooltipProvider),
@@ -298,7 +299,7 @@ const CourseCardDay2 = () => {
                 <div className="flex flex-col items-center">
                   <div className="relative">
                     <img
-                      src="/api/placeholder/48/48"
+                      src={avatar.src.toString()}
                       alt="Guest Lecturer"
                       className="rounded-full w-12 h-12 border-2 border-yellow-400"
                     />
@@ -314,11 +315,11 @@ const CourseCardDay2 = () => {
                     Special Guest Lecture
                   </h3>
                   <p className="text-sm text-white mt-1">
-                    Advanced Kubernetes Security Patterns & Best Practices
+                  Announced soon
                   </p>
                   <div className="flex items-center gap-2 mt-2">
                     <span className="px-2 py-1 bg-yellow-100 text-yellow-700 rounded text-xs font-medium">
-                    Announced soon
+                    Industry expert
                     </span>
                     <span className="text-sm text-green-200">
                       {/* session durating should be dynamic from json TODO */}
