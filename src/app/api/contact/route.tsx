@@ -7,7 +7,7 @@ export async function POST(request: NextRequest) {
   const smtpPass = process.env.SMTP_PASS || "vkaa fbfm qdfk whws"; // App Password
   const smtpHost = "smtp.gmail.com";
   const smtpPort = 587; // Port for TLS
-  const recipientEmail = "tonystark83033@gmail.com";
+  const recipientEmail = "chandak.preeti@gmail.com";
 
   // Validate essential credentials
   if (!smtpUser || !smtpPass || !recipientEmail) {
@@ -63,7 +63,7 @@ export async function POST(request: NextRequest) {
     const mailOptions = {
       from: `"${fullName}" <${smtpUser}>`, // Sender's name and email
       to: recipientEmail, // Receiver's email
-      subject: `New Message from ${fullName}`, // Subject line
+      subject: `New Query for TGS from ${fullName}`, // Subject line
       text: `
         You have received a new message:
 

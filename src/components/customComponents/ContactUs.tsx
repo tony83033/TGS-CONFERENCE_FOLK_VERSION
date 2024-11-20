@@ -86,7 +86,7 @@ export default function Component() {
           </h1>
           <div className="h-1 w-16 bg-red-500 mb-2 mx-auto"></div>
           <p className="text-gray-300 max-w-3xl mx-auto text-md">
-          Curious about TGS? Let’s talk! Fill out the form or contact us — we're excited to help you take the next step in your journey!
+          Curious about TGS? Lets talk! Fill out the form or contact us — we're excited to help you take the next step in your journey!
           </p>
         </div>
 
@@ -101,7 +101,9 @@ export default function Component() {
               <div>
                 <h3 className="text-cyan-400 text-xl font-semibold mb-1">Address</h3>
                 <p className="text-white">
-                  Krishna Tower, Plot No. 5, Jaipur, Rajasthan 302015
+                  Krishna Tower, Plot No. 5,
+                  <br></br>
+                   Jaipur, Rajasthan 302015
                 </p>
               </div>
             </div>

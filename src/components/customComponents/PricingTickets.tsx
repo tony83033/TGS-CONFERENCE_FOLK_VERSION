@@ -324,16 +324,19 @@ export default function Component() {
                 <CardFooter className="p-6 pt-0 flex items-center justify-center">
                   <Button
                     className="w-full bg-black hover:bg-gray-800 text-white rounded-[8px] py-3 text-base font-semibold"
-                    onClick={() => window.open(tier.paymentLink, "_blank")}
+
                   >
                     <span className="text-sm text-[#ffffff] font-semibold">
                       {tier.name === "Early Bird offer" ? (
                         <>
-                          ₹ 8,400 + Taxes
+                       <a className="style-none" href="https://rzp.io/rzp/Cio2KAP" target="blank">                           ₹ 8,400 + Taxes</a>
+
                         </>
                       ) : tier.name === "Regular Fees" ? (
                         <>
+                                               <a className="style-none" href="https://rzp.io/rzp/4sPDgKAY" target="blank">  
                           ₹ 10,400 + Taxes
+                          </a>
                         </>
                       ) : (
                         <a href="#contact">Connect with our TGS Team</a>
