@@ -336,7 +336,7 @@ export default function Component() {
                           ₹ 10,400 + Taxes
                         </>
                       ) : (
-                        "Connect with our TGS Team"
+                        <a href="#contact">Connect with our TGS Team</a>
                       )}
                     </span>
                   </Button>
