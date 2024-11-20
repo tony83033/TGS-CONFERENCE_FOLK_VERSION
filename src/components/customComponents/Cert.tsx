@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Award, Share2, UserCheck, Briefcase } from 'lucide-react'
-import CertImage from "../../app/public/assets/cert.png"
+import CertImage from "../../app/public/assets/cert.jpeg"
 import EventImage1 from "../../app/public/assets/event-gallery/event-gallery-1.jpg"
 import EventImage2 from "../../app/public/assets/event-gallery/event-gallery-2.jpg"
 import EventImage3 from "../../app/public/assets/event-gallery/event-gallery-3.jpg"
