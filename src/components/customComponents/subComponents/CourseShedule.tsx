@@ -287,7 +287,7 @@ const CourseCard = () => {
                   </Badge>
                 </TooltipTrigger>
                 <TooltipContent className="w-64">
-                  <p>Mr. Vimal sir is a Technologist ...</p>
+                  <p>Vimal Daga reinvents training, promoting collaboration for India's future readiness.</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>

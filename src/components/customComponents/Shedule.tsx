@@ -23,8 +23,8 @@ const EventSchedule = () => {
             className={`px-16 py-3 rounded-full text-black font-medium transition-colors ${
               activeDay === 1
                
-                 ? "bg-[#ffffff] shadow-lg shadow-[#00BFFF]/50 scale-105 text-[#000000]"
-                : "bg-[#0A1150] hover:bg-[#4E5A94]"
+                 ? "bg-[#ffffff]  shadow-lg shadow-[#00BFFF]/50 scale-105 "
+                : "bg-[#0A1150] text-white hover:bg-[#4E5A94]"
             }`}
           >
             Day 1
@@ -34,7 +34,7 @@ const EventSchedule = () => {
             className={`px-16 py-3 rounded-full text-black font-medium transition-colors ${
               activeDay === 2
                 ? "bg-[#ffffff] shadow-lg shadow-[#00BFFF]/50 scale-105 text-[#000000]"
-                : "bg-[#0A1150] hover:bg-[#4E5A94]"
+                : "bg-[#0A1150] text-white hover:bg-[#4E5A94]"
             }`}
           >
             Day 2
@@ -44,7 +44,7 @@ const EventSchedule = () => {
             className={`px-16 py-3 rounded-full text-black font-medium transition-colors ${
               activeDay === 3
                 ? "bg-[#ffffff] shadow-lg shadow-[#00BFFF]/50 scale-105 text-[#000000]"
-                : "bg-[#0A1150] hover:bg-[#4E5A94]"
+                : "bg-[#0A1150] text-white hover:bg-[#4E5A94]"
             }`}
           >
             Day 3

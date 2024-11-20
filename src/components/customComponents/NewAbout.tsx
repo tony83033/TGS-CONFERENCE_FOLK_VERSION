@@ -70,7 +70,7 @@ const TGSAboutSection = () => {
                          backdrop-blur-sm">
             <CardContent className="p-8 space-y-4">
               <div className="flex items-center gap-3">
-                <Award className="w-6 h-6 text-gray-300" />
+                <Award className="w-6 h-6 text-yellow-300 font-bold" />
                 <h3 className="text-xl font-bold text-gray-300">Expert Leadership</h3>
               </div>
               <p className="text-gray-300 text-lg">
@@ -88,7 +88,7 @@ const TGSAboutSection = () => {
                          backdrop-blur-sm">
             <CardContent className="p-8 space-y-4">
               <div className="flex items-center gap-3">
-                <MapPin className="w-6 h-6 text-gray-300" />
+                <MapPin className="w-6 h-6 text-blue-400 font-bold" />
                 <h3 className="text-xl font-bold text-gray-300">Multi-City Experience</h3>
               </div>
               <p className="text-gray-300 text-lg">
