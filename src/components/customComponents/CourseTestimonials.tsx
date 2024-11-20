@@ -82,6 +82,19 @@ Your invaluable guidance in this remarkable Kubernetes training program has been
 It was an amazing class to attend. I liked the way sir delivered the helm content. Helm became so easy for me now. I like to attend these classes as it helps me to elevate my skills. Thank you Vimal sir as well as LinuxWorld Informatics Pvt to share such a good content with us..`,
     timestamp: "8 month ago"
   },
+   {
+    id: 7,
+    author: {
+      name: "Sanchita Agrawal",
+      title: "DevOps Engineer at Genus Power Infrastructure Limited",
+      avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHvkoJDpKyN6w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1664520645818?e=1737590400&v=beta&t=0s-H7cUGZ7347Xo4Zn2GUdJGkO5tlKQjtzNVnJ3mJYw",
+      linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7239134220567130113/?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7239134220567130113%2C7240708775475601408%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287240708775475601408%2Curn%3Ali%3Aactivity%3A7239134220567130113%29"
+    },
+    content: `
+Another amazing informative workshop by vimal sir. It’s always fun learning from you sir. Learned so much of AWS DevOps concepts and how it gets implemented in real-world projects.`,
+    timestamp: "2 month ago"
+  },
+  
 ];
 
   // Show only the first 6 posts when not expanded, otherwise show all posts

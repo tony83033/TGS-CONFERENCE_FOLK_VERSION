@@ -76,7 +76,7 @@ export default function Component() {
               <path
                 d="M50,250 Q200,100 400,250 T750,250"
                 fill="none"
-                stroke="#00ffff"
+                stroke="#00ffff"  
                 strokeWidth="0.5"
               />
               <path
@@ -126,9 +126,9 @@ Gain hands-on experience in Kubernetes and DevOps. Deploy microservices, optimiz
           </div>
         </div>
 
-        <div className="-mt-12">
+        <div className="">
           <h2 className="text-2xl font-bold mb-8 text-center">
-            Kubernetes ScaleOps <span className="text-[#ffff00]">Secure and Scalable</span> Microservice Management
+            Kubernetes ScaleOps: <span className="text-[#ffff00]">Secure and Scalable</span> Microservice Management
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
