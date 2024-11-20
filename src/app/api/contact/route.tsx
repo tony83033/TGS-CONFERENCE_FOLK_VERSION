@@ -3,14 +3,15 @@ import { NextResponse, NextRequest } from "next/server";
 
 export async function POST(request: NextRequest) {
   // Step 1: Retrieve and validate environment variables
-  const smtpUser = "linux world tgs";
-  const smtpPass = "vkaa fbfm qdfk whws";
-  const smtpHost =  "smtp.gmail.com";
-  const smtpPort =  587;
-  const senderEmail = "linuxworld.certificates@gmail.com";
+  const smtpUser = process.env.SMTP_USER || "linuxworld.certificates@gmail.com"; // Use your Gmail address
+  const smtpPass = process.env.SMTP_PASS || "vkaa fbfm qdfk whws"; // App Password
+  const smtpHost = "smtp.gmail.com";
+  const smtpPort = 587; // Port for TLS
   const recipientEmail = "tonystark83033@gmail.com";
 
-  if (!smtpUser || !smtpPass || !senderEmail || !recipientEmail) {
+  // Validate essential credentials
+  if (!smtpUser || !smtpPass || !recipientEmail) {
+    console.error("Server misconfiguration: Missing email credentials.");
     return NextResponse.json(
       { error: "Server misconfiguration: Missing email credentials." },
       { status: 500 }
@@ -30,10 +31,10 @@ export async function POST(request: NextRequest) {
 
   const { fullName, email, whatsappNumber, message } = body;
 
-  // Validate fields
+  // Validate input fields
   if (!fullName || !email || !whatsappNumber || !message) {
     return NextResponse.json(
-      { error: "Full name, email, WhatsApp number, and message are required fields." },
+      { error: "All fields (full name, email, WhatsApp number, and message) are required." },
       { status: 400 }
     );
   }
@@ -48,8 +49,8 @@ export async function POST(request: NextRequest) {
   // Step 3: Configure the nodemailer transporter
   const transporter = nodemailer.createTransport({
     host: smtpHost,
-    port: Number(smtpPort),
-    secure: false, // Secure if port is 465
+    port: smtpPort,
+    secure: false, // Use TLS for port 587
     auth: {
       user: smtpUser,
       pass: smtpPass,
@@ -59,7 +60,7 @@ export async function POST(request: NextRequest) {
   try {
     // Step 4: Compose and send the plain text email
     const mailOptions = {
-      from: `"${fullName}" <${senderEmail}>`, // Sender's name and email
+      from: `"${fullName}" <${smtpUser}>`, // Sender's name and email
       to: recipientEmail, // Receiver's email
       subject: `New Message from ${fullName}`, // Subject line
       text: `
@@ -81,12 +82,12 @@ export async function POST(request: NextRequest) {
       {
         success: true,
         message: "Email sent successfully!",
-        info,
+        info: info.messageId, // Optional: Include the message ID for tracking
       },
       { status: 200 }
     );
-  } catch (error) {
-    console.error("Error sending email:", error);
+  } catch (error: any) {
+    console.error("Error sending email:", error.message);
     return NextResponse.json(
       { error: "Failed to send email. Please try again later." },
       { status: 500 }
