@@ -106,7 +106,7 @@ export default function Faq() {
   return (
     <div className="container mx-auto max-w-6xl px-4 py-12">
       {/* Header */}
-      <h1 className="sm:text-2xl lg:text-3xl font-bold mb-8 sm:mb-12 text-center sm:text-left">
+      <h1 className="sm:text-3xl lg:text-3xl font-bold mb-8 sm:mb-12 text-center sm:text-left">
        <span className="text-white"> Frequently Asked </span><span className="text-[#ebff00]">Questions</span>
       </h1>
 
