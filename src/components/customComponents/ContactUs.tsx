@@ -77,7 +77,7 @@ export default function Component() {
   };
 
   return (
-    <div className="bg-zinc-900 px-4 py-12">
+    <div className="bg-zinc-900 px-4 py-12" id="contact">
       <div className="container mx-auto max-w-6xl">
         {/* Header Section */}
         <div className="text-center mb-12">

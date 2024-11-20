@@ -9,7 +9,7 @@ const EventSchedule = () => {
 
   return (
     <>
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-4xl mx-auto px-4 py-8" id="schedule">
         {/* Title with underline decoration */}
         <div className="text-center mb-12">
           <h1 className="text-3xl font-bold text-[#ebff00] mb-2"><span className="text-white" >The Growth String </span>Experience : Kubernetes Edition</h1>
