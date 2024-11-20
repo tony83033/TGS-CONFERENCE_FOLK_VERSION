@@ -9,28 +9,29 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import MentorFeatured from './subComponents/MentorFeatured'
-import mentor7 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-1.jpeg";
+
 import { CircleCheck } from 'lucide-react';
+import mentor1 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-1.jpeg";
+import mentor2 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-2.jpeg";
 import mentor3 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-3.jpeg";
 import mentor4 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-4.jpeg";
 import mentor5 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-5.jpeg";
 import mentor6 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-6.jpeg";
-import mentor1 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-7.jpeg";
+import mentor7 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-7.jpeg";
 import mentor8 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-8.jpeg";
-import mentor9 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-9.jpeg";
-import mentor10 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-10.jpeg";
+
 
 const MentorProfile = () => {
   const mentorImages = [
     mentor1.src.toString(),
+    mentor2.src.toString(),
     mentor3.src.toString(),
     mentor4.src.toString(),
     mentor5.src.toString(),
     mentor6.src.toString(),
     mentor7.src.toString(),
     mentor8.src.toString(),
-    mentor9.src.toString(),
-    mentor10.src.toString(),
+
   ];
 
   // Social stats data with URLs
