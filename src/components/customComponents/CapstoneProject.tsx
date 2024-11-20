@@ -119,7 +119,7 @@ export default function Component() {
   Master Capstone Projects in <span className="text-[#ebff00]">Kubernetes DevOps</span>
 </h1>
 <p className="text-md mb-6">
-  Develop secure, observable, and scalable application deployments. From designing microservices and optimizing containers to setting up GitOps workflows and monitoring with Grafana, these projects will elevate your DevOps expertise to production-grade standards.
+Gain hands-on experience in Kubernetes and DevOps. Deploy microservices, optimize containers, set up autoscaling Kubernetes clusters, and integrate CI/CD workflows with Jenkins and Argo CD. Focus on security and performance by scanning images with Trivy, managing secrets, and performing load testing and security audits for production-grade deployments.
 </p>
 
       
@@ -128,7 +128,7 @@ export default function Component() {
 
         <div className="-mt-12">
           <h2 className="text-2xl font-bold mb-8 text-center">
-            Capstone Project: <span className="text-[#ffff00]">Secure, Observable, and Scalable</span> Application Deployment
+            Kubernetes ScaleOps <span className="text-[#ffff00]">Secure and Scalable</span> Microservice Management
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
