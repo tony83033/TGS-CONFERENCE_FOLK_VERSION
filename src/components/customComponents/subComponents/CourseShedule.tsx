@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic'
 import React from 'react';
+import Link from 'next/link';
 import {
   Accordion,
   AccordionContent,
@@ -271,11 +272,14 @@ const CourseCard = () => {
               <Tooltip>
                 <TooltipTrigger>
                   <div className="flex-shrink-0 items-center">
+                    <Link target='blank' href="https://www.linkedin.com/in/vimaldaga/">
                     <img
                       src={mentorImage.src.toString()}
                       alt="Mentor"
                       className="rounded-full w-20 h-20 border-yellow-400 p-2"
                     />
+                    </Link>
+
                   </div>
                   <Badge className="bg-yellow-100 text-yellow-800 hover:text-yellow-900 font-bold">
                     Mr.Vimal Daga
