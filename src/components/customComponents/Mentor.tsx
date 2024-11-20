@@ -132,7 +132,7 @@ const MentorProfile = () => {
               </span>
             </div>
             <div className="space-y-1 pl-5">
-              <h2 className="text-2xl font-bold text-gray-900">Mr. Vimal Daga</h2>
+              <h2 className="text-2xl font-bold text-gray-900"> Mr. Vimal Daga</h2>
               <p className="text-gray-600 font-medium">Founder of LinuxWorld | #13 | IIEC | JAZBAA </p>
             </div>
           </div>

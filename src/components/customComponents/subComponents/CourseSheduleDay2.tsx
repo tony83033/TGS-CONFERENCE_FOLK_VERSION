@@ -244,11 +244,11 @@ const CourseCardDay2 = () => {
                     <img
                       src={mentorImage.src.toString()}
                       alt="Mentor"
-                      className="rounded-full w-20 h-20 border-yellow-400 p-2"
+                      className="rounded-full ml-2 w-20 h-20 border-yellow-400 p-2"
                     />
                   </div>
                   <Badge className="bg-yellow-100 text-yellow-800 hover:text-yellow-900 font-bold">
-                    Mr.Vimal Daga
+                    Mr. Vimal Daga
                   </Badge>
                 </TooltipTrigger>
                 <TooltipContent className="w-64">
