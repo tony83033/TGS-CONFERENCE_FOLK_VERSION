@@ -7,6 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import avatar from "../../../app/public/assets/avatar.png"
 import { ChevronDown, ChevronUp } from "lucide-react";
 // Dynamic imports for Tooltip components
 const TooltipProvider = dynamic(
@@ -258,7 +259,7 @@ const CourseCard = () => {
               </div>
               <div className="flex items-center gap-2 mt-2">
                 <span className="px-2 py-1 bg-yellow-100 text-yellow-700 rounded text-xs font-medium">
-                  Mr.Vimal Daga
+                  Mr. Vimal Daga
                 </span>
                 <span className="text-sm text-green-200">
                   {/* sessin duration should be dynamically display from json TODO*/}
@@ -276,13 +277,13 @@ const CourseCard = () => {
                     <img
                       src={mentorImage.src.toString()}
                       alt="Mentor"
-                      className="rounded-full w-20 h-20 border-yellow-400 p-2"
+                      className="rounded-full ml-2 w-20 h-20 border-yellow-400 p-2"
                     />
                     </Link>
 
                   </div>
                   <Badge className="bg-yellow-100 text-yellow-800 hover:text-yellow-900 font-bold">
-                    Mr.Vimal Daga
+                    Mr. Vimal Daga
                   </Badge>
                 </TooltipTrigger>
                 <TooltipContent className="w-64">
@@ -333,7 +334,7 @@ const CourseCard = () => {
                 <div className="flex flex-col items-center">
                   <div className="relative">
                     <img
-                      src="/api/placeholder/48/48"
+                      src={avatar.src.toString()}
                       alt="Guest Lecturer"
                       className="rounded-full w-12 h-12 border-2 border-yellow-400"
                     />
@@ -353,7 +354,7 @@ const CourseCard = () => {
                   </p>
                   <div className="flex items-center gap-2 mt-2">
                     <span className="px-2 py-1 bg-yellow-100 text-yellow-700 rounded text-xs font-medium">
-                    Announced soon
+                    Industry expert
                     </span>
                     <span className="text-sm text-green-200">
                       {/* session durating should be dynamic from json TODO */}
