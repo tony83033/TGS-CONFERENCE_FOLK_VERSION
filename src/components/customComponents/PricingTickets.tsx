@@ -250,7 +250,7 @@ export default function Component() {
   ];
 
   return (
-    <div className="flex flex-col items-center gap-8 p-8 bg-[#1E1E1E]">
+    <div className="flex flex-col items-center gap-8 p-8 bg-[#1E1E1E]" id="buy-tickets">
       <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold text-white text-center -mb-4">
         Your Exclusive TGS Pass to Hands-On
         <span className="text-[#ebff00]"> Learning and Growth</span>
