@@ -39,6 +39,7 @@ export async function POST(request: NextRequest) {
     );
   }
 
+  // WhatsApp number validation
   if (!/^\d{10,15}$/.test(whatsappNumber)) {
     return NextResponse.json(
       { error: "WhatsApp number must be a valid numeric string between 10 and 15 digits." },
