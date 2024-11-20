@@ -14,6 +14,7 @@ export default function Footer() {
             “Empowering Growth, Redefining Technical Training”
           </p>
 
+            <p className="text-sm text-gray-400 font-italic">Powered By:</p>
           {/* Logos */}
           <div className="mt-4 flex gap-4 mx-auto">
           <img src={hash13.src.toString()} width={112} height={64} alt="Logo" />
@@ -41,5 +42,5 @@ export default function Footer() {
         © Copyright 2024 TGS | Designed & Developed with ❤️ by LinuxWorld | All Rights Reserved
       </div>
     </footer>
-  );
+  ); 
 }

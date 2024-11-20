@@ -82,11 +82,11 @@ export default function Component() {
         {/* Header Section */}
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-3xl font-bold text-[#FFFF00] mb-2">
-            Contact Us
+          Connect with TGS
           </h1>
           <div className="h-1 w-16 bg-red-500 mb-2 mx-auto"></div>
-          <p className="text-gray-300 max-w-3xl mx-auto text-sm">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          <p className="text-gray-300 max-w-3xl mx-auto text-md">
+          Curious about TGS? Let’s talk! Fill out the form or contact us — we're excited to help you take the next step in your journey!
           </p>
         </div>
 
