@@ -136,7 +136,7 @@ export default function Component() {
           </div>
 
           {/* Contact Form */}
-          <Card className="bg-[#353839]">
+          <Card className="bg-[#353839] m-4">
             <CardHeader>
               <CardTitle className="text-2xl text-white">Send Message</CardTitle>
             </CardHeader>
