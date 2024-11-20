@@ -120,7 +120,7 @@ export default function CityCardGrid() {
                 </a>
               ) : (
                 <a href=""><div className="mt-4 py-2 px-4 w-full hover:border text-white font-semibold rounded-lg bg-white/10 hover:bg-white/20 text-center  leading-none">
-                  Date &
+                  To be announced
                   <br/>
 
                   <span className="text-[10px] bg-[#ff0000]">(Venue will be announced soon...)</span>

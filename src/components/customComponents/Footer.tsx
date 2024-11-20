@@ -94,7 +94,7 @@ export default function Footer() {
       </div>
 
       {/* Footer Bottom */}
-      <div className="text-center mt-8 text-gray-500 text-sm">
+      <div className="text-center mt-8 text-white text-sm">
         © Copyright 2024 TGS | Designed & Developed with ❤️ by LinuxWorld | All Rights Reserved
       </div>
     </footer>
