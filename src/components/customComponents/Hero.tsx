@@ -9,10 +9,10 @@ const Hero = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   return (
-    <div className="relative min-h-[100svh] w-full overflow-hidden md:max-w-7xl mx-auto">
+    <div className="relative  min-h-[100svh] w-full overflow-hidden md:max-w-7xl mx-auto">
       {/* Background Image Container */}
       <div 
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute  inset-0 bg-cover bg-center"
         style={{
           backgroundImage: `url(${tgsHeroImage.src})`,
           height: "100%",
