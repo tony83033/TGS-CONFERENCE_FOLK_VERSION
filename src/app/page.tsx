@@ -12,6 +12,7 @@ import EventSchedule from "@/components/customComponents/Shedule";
 import TrainingCertificate from "@/components/customComponents/Cert";
 import ContactUs from "@/components/customComponents/ContactUs"
 import TGSAboutSection from "@/components/customComponents/NewAbout";
+import ParticipateNowButton from "@/components/customComponents/ParticipateNow";
 export default function Home() {
   return (
    <>
@@ -47,7 +48,7 @@ export default function Home() {
    <Faq></Faq>
   
    
-
+   <ParticipateNowButton></ParticipateNowButton>
    
   {/* CANTACT */}
    

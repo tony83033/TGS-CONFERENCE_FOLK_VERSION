@@ -35,7 +35,7 @@ export default function RootLayout({
         <Navbar/>
         {children}
         <WhatsAppBot></WhatsAppBot>
-        <ParticipateNowButton/>
+        
         <Footer/>
       </body>
     </html>
