@@ -20,7 +20,6 @@ import mentor6 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-6.j
 import mentor7 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-7.jpeg";
 import mentor8 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-8.jpeg";
 
-
 const MentorProfile = () => {
   const mentorImages = [
     mentor1.src.toString(),
@@ -31,29 +30,6 @@ const MentorProfile = () => {
     mentor6.src.toString(),
     mentor7.src.toString(),
     mentor8.src.toString(),
-
-  ];
-
-  // Social stats data with URLs
-  const socialStats = [
-    { 
-      icon: <Youtube className="w-6 h-6 text-red-600" />, 
-      targetCount: 300000, 
-      label: "subscribers", 
-      url: "https://www.youtube.com/@IIECconnect" // Replace with your YouTube link
-    },
-    { 
-      icon: <Instagram className="w-6 h-6 text-pink-600" />, 
-      targetCount: 1100000, 
-      label: "followers", 
-      url: "https://www.instagram.com/vimaldaga.india/?hl=en" // Replace with your Instagram link
-    },
-    { 
-      icon: <Linkedin className="w-6 h-6 text-blue-600" />, 
-      targetCount: 60000, 
-      label: "followers", 
-      url: "https://www.instagram.com/vimaldaga.india/?hl=en" // Replace with your LinkedIn link
-    }
   ];
 
   // State to track if the component is in view
@@ -101,6 +77,33 @@ const MentorProfile = () => {
     return count;
   };
 
+  // Create separate counter states for each social stat
+  const youtubeCount = useCounter(300000, 2000, isVisible);
+  const instagramCount = useCounter(1100000, 2000, isVisible);
+  const linkedinCount = useCounter(60000, 2000, isVisible);
+
+  // Social stats data with URLs and counter values
+  const socialStats = [
+    { 
+      icon: <Youtube className="w-6 h-6 text-red-600" />, 
+      count: youtubeCount,
+      label: "subscribers", 
+      url: "https://www.youtube.com/@IIECconnect"
+    },
+    { 
+      icon: <Instagram className="w-6 h-6 text-pink-600" />, 
+      count: instagramCount,
+      label: "followers", 
+      url: "https://www.instagram.com/vimaldaga.india/?hl=en"
+    },
+    { 
+      icon: <Linkedin className="w-6 h-6 text-blue-600" />, 
+      count: linkedinCount,
+      label: "followers", 
+      url: "https://www.instagram.com/vimaldaga.india/?hl=en"
+    }
+  ];
+
   return (
     <div ref={profileRef} className="max-w-6xl mt-6 mx-auto p-6 lg:px-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -132,7 +135,7 @@ const MentorProfile = () => {
               </span>
             </div>
             <div className="space-y-1 pl-5">
-              <h2 className="text-2xl font-bold text-gray-900"> Mr. Vimal Daga</h2>
+              <h2 className="text-2xl font-bold text-gray-900">Mr. Vimal Daga</h2>
               <p className="text-gray-600 font-medium">Founder of LinuxWorld | #13 | IIEC | JAZBAA </p>
             </div>
           </div>
@@ -154,11 +157,10 @@ const MentorProfile = () => {
               </ul>
 
               <p className="text-white text-md -mb-2 pl-6">
-              Mr. Vimal Daga, the driving force behind TGS, is on an exclusive India Tour, visiting cities across the country to re-invent technical training. His mission is not only to provide hands-on learning but to bring together industry expert interactions, real-world capstone projects, and valuable industry insights—all in one place
+                Mr. Vimal Daga, the driving force behind TGS, is on an exclusive India Tour, visiting cities across the country to re-invent technical training. His mission is not only to provide hands-on learning but to bring together industry expert interactions, real-world capstone projects, and valuable industry insights—all in one place
               </p>
               <p className="text-white pl-6">
-              He firmly believes that networking and collaboration are the key to personal and professional growth, and this tour is designed to foster both. His vision of “Making India, Future Ready” goes beyond skills training—it’s about creating a thriving ecosystem where learners and professionals can collaborate, innovate, and succeed together.
-
+                He firmly believes that networking and collaboration are the key to personal and professional growth, and this tour is designed to foster both. His vision of "Making India, Future Ready" goes beyond skills training—it's about creating a thriving ecosystem where learners and professionals can collaborate, innovate, and succeed together.
               </p>
             </div>
           </div>
@@ -171,7 +173,7 @@ const MentorProfile = () => {
                   <div className="flex justify-center">{stat.icon}</div>
                 </a>
                 <div className="font-bold text-md text-gray-900">
-                  {useCounter(stat.targetCount, 2000, isVisible).toLocaleString()}+
+                  {stat.count.toLocaleString()}+
                 </div>
                 <div className="text-gray-600 text-sm font-medium">{stat.label}</div>
               </div>
@@ -190,6 +192,3 @@ const MentorProfile = () => {
 };
 
 export default MentorProfile;
-
-
-
