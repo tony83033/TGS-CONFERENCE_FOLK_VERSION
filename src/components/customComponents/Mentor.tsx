@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState, useRef } from 'react';
+
 import { Youtube, Instagram, Linkedin } from "lucide-react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
@@ -29,6 +30,7 @@ const MentorProfile = () => {
     mentor6.src.toString(),
     mentor7.src.toString(),
     mentor8.src.toString(),
+
   ];
 
   // State to track if the component is in view
@@ -159,20 +161,22 @@ const MentorProfile = () => {
                 Mr. Vimal Daga, the driving force behind TGS, is on an exclusive India Tour, visiting cities across the country to re-invent technical training. His mission is not only to provide hands-on learning but to bring together industry expert interactions, real-world capstone projects, and valuable industry insights—all in one place
               </p>
               <p className="text-white pl-6">
-                He firmly believes that networking and collaboration are the key to personal and professional growth, and this tour is designed to foster both. His vision of &ldquo;Making India, Future Ready&rdquo; goes beyond skills training&mdash;it&apos;s about creating a thriving ecosystem where learners and professionals can collaborate, innovate, and succeed together.
+              He firmly believes that networking and collaboration are the key to personal and professional growth, and this tour is designed to foster both. His vision of “Making India, Future Ready” goes beyond skills training—it’s about creating a thriving ecosystem where learners and professionals can collaborate, innovate, and succeed together.
               </p>
             </div>
           </div>
 
           {/* Social Stats with Counter */}
           <div className="grid grid-cols-3 gap-4">
-            {socialStats.map((stat, index) => (
-              <div key={index} className="bg-blue-50 rounded-xl p-2 text-center border border-blue-100 shadow-sm hover:shadow-md transition-all duration-200 -mb-2">
-                <a href={stat.url} target="_blank" rel="noopener noreferrer">
-                  <div className="flex justify-center">{stat.icon}</div>
-                </a>
-                <div className="font-bold text-md text-gray-900">
-                  {stat.count.toLocaleString()}+
+            {socialStats.map((stat, index) => {
+              // Call useCounter here directly in the map iteration
+              const count = useCounter(stat.targetCount, 2000, isVisible);
+              return (
+                <div key={index} className="bg-blue-50 rounded-xl shadow-md p-4 flex items-center justify-center flex-col">
+                  <div className="text-[#2f57a1] text-4xl font-bold mb-2">
+                    {count.toLocaleString()}
+                  </div>
+                  <div className="text-gray-500 text-sm">{stat.label}</div>
                 </div>
                 <div className="text-gray-600 text-sm font-medium">{stat.label}</div>
               </div>
