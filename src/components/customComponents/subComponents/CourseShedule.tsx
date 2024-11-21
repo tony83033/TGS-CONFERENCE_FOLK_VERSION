@@ -285,7 +285,7 @@ const CourseCard = () => {
                   </Badge>
                 </TooltipTrigger>
                 <TooltipContent className="w-64">
-                  <p>Vimal Daga reinvents training, promoting collaboration for India's future readiness.</p>
+                  <p>Vimal Daga reinvents training, promoting collaboration for India&apos;s future readiness.</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
@@ -361,20 +361,7 @@ const CourseCard = () => {
                   </div>
                 </div>
                 <div className="flex-shrink-0">
-                  {/* <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger>
-                  <img 
-                    src={mentorImage.src.toString()} 
-                    alt="Guest Lecturer" 
-                    className="rounded-full w-20 h-20 border-yellow-400 p-2"
-                  />
-                </TooltipTrigger>
-                <TooltipContent className="w-64">
-                  <p>Guest speaker is a cybersecurity expert...</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider> */}
+             
                 </div>
               </div>
             </div>
