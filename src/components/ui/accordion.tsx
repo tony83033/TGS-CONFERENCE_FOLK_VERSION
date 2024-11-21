@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import * as AccordionPrimitive from "@radix-ui/react-accordion"
-import { ChevronsDown  } from "lucide-react"
+
 import moveDown from "../../app/public/assets/MoveDown.svg"
 import { cn } from "@/lib/utils"
 

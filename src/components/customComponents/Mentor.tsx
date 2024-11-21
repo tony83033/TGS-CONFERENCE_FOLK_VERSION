@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState, useRef } from 'react';
-import { Card } from "@/components/ui/card";
-import { Youtube, Instagram, Linkedin, ChevronLeft, ChevronRight } from "lucide-react";
+
+import { Youtube, Instagram, Linkedin } from "lucide-react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';

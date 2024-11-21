@@ -1,10 +1,9 @@
 import React from 'react';
 import { Card, CardHeader, CardContent } from '@/components/ui/card';
-import { MoveDown } from 'lucide-react';
+
 import moveDown from "../../app/public/assets/MoveDown.svg"
 import EventImage from "../../app/public/assets/event-gallery/event-gallery-1.jpg"
-import EventImage2 from "../../app/public/assets/event-gallery/event-gallery-2.jpg"
-import EventImage3 from "../../app/public/assets/event-gallery/event-gallery-3.jpg"
+
 // Background shapes component
 const BackgroundShape = ({ position }: { position: 'left' | 'right' }) => (
   <div className={`absolute -z-10 opacity-80 hover:opacity-100 blur-sm ${position === 'left' ? '-left-20' : '-right-20'} w-[300px]`}>

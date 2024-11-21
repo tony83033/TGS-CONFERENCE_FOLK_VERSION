@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { PlayCircle, MapPin, Users, Calendar, Award } from 'lucide-react';
+import React from 'react';
+import { PlayCircle, MapPin, Award } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import {
   Dialog,
@@ -74,9 +74,9 @@ const TGSAboutSection = () => {
                 <h3 className="text-xl font-bold text-gray-300">Expert Leadership</h3>
               </div>
               <p className="text-gray-300 text-lg">
-                Led by <span className="font-semibold">Mr. Vimal Daga</span>, 
+                Led by <span className="font-semibold">Mr. Vimal Daga</span>&quot;
                 this unique 3-day immersive experience is designed to revolutionize how tech 
-                professionals learn, connect, and grow.
+                professionals learn&quot; connect&quot; and grow.
               </p>
             </CardContent>
           </Card>
@@ -92,7 +92,7 @@ const TGSAboutSection = () => {
                 <h3 className="text-xl font-bold text-gray-300">Multi-City Experience</h3>
               </div>
               <p className="text-gray-300 text-lg">
-                Join us across six major tech cities: Mumbai, Bengaluru, Hyderabad, Pune, 
+                Join us across six major tech cities: Mumbai, Bengaluru, Hyderabad, Pune
                 Chennai, and Gurugram.
               </p>
             </CardContent>
@@ -133,7 +133,7 @@ const TGSAboutSection = () => {
                       shadow-[0_4px_30px_rgba(255,255,255,0.15)]">
           <p className="text-2xl font-medium italic">
             <span className="text-[#ff0000] drop-shadow-[0_0_10px_rgba(255,0,0,0.3)]">
-              "TGS: Where Every Edition Empowers You with the Technology of Today & Tomorrow!"
+TGS: Where Every Edition Empowers You with the Technology of Today & Tomorrow!
             </span>
           </p>
         </div>

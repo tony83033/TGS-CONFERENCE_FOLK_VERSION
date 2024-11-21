@@ -6,7 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { ChevronDown, ChevronUp } from "lucide-react";
+
 import avatar from "../../../app/public/assets/avatar.png"
 // Dynamic imports for Tooltip components
 const TooltipProvider = dynamic(
@@ -28,9 +28,7 @@ const TooltipContent = dynamic(
 
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import technologyImage from "../../../app/public/assets/docker.png";
-import k8sImage from "../../../app/public/assets/k8s.png";
-import istioImage from "../../../app/public/assets/istio.svg"
+
 import argoImage from "../../../app/public/assets/argo.png"
 import grafanaImage from "../../../app/public/assets/grafana.svg"
 import trivy from "../../../app/public/assets/Trivy--Streamline-Simple-Icons.png"
@@ -200,7 +198,7 @@ const CourseCardDay2 = () => {
   ];
   return (
     <div className="space-y-6">
-    {courseData.map((course, courseIndex) => (
+    {courseData.map((course) => (
       <Card key={course.id} className="max-w-3xl mx-auto shadow-lg rounded-xl border border-gray-200 bg-[#494F52]">
         <div className="p-6">
           {/* Static Course Overview */}
