@@ -100,7 +100,7 @@ const MentorProfile = () => {
       icon: <Linkedin className="w-6 h-6 text-blue-600" />, 
       count: linkedinCount,
       label: "followers", 
-      url: "https://www.instagram.com/vimaldaga.india/?hl=en"
+      url: "https://www.linkedin.com/in/vimaldaga/"
     }
   ];
 
