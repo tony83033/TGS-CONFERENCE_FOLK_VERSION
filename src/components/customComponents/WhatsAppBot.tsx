@@ -21,7 +21,7 @@ const WhatsAppBot = () => {
   };
 
   return (
-    <div className="fixed bottom-6 right-20 z-50">
+    <div className="fixed bottom-6 right-5 z-50">
       {/* Modal for displaying phone number and additional information */}
       {isOpen && (
         <div className="bg-white w-72 sm:w-80 rounded-lg shadow-lg p-4 border border-gray-300 absolute bottom-20 right-0 sm:bottom-20 sm:right-0">

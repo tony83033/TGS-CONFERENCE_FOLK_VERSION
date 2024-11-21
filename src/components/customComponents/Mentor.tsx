@@ -148,7 +148,7 @@ const MentorProfile = () => {
               The Visionary Behind <span className="text-[#ebff00]">TGS</span> (The Growth String)
             </h1>
             <div className="space-y-4 text-black-800">
-              <ul className="grid grid-cols-2 gap-y-2 list-disc pl-5 text-white -mb-1 list-none">
+              <ul className="grid md:grid-cols-2 gap-y-2 list-disc pl-5 text-white -mb-1 list-none sm:grid-cols-1">
                 <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> World Record Holder</li>
                 <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> Two-Time TEDx Speaker</li>
                 <li className="leading-relaxed text-sm leading-tight"><CircleCheck className='inline text-green-400 ml-2' /> Senior Principal IT Consultant</li>
