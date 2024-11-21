@@ -277,7 +277,7 @@ const CourseCard = () => {
                     <img
                       src={mentorImage.src.toString()}
                       alt="Mentor"
-                      className="rounded-full ml-2 w-20 h-20 border-yellow-400 p-2"
+                      className="rounded-full ml-4 w-20 h-20 border-yellow-400 p-2"
                     />
                     </Link>
 

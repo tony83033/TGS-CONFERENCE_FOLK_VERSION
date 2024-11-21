@@ -114,11 +114,11 @@ export default function Component() {
           </div>
 
           {/* Content */}
-          <div>
+          <div className="pl-4 pr-4 pt-4">
           <h1 className="text-3xl font-bold mb-2">
   Master Capstone Projects in <span className="text-[#ebff00]">Kubernetes DevOps</span>
 </h1>
-<p className="text-md mb-6">
+<p className="text-md mb-6 text-center md:text-left">
 Gain hands-on experience in Kubernetes and DevOps. Deploy microservices, optimize containers, set up autoscaling Kubernetes clusters, and integrate CI/CD workflows with Jenkins and Argo CD. Focus on security and performance by scanning images with Trivy, managing secrets, and performing load testing and security audits for production-grade deployments.
 </p>
 
