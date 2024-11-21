@@ -1,9 +1,3 @@
-
-
-
-
-
-
 "use client";
 
 import { useState } from "react";
@@ -100,7 +94,7 @@ export default function Component() {
         <div className="grid md:grid-cols-2 gap-0 items-start">
           {/* Contact Info */}
           <div className="space-y-6">
-            <div className="flex items-center space-x-4">
+            {/* <div className="flex items-center space-x-4">
               <div className="bg-white rounded-full p-3">
                 <Home className="w-6 h-6 text-zinc-900" />
               </div>
@@ -112,7 +106,7 @@ export default function Component() {
                   Jaipur, Rajasthan 302015
                 </p>
               </div>
-            </div>
+            </div> */}
 
             <div className="flex items-center space-x-4">
               <div className="bg-white rounded-full p-3">
