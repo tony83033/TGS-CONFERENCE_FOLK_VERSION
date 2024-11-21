@@ -1,4 +1,6 @@
-import { Card, CardContent } from "@/components/ui/card"
+
+
+import { Card, CardContent } from "@/components/ui/card";
 import {
   GitBranch,
   Container,
@@ -6,15 +8,14 @@ import {
   BarChart,
   Shield,
   Workflow,
-
-} from "lucide-react"
-import Image from "next/image"
-import Docker from "../../app/public/assets/docker.png"
+} from "lucide-react";
+import Image from "next/image";
+import Docker from "../../app/public/assets/docker.png";
 import k8sImage from "../../app/public/assets/k8s.png";
-import istioImage from "../../app/public/assets/istio.svg"
-import argoImage from "../../app/public/assets/argo.png"
-import grafanaImage from "../../app/public/assets/grafana.svg"
-import Linux from "../../app/public/assets/linux.png"
+import istioImage from "../../app/public/assets/istio.svg";
+import argoImage from "../../app/public/assets/argo.png";
+import grafanaImage from "../../app/public/assets/grafana.svg";
+import Linux from "../../app/public/assets/linux.png";
 
 export default function Component() {
   const steps = [
@@ -54,28 +55,28 @@ export default function Component() {
       description:
         "Scan Docker images with Trivy, manage secrets securely, and enforce RBAC policies.",
     },
-  ]
+  ];
 
   const avatars = [
-    { src: Docker, alt: "User 1", top: "25%", left: "10%" },
-    { src: k8sImage, alt: "User 2", top: "30%", left: "40%" },
-    { src: istioImage, alt: "User 3", top: "60%", left: "30%" },
-    { src: argoImage, alt: "User 4", top: "50%", left: "70%" },
-    { src: grafanaImage, alt: "User 5", top: "35%", left: "90%" },
-    { src: Linux, alt: "User 6", top: "60%", left: "12%" },
-  ]
+    { src: Docker, alt: "Docker", top: "25%", left: "10%" },
+    { src: k8sImage, alt: "Kubernetes", top: "30%", left: "40%" },
+    { src: istioImage, alt: "Istio", top: "60%", left: "30%" },
+    { src: argoImage, alt: "Argo CD", top: "50%", left: "70%" },
+    { src: grafanaImage, alt: "Grafana", top: "35%", left: "90%" },
+    { src: Linux, alt: "Linux", top: "60%", left: "12%" },
+  ];
 
   return (
-    <div className=" bg-[#1a1f36] text-white mt-0 p-2 pt-0">
-      <div className="max-w-6xl pt-0 mx-auto h-full">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <div className="bg-[#1a1f36] text-white mt-0 p-4 sm:p-8">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* World Map with Avatars */}
-          <div className="relative aspect-[4/3] hidden lg:block">
+          <div className="relative aspect-[4/3] hidden sm:block">
             <svg viewBox="0 0 800 600" className="w-full h-full">
               <path
                 d="M50,250 Q200,100 400,250 T750,250"
                 fill="none"
-                stroke="#00ffff"  
+                stroke="#00ffff"
                 strokeWidth="0.5"
               />
               <path
@@ -98,14 +99,14 @@ export default function Component() {
             {avatars.map((avatar, index) => (
               <div
                 key={index}
-                className="absolute w-12 h-12 rounded-full overflow-hidden border-2 border-cyan-400"
+                className="absolute w-10 h-10 rounded-full overflow-hidden border-2 border-cyan-400"
                 style={{ top: avatar.top, left: avatar.left }}
               >
                 <Image
                   src={avatar.src}
                   alt={avatar.alt}
-                  width={48}
-                  height={48}
+                  width={40}
+                  height={40}
                   className="object-cover"
                 />
               </div>
@@ -113,26 +114,32 @@ export default function Component() {
           </div>
 
           {/* Content */}
-          <div className="pl-4 pr-4 pt-4">
-          <h1 className="text-3xl font-bold mb-2">
-  Master Capstone Projects in <span className="text-[#ebff00]">Kubernetes DevOps</span>
-</h1>
-<p className="text-md mb-6 text-center md:text-left">
-Gain hands-on experience in Kubernetes and DevOps. Deploy microservices, optimize containers, set up autoscaling Kubernetes clusters, and integrate CI/CD workflows with Jenkins and Argo CD. Focus on security and performance by scanning images with Trivy, managing secrets, and performing load testing and security audits for production-grade deployments.
-</p>
-
-      
+          <div>
+            <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-center sm:text-left">
+              Master Capstone Projects in{" "}
+              <span className="text-[#ebff00]">Kubernetes DevOps</span>
+            </h1>
+            <p className="text-sm sm:text-base text-gray-300 text-center sm:text-left">
+              Gain hands-on experience in Kubernetes and DevOps. Deploy
+              microservices, optimize containers, set up autoscaling Kubernetes
+              clusters, and integrate CI/CD workflows with Jenkins and Argo CD.
+              Focus on security and performance by scanning images with Trivy,
+              managing secrets, and performing load testing and security audits
+              for production-grade deployments.
+            </p>
           </div>
         </div>
 
-        <div className="">
-          <h2 className="text-2xl font-bold mb-8 text-center">
-            Kubernetes ScaleOps: <span className="text-[#ffff00]">Secure and Scalable</span> Microservice Management
+        <div>
+          <h2 className="text-xl sm:text-2xl font-bold mb-6 text-center">
+            Kubernetes ScaleOps:{" "}
+            <span className="text-[#ffff00]">Secure and Scalable</span>{" "}
+            Microservice Management
           </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {steps.map((step, index) => (
-              <Card key={index} className="bg-[#252b43] border-none">
+              <Card key={index} className="bg-[#252b43] border-none w-full">
                 <CardContent className="p-6">
                   <div className="mb-4 text-cyan-400">{step.icon}</div>
                   <h3 className="text-lg font-semibold mb-2 text-white">{step.title}</h3>
@@ -141,10 +148,8 @@ Gain hands-on experience in Kubernetes and DevOps. Deploy microservices, optimiz
               </Card>
             ))}
           </div>
-
-          
         </div>
       </div>
     </div>
-  )
+  );
 }

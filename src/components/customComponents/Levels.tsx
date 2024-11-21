@@ -6,7 +6,7 @@ import EventImage from "../../app/public/assets/event-gallery/event-gallery-1.jp
 
 // Background shapes component
 const BackgroundShape = ({ position }: { position: 'left' | 'right' }) => (
-  <div className={`absolute -z-10 opacity-80 hover:opacity-100 blur-sm ${position === 'left' ? '-left-20' : '-right-20'} w-[300px]`}>
+  <div className={`absolute -z-10 opacity-80 hover:opacity-100 blur-sm ${position === 'left' ? '-left-20' : '-right-1'} w-[300px]`}>
     {position === 'left' ? (
       <div className="w-full h-[200px] bg-gradient-to-br  to-purple-500/20 rounded-3xl transform -rotate-12" >
              <img 
