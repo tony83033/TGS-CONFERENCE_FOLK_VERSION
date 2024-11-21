@@ -2,15 +2,15 @@
 import React from 'react';
 import Image from 'next/image';
 
-import Event1Image from "../../../app/public/assets/companyLogo/img1.jpg";
-import Event2Image from "../../../app/public/assets/companyLogo/img2.jpg";
-import Event3Image from "../../../app/public/assets/companyLogo/img3.jpg";
-import Event4Image from "../../../app/public/assets/companyLogo/img4.jpg";
-import Event5Image from "../../../app/public/assets/companyLogo/img5.jpg";
-import Event6Image from "../../../app/public/assets/companyLogo/img6.jpg";
-import Event7Image from "../../../app/public/assets/companyLogo/img7.jpg";
-import Event8Image from "../../../app/public/assets/companyLogo/img8.jpg";
-import Event9Image from "../../../app/public/assets/companyLogo/img9.jpg";
+import Event1Image from "../../../app/public/assets/certImages/cert-1.jpg";
+import Event2Image from "../../../app/public/assets/certImages/cert-2.jpg";
+import Event3Image from "../../../app/public/assets/certImages/cert-3.jpg";
+import Event4Image from "../../../app/public/assets/certImages/cert-4.jpg";
+import Event5Image from "../../../app/public/assets/certImages/cert-5.jpg";
+import Event6Image from "../../../app/public/assets/certImages/cert-6.jpg";
+import Event7Image from "../../../app/public/assets/certImages/cert-7.jpg";
+import Event8Image from "../../../app/public/assets/certImages/cert-8.jpg";
+import Event9Image from "../../../app/public/assets/certImages/cert-9.jpg";
 
 
 
