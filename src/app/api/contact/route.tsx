@@ -23,6 +23,7 @@ export async function POST(request: NextRequest) {
   try {
     body = await request.json();
   } catch (err) {
+    console.log(err)
     return NextResponse.json(
       { error: "Invalid JSON payload in the request body." },
       { status: 400 }
@@ -87,11 +88,20 @@ export async function POST(request: NextRequest) {
       },
       { status: 200 }
     );
-  } catch (error: any) {
-    console.error("Error sending email:", error.message);
+   } catch (error: unknown) {
+    if (error instanceof Error) {
+        console.error("Error sending email:", error.message);
+        return NextResponse.json(
+            { error: "Failed to send email. Please try again later." },
+            { status: 500 }
+        );
+    }
+
+    // Handle unexpected error formats
+    console.error("Unexpected error format:", error);
     return NextResponse.json(
-      { error: "Failed to send email. Please try again later." },
-      { status: 500 }
+        { error: "An unexpected error occurred." },
+        { status: 500 }
     );
-  }
+}
 }
