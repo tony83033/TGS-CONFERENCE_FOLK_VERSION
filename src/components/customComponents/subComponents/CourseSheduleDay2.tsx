@@ -225,7 +225,7 @@ const CourseCardDay2 = () => {
               </div>
               <div className="flex items-center gap-2 mt-2">
                 <span className="px-2 py-1 bg-yellow-100 text-yellow-700 rounded text-xs font-medium">
-                  Mr.Vimal Daga
+                  Mr. Vimal Daga
                 </span>
                 <span className="text-sm text-green-200">
                   {/* sessin duration should be dynamically display from json TODO*/}
@@ -250,7 +250,7 @@ const CourseCardDay2 = () => {
                   </Badge>
                 </TooltipTrigger>
                 <TooltipContent className="w-64">
-                  <p>Vimal Daga reinvents training, promoting collaboration for India's future readiness.</p>
+                  <p>Vimal Daga reinvents training, promoting collaboration for India&apos;s future readiness.</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
@@ -326,20 +326,7 @@ const CourseCardDay2 = () => {
                   </div>
                 </div>
                 <div className="flex-shrink-0">
-                  {/* <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger>
-                  <img 
-                    src={mentorImage.src.toString()} 
-                    alt="Guest Lecturer" 
-                    className="rounded-full w-20 h-20 border-yellow-400 p-2"
-                  />
-                </TooltipTrigger>
-                <TooltipContent className="w-64">
-                  <p>Guest speaker is a cybersecurity expert...</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider> */}
+                  
                 </div>
               </div>
             </div>

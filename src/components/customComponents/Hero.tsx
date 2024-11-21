@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Play } from "lucide-react";
 import tgsHeroImage from "../../app/public/assets/TGS-home-page1.jpg";
-import HeroImage from "../../app/public/assets/tgs_front_page_protrait.png";
+import HeroImage from "../../app/public/assets/tgs front page protrait.png";
 
 const Hero = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);

@@ -4,8 +4,8 @@
 
 
 
-import hash13 from "../../app/public/assets/hash13.svg";
-import lwlogo from "../../app/public/assets/LW-logo.png";
+import hash13 from "../../app/public/assets/hash13whitelogo.png";
+import lwlogo from "../../app/public/assets/LW-white.png";
 
 export default function Footer() {
   // Cloudinary video URL

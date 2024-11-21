@@ -158,7 +158,7 @@ const CourseCardDay3 = () => {
                   </Badge>
                 </TooltipTrigger>
                 <TooltipContent className="w-64">
-                  <p>Vimal Daga reinvents training, promoting collaboration for India's future readiness.</p>
+                  <p>Vimal Daga reinvents training, promoting collaboration for India&apos;s future readiness.</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
