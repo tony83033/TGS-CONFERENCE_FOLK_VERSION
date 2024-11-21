@@ -7,8 +7,8 @@ export default function CongratulationsPage() {
   return (
     <>
     <div className="min-h-screen bg-black text-white">
-      <header className="bg-yellow-600 text-center py-2">
-        <p className="text-sm">
+      <header className="bg-[#EBFF00] text-center py-2">
+        <p className="text-sm text-black font-bold">
           🎉 Congratulations!! Wohooo.... [Your Ticket Has Been Confirmed!] ❤️
         </p>
       </header>
@@ -17,22 +17,22 @@ export default function CongratulationsPage() {
           Congratulations!! <span role="img" aria-label="party">🥳</span>
         </h1>
         <h2 className="text-2xl font-bold mb-4">
-          Your Seat For This <span className="underline">&quot;Once In A Decade&quot;</span> Event Is Saved! ❤️
+          Your Seat For This <span className="underline">&quot;Once In A Decade&quot;</span> TGS Event Is Saved! ❤️
         </h2>
         <p className="text-lg mb-6">
           NOTE: These 3 Days Could Easily Be Worth A Crore For You!
         </p>
-        <Button className="bg-yellow-500 text-black font-bold py-2 px-4 rounded-lg mb-8">
-          Join VIP WhatsApp Now!
+        <Button className="bg-[#EBFF00] hover:bg-[#EBFF00] text-black font-bold py-2 px-4 rounded-lg mb-8">
+        Fill Google  Form
         </Button>
         <div className="flex gap-4">
           <div className="bg-gray-800 p-4 rounded-lg text-center">
             <p className="text-sm text-gray-400">DATE</p>
-            <p className="text-lg font-bold">10 Jan - 12 Jan 2025</p>
+            <p className="text-lg font-bold">10 Jan - 12 Jan, 2025</p>
           </div>
           <div className="bg-gray-800 p-4 rounded-lg text-center">
             <p className="text-sm text-gray-400">TIME</p>
-            <p className="text-lg font-bold">9:00 AM to 7:00 PM IST</p>
+            <p className="text-lg font-bold">9:00 am to 7:00 pm IST</p>
           </div>
         </div>
       </main>
