@@ -2,7 +2,7 @@ import Image from "next/image"
 import { Award, Share2, UserCheck, Briefcase } from 'lucide-react'
 import CertImage from "../../app/public/assets/cert.jpeg"
 
-//import CertScroll from "./subComponents/CertScroll"
+// import CertScroll from "./subComponents/CertScroll"
 export default function Component() {
   // Sample decorative images data - replace these with your actual image paths
   // const decorativeImages = {
