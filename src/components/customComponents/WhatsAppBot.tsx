@@ -1,3 +1,4 @@
+
 "use client";
 // src/components/WhatsAppBot.js
 import React, { useState } from "react";
@@ -21,7 +22,7 @@ const WhatsAppBot = () => {
   };
 
   return (
-    <div className="fixed bottom-6 right-5 z-50">
+    <div className="fixed bottom-20 right-5 z-50 sm:bottom-5 sm:right-10">
       {/* Modal for displaying phone number and additional information */}
       {isOpen && (
         <div className="bg-white w-72 sm:w-80 rounded-lg shadow-lg p-4 border border-gray-300 absolute bottom-20 right-0 sm:bottom-20 sm:right-0">
@@ -57,7 +58,7 @@ const WhatsAppBot = () => {
       {/* WhatsApp Button */}
       <button
         onClick={toggleChat}
-        className="bg-green-500 hover:bg-green-600 text-white p-3 sm:p-4 rounded-full shadow-lg focus:outline-none"
+        className="bg-green-500 hover:bg-green-600 text-white p-3 sm:p-4 rounded-full shadow-lg focus:outline-none sm:mb-10"
       >
         <FaWhatsapp size={24} className="sm:size-[30]" />
       </button>
