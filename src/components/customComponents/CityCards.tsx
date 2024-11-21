@@ -113,7 +113,7 @@ export default function CityCardGrid() {
               <div className="mt-4  py-2 px-4 w-full text-center leading-none">
                 {city.city === "Bengaluru" ? (
                   <a href="">
-                    <div className="hover:border  text-white font-semibold rounded-lg bg-white/40 hover:bg-white/70 hover:text-black">
+                    <div className="hover:border p-2 text-white font-semibold rounded-lg bg-white/40 hover:bg-white/70 hover:text-black">
                       10th - 12th Jan, 2025
                       <br />
                       <span className="text-[10px] bg-[#ff0000]">(Venue will be announced soon...)</span>
@@ -121,7 +121,7 @@ export default function CityCardGrid() {
                   </a>
                 ) : (
                   <a href="">
-                    <div className="hover:border text-white font-semibold rounded-lg bg-white/10 hover:bg-white/20">
+                    <div className="hover:border p-2 text-white font-semibold rounded-lg bg-white/10 hover:bg-white/20">
                       To be announced
                       <br />
                       <span className="text-[10px] bg-[#ff0000]">(Venue will be announced soon...)</span>
