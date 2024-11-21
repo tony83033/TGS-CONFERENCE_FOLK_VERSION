@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Hero from "@/components/customComponents/Hero";
 import CityCardGrid from "@/components/customComponents/CityCards";
 import Carousel from "@/components/customComponents/Carousel"

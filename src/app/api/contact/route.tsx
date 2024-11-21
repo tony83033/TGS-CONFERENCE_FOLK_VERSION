@@ -4,7 +4,7 @@ import { NextResponse, NextRequest } from "next/server";
 export async function POST(request: NextRequest) {
   // Step 1: Retrieve and validate environment variables
   const smtpUser = process.env.SMTP_USER || "linuxworld.certificates@gmail.com"; // Use your Gmail address
-  const smtpPass = process.env.SMTP_PASS || "vkaa fbfm qdfk whws"; // App Password
+  const smtpPass = process.env.EMAIL_PASS || ""; // App Password
   const smtpHost = "smtp.gmail.com";
   const smtpPort = 587; // Port for TLS
   const recipientEmail = "chandak.preeti@gmail.com";

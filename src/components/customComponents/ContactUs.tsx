@@ -1,9 +1,3 @@
-
-
-
-
-
-
 "use client";
 
 import { useState } from "react";
@@ -11,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Home, Phone, Mail } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 import { Circle } from "lucide-react"; // Import spinner icon
 
 interface Status {
@@ -43,7 +37,7 @@ export default function Component() {
 
     try {
       // Send POST request to the API
-      const response = await fetch("http://localhost:3000/api/contact/", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/contact/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -100,7 +94,7 @@ export default function Component() {
         <div className="grid md:grid-cols-2 gap-0 items-start">
           {/* Contact Info */}
           <div className="space-y-6">
-            <div className="flex items-center space-x-4">
+            {/* <div className="flex items-center space-x-4">
               <div className="bg-white rounded-full p-3">
                 <Home className="w-6 h-6 text-zinc-900" />
               </div>
@@ -112,7 +106,7 @@ export default function Component() {
                   Jaipur, Rajasthan 302015
                 </p>
               </div>
-            </div>
+            </div> */}
 
             <div className="flex items-center space-x-4">
               <div className="bg-white rounded-full p-3">

@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useState, useRef } from 'react';
-import image from "next/image"
 import { Youtube, Instagram, Linkedin } from "lucide-react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
@@ -157,10 +156,10 @@ const MentorProfile = () => {
               </ul>
 
               <p className="text-white text-md -mb-2 pl-6">
-                Mr. Vimal Daga, the driving force behind TGS, is on an exclusive India Tour, visiting cities across the country to re-invent technical training. His mission is not only to provide hands-on learning but to bring together industry expert interactions, real-world capstone projects, and valuable industry insights—all in one place
+                Mr. Vimal Daga, the driving force behind TGS, is on an exclusive India Tour, visiting cities across the country to re-invent technical training. His mission is not only to provide hands-on learning but to bring together industry expert interactions, real-world capstone projects, and valuable industry insights&mdash;all in one place
               </p>
               <p className="text-white pl-6">
-                He firmly believes that networking and collaboration are the key to personal and professional growth, and this tour is designed to foster both. His vision of "Making India, Future Ready" goes beyond skills training—it's about creating a thriving ecosystem where learners and professionals can collaborate, innovate, and succeed together.
+                He firmly believes that networking and collaboration are the key to personal and professional growth, and this tour is designed to foster both. His vision of &ldquo;Making India, Future Ready&rdquo; goes beyond skills training&mdash;it&apos;s about creating a thriving ecosystem where learners and professionals can collaborate, innovate, and succeed together.
               </p>
             </div>
           </div>
