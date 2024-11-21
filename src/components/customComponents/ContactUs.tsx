@@ -1,3 +1,9 @@
+
+
+
+
+
+
 "use client";
 
 import { useState } from "react";
@@ -6,7 +12,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Home, Phone, Mail } from "lucide-react";
-import { Circle  } from "lucide-react"; // Import spinner icon
+import { Circle } from "lucide-react"; // Import spinner icon
 
 interface Status {
   success: boolean;
@@ -82,11 +88,11 @@ export default function Component() {
         {/* Header Section */}
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-3xl font-bold text-[#FFFF00] mb-2">
-          Connect with TGS
+            Connect with TGS
           </h1>
           <div className="h-1 w-16 bg-red-500 mb-2 mx-auto"></div>
           <p className="text-gray-300 max-w-3xl mx-auto text-md">
-          Curious about TGS? Lets talk! Fill out the form or contact us — we're excited to help you take the next step in your journey!
+            Curious about TGS? Let&apos;s talk! Fill out the form or contact us — we&apos;re excited to help you take the next step in your journey!
           </p>
         </div>
 
@@ -102,8 +108,8 @@ export default function Component() {
                 <h3 className="text-cyan-400 text-xl font-semibold mb-1">Address</h3>
                 <p className="text-white">
                   Krishna Tower, Plot No. 5,
-                  <br></br>
-                   Jaipur, Rajasthan 302015
+                  <br />
+                  Jaipur, Rajasthan 302015
                 </p>
               </div>
             </div>
@@ -145,10 +151,7 @@ export default function Component() {
             <CardContent>
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <div className="space-y-2">
-                  <label
-                    htmlFor="fullName"
-                    className="text-sm font-medium text-white"
-                  >
+                  <label htmlFor="fullName" className="text-sm font-medium text-white">
                     Full Name
                   </label>
                   <Input
@@ -171,10 +174,7 @@ export default function Component() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <label
-                    htmlFor="whatsapp"
-                    className="text-sm font-medium text-white"
-                  >
+                  <label htmlFor="whatsapp" className="text-sm font-medium text-white">
                     WhatsApp No.
                   </label>
                   <Input
@@ -201,7 +201,7 @@ export default function Component() {
                   disabled={loading} // Disable the button while loading
                 >
                   {loading ? (
-                    <Circle  className="w-5 h-5 animate-spin" /> // Spinner icon
+                    <Circle className="w-5 h-5 animate-spin" /> // Spinner icon
                   ) : (
                     "Send"
                   )}

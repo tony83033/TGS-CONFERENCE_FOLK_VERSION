@@ -1,9 +1,9 @@
 
 
+"use client"
 
-"use client";
 
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils"; // Helper for conditional classes
 import Event1Image from "../../app/public/assets/event-gallery/event-gallery-1.jpg";
@@ -69,12 +69,12 @@ export default function GalleryCarousel() {
     setSelectedImage(null);
   };
 
-  // Handle click outside of the modal to close it
-  const handleOutsideClick = (e: MouseEvent) => {
+  // Use useCallback to memoize the handleOutsideClick function
+  const handleOutsideClick = useCallback((e: MouseEvent) => {
     if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
       closeModal();
     }
-  };
+  }, []); // Memoize this function, no dependencies as modalRef doesn't change
 
   // Add and remove event listener for clicking outside
   useEffect(() => {
@@ -87,7 +87,7 @@ export default function GalleryCarousel() {
     return () => {
       document.removeEventListener("mousedown", handleOutsideClick);
     };
-  }, [isModalOpen]);
+  }, [isModalOpen, handleOutsideClick]); // Ensure handleOutsideClick is referenced correctly
 
   return (
     <div className="flex flex-col items-center" id="gallery">

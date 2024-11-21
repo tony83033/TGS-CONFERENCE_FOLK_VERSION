@@ -1,7 +1,7 @@
 
 'use client'
 
-import { useState } from 'react'
+
 import Image, { StaticImageData } from 'next/image'
 import chennai from "../../app/public/assets/cityCards/Chennai.jpg"
 import mumbai from "../../app/public/assets/cityCards/Mumbai1.jpg"
@@ -80,8 +80,7 @@ export default function CityCardGrid() {
           <div
             key={index}
             className="relative overflow-hidden rounded-lg shadow-xl transition-transform duration-500 transform hover:scale-105 h-[470px] group"
-            onMouseEnter={() => setHoveredIndex(index)}
-            onMouseLeave={() => setHoveredIndex(null)}
+           
           >
             <div className="absolute inset-0 w-full h-full">
               <Image
