@@ -24,16 +24,17 @@ const TGSAboutSection = () => {
         </div>
 
         <div className="mx-auto md:h-[300px] md:w-[400px] sm:w-[250px]">
-              <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/uVwbQAzPumo?autoplay=1&loop=1&playlist=uVwbQAzPumo&modestbranding=1&controls=0&showinfo=0&rel=0&fs=0&iv_load_policy=3"
-              title="Conference Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              className="w-full h-full"
-            />
+        <iframe
+  width="100%"
+  height="100%"
+  src="https://www.youtube.com/embed/uVwbQAzPumo?loop=1&playlist=uVwbQAzPumo&modestbranding=1&controls=0&showinfo=0&rel=0&fs=0&iv_load_policy=3"
+  title="Conference Video"
+  frameBorder="0"
+  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowFullScreen
+  className="w-full h-full"
+/>
+
 </div>
         
 
