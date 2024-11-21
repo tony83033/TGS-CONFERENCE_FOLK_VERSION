@@ -16,20 +16,20 @@ import mentor2 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-2.j
 import mentor3 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-3.jpeg";
 import mentor4 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-4.jpeg";
 import mentor5 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-5.jpeg";
-import mentor6 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-6.jpeg";
-import mentor7 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-7.jpeg";
-import mentor8 from "../../app/public/assets/mentor-with-VIPS/mentor-gallery-8.jpeg";
+import mentor6 from "../../app/public/assets/mentor-with-VIPS/techie1.png";
+import mentor7 from "../../app/public/assets/mentor-with-VIPS/techie2.png";
+import mentor8 from "../../app/public/assets/mentor-with-VIPS/techie3.png";
 
 const MentorProfile = () => {
   const mentorImages = [
     mentor1.src.toString(),
     mentor2.src.toString(),
-    mentor3.src.toString(),
-    mentor4.src.toString(),
-    mentor5.src.toString(),
     mentor6.src.toString(),
+    mentor3.src.toString(),
     mentor7.src.toString(),
+    mentor4.src.toString(),
     mentor8.src.toString(),
+    mentor5.src.toString(),
   ];
 
   // State to track if the component is in view

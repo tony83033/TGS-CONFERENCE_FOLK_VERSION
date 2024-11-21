@@ -91,6 +91,11 @@ const Navbar: React.FC = () => {
                 Contact
               </a>
             </li>
+            <li>
+              <a href="#contact" className="text-white hover:text-blue-600">
+                Inquire Now
+              </a>
+            </li>
           </ul>
         </nav>
 
