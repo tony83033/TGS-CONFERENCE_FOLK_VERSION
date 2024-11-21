@@ -46,17 +46,19 @@ const TGSAboutSection = () => {
               </div>
             </div>
           </DialogTrigger>
-          <DialogContent className="max-w-4xl">
-            <div className="aspect-video w-full bg-black">
+          <DialogContent className="max-w-4xl sm:max-w-[90vw] md:max-w-4xl p-0 mx-4 sm:mx-auto">
+            <div className="aspect-video w-full bg-black ">
               {/* Replace src with your actual video URL */}
-              <iframe 
-                className="w-full h-full"
-                src="about:blank" // Replace with actual video URL
-                title="TGS Introduction Video"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+              <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/uVwbQAzPumo?autoplay=1&loop=1&playlist=uVwbQAzPumo&modestbranding=1&controls=0&showinfo=0&rel=0&fs=0&iv_load_policy=3" 
+              title="Conference Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowFullScreen
+              className="w-full h-full"
+            />
             </div>
           </DialogContent>
         </Dialog>
