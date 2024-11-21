@@ -1,9 +1,4 @@
 
-
-
-
-
-
 import hash13 from "../../app/public/assets/hash13whitelogo.png";
 import lwlogo from "../../app/public/assets/LW-white.png";
 

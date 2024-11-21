@@ -1,9 +1,5 @@
-
-
-
-
 import React from 'react';
-import { PlayCircle, MapPin, Award } from 'lucide-react';
+import { MapPin, Award } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const TGSAboutSection = () => {

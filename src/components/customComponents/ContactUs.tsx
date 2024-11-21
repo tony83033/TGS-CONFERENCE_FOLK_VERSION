@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Home, Phone, Mail } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 import { Circle } from "lucide-react"; // Import spinner icon
 
 interface Status {
@@ -37,7 +37,7 @@ export default function Component() {
 
     try {
       // Send POST request to the API
-      const response = await fetch("http://localhost:3000/api/contact/", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/contact/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
