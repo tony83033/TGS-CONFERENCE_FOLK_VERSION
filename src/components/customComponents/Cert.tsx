@@ -8,12 +8,12 @@ import EventImage4 from "../../app/public/assets/event-gallery/event-gallery-4.j
 import CertScroll from "./subComponents/CertScroll"
 export default function Component() {
   // Sample decorative images data - replace these with your actual image paths
-  const decorativeImages = {
-    topLeft: EventImage1.src.toString(),
-    topRight: EventImage2.src.toString(),
-    bottomLeft: EventImage3.src.toString(),
-    bottomRight: EventImage4.src.toString()
-  }
+  // const decorativeImages = {
+  //   topLeft: EventImage1.src.toString(),
+  //   topRight: EventImage2.src.toString(),
+  //   bottomLeft: EventImage3.src.toString(),
+  //   bottomRight: EventImage4.src.toString()
+  // }
 
   return (
     <div className="max-w-6xl mx-auto p-6 lg:px-8">

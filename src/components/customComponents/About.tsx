@@ -1,8 +1,7 @@
 import React from 'react';
-import { Card, CardContent } from "@/components/ui/card";
 import aboutBg from "../../app/public/assets/aboutBg.jpg"
 import { Quote } from 'lucide-react';
-import { CheckCheck,CircleCheckBig  } from 'lucide-react';
+import { CircleCheckBig  } from 'lucide-react';
 import { Ampersand } from 'lucide-react';
 const About = () => {
   return (

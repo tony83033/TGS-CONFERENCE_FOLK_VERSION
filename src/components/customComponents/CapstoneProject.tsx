@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import {
   GitBranch,
@@ -7,7 +6,7 @@ import {
   BarChart,
   Shield,
   Workflow,
-  Globe,
+
 } from "lucide-react"
 import Image from "next/image"
 import Docker from "../../app/public/assets/docker.png"
