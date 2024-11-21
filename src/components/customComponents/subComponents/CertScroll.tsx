@@ -16,15 +16,15 @@ import Event9Image from "../../../app/public/assets/certImages/img9.jpg";
 
 const CertScroll = () => {
   const logos = [
-    { src: Event1Image.src, alt: "Gallery Image 1" },
-    { src: Event2Image.src, alt: "Gallery Image 2" },
-    { src: Event3Image.src, alt: "Gallery Image 3" },
-    { src: Event4Image.src, alt: "Gallery Image 4" },
-    { src: Event5Image.src, alt: "Gallery Image 5" },
-    { src: Event6Image.src, alt: "Gallery Image 6" },
-    { src: Event7Image.src, alt: "Gallery Image 7" },
-    { src: Event8Image.src, alt: "Gallery Image 8" },
-    { src: Event9Image.src, alt: "Gallery Image 9" },
+    { src: Event1Image, alt: "Gallery Image 1" },
+    { src: Event2Image, alt: "Gallery Image 2" },
+    { src: Event3Image, alt: "Gallery Image 3" },
+    { src: Event4Image, alt: "Gallery Image 4" },
+    { src: Event5Image, alt: "Gallery Image 5" },
+    { src: Event6Image, alt: "Gallery Image 6" },
+    { src: Event7Image, alt: "Gallery Image 7" },
+    { src: Event8Image, alt: "Gallery Image 8" },
+    { src: Event9Image, alt: "Gallery Image 9" },
   ];
 
   return (
