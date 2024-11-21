@@ -10,8 +10,7 @@ import Hyderabad from "../../../src/app/public/assets/cityCards/hyderabad.jpg";
 import Bengaluru from "../../../src/app/public/assets/cityCards/bangalore.jpg";
 import Gurugram from "../../../src/app/public/assets/cityCards/gurgaon1.jpg";
 import Chennai from "../../../src/app/public/assets/cityCards/Chennai.jpg";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRupeeSign } from '@fortawesome/free-solid-svg-icons';
+
 import { BadgeCheck } from "lucide-react";
 
 interface PricingTier {

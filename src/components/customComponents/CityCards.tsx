@@ -80,7 +80,11 @@ export default function CityCardGrid() {
           <div
             key={index}
             className="relative overflow-hidden rounded-lg shadow-xl transition-transform duration-500 transform hover:scale-105 h-[470px] group"
+<<<<<<< HEAD
            
+=======
+            
+>>>>>>> f39734e10158f4be6d53c55c8a0f8d9f284f1366
           >
             <div className="absolute inset-0 w-full h-full">
               <Image
