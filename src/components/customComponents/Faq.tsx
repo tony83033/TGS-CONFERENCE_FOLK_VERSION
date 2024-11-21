@@ -140,7 +140,7 @@ export default function Faq() {
               value={`item-${index}`}
               className="border rounded-lg shadow-sm hover:shadow-md transition-all duration-300  bg-[#FFFFF0]"
             >
-              <AccordionTrigger className="text-base sm:text-md font-semibold px-4 sm:px-6 py-3 sm:py-4 [&[data-state=open]]:text-[#ff0000]">
+              <AccordionTrigger className="text-base sm:text-md  text-left items-start font-semibold px-4 sm:px-6 py-3 sm:py-4 [&[data-state=open]]:text-[#ff0000]">
                 {item.question}
               </AccordionTrigger>
               <AccordionContent className="text-sm sm:text-base text-black px-4 sm:px-6 pb-3 sm:pb-4">
