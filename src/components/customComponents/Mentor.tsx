@@ -116,7 +116,7 @@ const MentorProfile = () => {
               pagination={{ clickable: true }}
               autoplay={{ delay: 3000, disableOnInteraction: false }}
               loop={true}
-              className="w-full h-[500px] rounded-lg overflow-hidden"
+              className="w-full md:h-[500px] rounded-lg overflow-hidden sm:h-[450px]"
             >
               {mentorImages.map((image, index) => (
                 <SwiperSlide key={index}>
@@ -130,13 +130,13 @@ const MentorProfile = () => {
           <div className="bg-blue-50 rounded-xl p-6 shadow-sm border border-blue-100">
             <div className="flex items-center gap-3 mb-3">
               <div className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></div>
-              <span className="text-blue-800 text-sm font-medium bg-blue-100/50 px-3 py-1 rounded-full">
+              <span className="text-blue-800 md:text-sm  font-medium bg-blue-100/50 px-3 py-1 rounded-full">
                 Internationally Recognised Industry Expert
               </span>
             </div>
             <div className="space-y-1 pl-5">
-              <h2 className="text-2xl font-bold text-gray-900">Mr. Vimal Daga</h2>
-              <p className="text-gray-600 font-medium">Founder of LinuxWorld | #13 | IIEC | JAZBAA </p>
+              <h2 className="md:text-2xl  font-bold text-gray-900">Mr. Vimal Daga</h2>
+              <p className="text-gray-600 font-sm">Founder of LinuxWorld | #13 | IIEC | JAZBAA </p>
             </div>
           </div>
         </div>
