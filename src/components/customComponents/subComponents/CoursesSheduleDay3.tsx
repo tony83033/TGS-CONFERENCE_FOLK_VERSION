@@ -156,7 +156,7 @@ const CourseCardDay3 = () => {
                     <img
                       src={mentorImage.src.toString()}
                       alt="Mentor"
-                      className="rounded-full ml-2 w-20 h-20 border-yellow-400 p-2"
+                      className="rounded-full ml-4 w-20 h-20 border-yellow-400 p-2"
                     />
                   </div>
                   <Badge className="bg-yellow-100  text-yellow-800 hover:text-yellow-900 font-bold">
