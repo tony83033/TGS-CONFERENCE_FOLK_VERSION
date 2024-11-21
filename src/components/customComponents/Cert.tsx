@@ -1,10 +1,7 @@
 import Image from "next/image"
 import { Award, Share2, UserCheck, Briefcase } from 'lucide-react'
 import CertImage from "../../app/public/assets/cert.jpeg"
-import EventImage1 from "../../app/public/assets/event-gallery/event-gallery-1.jpg"
-import EventImage2 from "../../app/public/assets/event-gallery/event-gallery-2.jpg"
-import EventImage3 from "../../app/public/assets/event-gallery/event-gallery-3.jpg"
-import EventImage4 from "../../app/public/assets/event-gallery/event-gallery-4.jpg"
+
 import CertScroll from "./subComponents/CertScroll"
 export default function Component() {
   // Sample decorative images data - replace these with your actual image paths
