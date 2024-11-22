@@ -13,6 +13,7 @@ import TrainingCertificate from "@/components/customComponents/Cert";
 import ContactUs from "@/components/customComponents/ContactUs"
 import TGSAboutSection from "@/components/customComponents/NewAbout";
 import ParticipateNowButton from "@/components/customComponents/ParticipateNow";
+import GalleryCarousel from "@/components/customComponents/Carousel";
 export default function Home() {
   return (
    <>
@@ -22,6 +23,7 @@ export default function Home() {
    <EventSchedule></EventSchedule> 
    {/* VISIONARY BEHIND TGS 3 */}
    <MentorProfile></MentorProfile>
+   <GalleryCarousel></GalleryCarousel>
    {/* ON  INDIA TOUR 4  */}
    <CityCardGrid></CityCardGrid>
 {/* TGS PASS 5 */}
