@@ -2,29 +2,21 @@
 import React from 'react';
 import Image from 'next/image';
 
-import Event1Image from "../../../app/public/assets/certImages/img1.jpg";
-import Event2Image from "../../../app/public/assets/certImages/img2.jpg";
-import Event3Image from "../../../app/public/assets/certImages/img3.jpg";
-import Event4Image from "../../../app/public/assets/certImages/img4.jpg";
-import Event5Image from "../../../app/public/assets/certImages/img5.jpg";
-import Event6Image from "../../../app/public/assets/certImages/img6.jpg";
-import Event7Image from "../../../app/public/assets/certImages/img7.jpg";
-import Event8Image from "../../../app/public/assets/certImages/img8.jpg";
-import Event9Image from "../../../app/public/assets/certImages/img9.jpg";
+
 
 
 
 const CertScroll = () => {
   const logos = [
-    { src: Event1Image.src, alt: "Gallery Image 1" },
-    { src: Event2Image.src, alt: "Gallery Image 2" },
-    { src: Event3Image.src, alt: "Gallery Image 3" },
-    { src: Event4Image.src, alt: "Gallery Image 4" },
-    { src: Event5Image.src, alt: "Gallery Image 5" },
-    { src: Event6Image.src, alt: "Gallery Image 6" },
-    { src: Event7Image.src, alt: "Gallery Image 7" },
-    { src: Event8Image.src, alt: "Gallery Image 8" },
-    { src: Event9Image.src, alt: "Gallery Image 9" },
+    { src: "https://utfs.io/f/eTRmNYrLOXzGpk7gzlWTJ5oMCX3zgnwFaikv2t87bOQyrTGW", alt: "Gallery Image 1" },
+    { src: "https://utfs.io/f/eTRmNYrLOXzGLv7N1Mow2fTdzxvAgRP36VyWHFCLoY9sMjuh", alt: "Gallery Image 2" },
+    { src: "https://utfs.io/f/eTRmNYrLOXzG6BKzCcs4lFMyP2RuqN0Tx7GJhWQ4afcDHKXi", alt: "Gallery Image 3" },
+    { src: "https://utfs.io/f/eTRmNYrLOXzGsao0wBRj7eE4XFhuV5GBpPr0gMU6oOfIviWC", alt: "Gallery Image 4" },
+    { src: "https://utfs.io/f/eTRmNYrLOXzGaCkxqIny5qYCim1jBXZMVUrSWAPTvEa4xHRn", alt: "Gallery Image 5" },
+    { src: "https://utfs.io/f/eTRmNYrLOXzGCWJq10NO9aELGADxOnTSI3d24mb50FjyhVrU", alt: "Gallery Image 6" },
+    { src: "https://utfs.io/f/eTRmNYrLOXzGhsayE0Lv1odxYcIF206hQRzPZ5aC9XWVGjkE", alt: "Gallery Image 7" },
+    { src: "https://utfs.io/f/eTRmNYrLOXzGpkXxEA8TJ5oMCX3zgnwFaikv2t87bOQyrTGW", alt: "Gallery Image 8" },
+    { src: "https://utfs.io/f/eTRmNYrLOXzGpk7gzlWTJ5oMCX3zgnwFaikv2t87bOQyrTGW", alt: "Gallery Image 9" },
   ];
 
   return (

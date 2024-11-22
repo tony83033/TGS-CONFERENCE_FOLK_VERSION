@@ -2,7 +2,7 @@ import Image from "next/image"
 import { Award, Share2, UserCheck, Briefcase } from 'lucide-react'
 import CertImage from "../../app/public/assets/cert.jpeg"
 
-// import CertScroll from "./subComponents/CertScroll"
+ import CertScroll from "./subComponents/CertScroll"
 export default function Component() {
   // Sample decorative images data - replace these with your actual image paths
   // const decorativeImages = {
@@ -113,7 +113,7 @@ export default function Component() {
             <div className="border mt-2 border-gray-200 rounded-xl p-2 shadow-sm bg-white backdrop-blur-sm">
           
             <div className="grid grid-cols-1 gap-8">
-              {/* <CertScroll /> */}
+              <CertScroll />
             </div>
           </div>
           </div>
