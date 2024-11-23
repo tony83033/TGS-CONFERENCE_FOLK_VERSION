@@ -12,7 +12,8 @@ import { BadgeCheck } from 'lucide-react';
 
 interface CityCardProps {
   city: string
-  backgroundImage: string | StaticImageData
+  backgroundImage: string | StaticImageData,
+  dates: string,
   overlayColor: string // New property for dynamic overlay color
   welcomeMessage: string // New property for dynamic welcome message
 }
@@ -21,36 +22,42 @@ const cities: CityCardProps[] = [
   {
     city: "Bengaluru",
     backgroundImage: mumbai,
+    dates:"10th - 12th Jan, 2025",
     overlayColor: "from-pink-500/60", // Example color
     welcomeMessage: "( Namaskara 🙏)", // Welcome message for Bengaluru
   },
   {
     city: "Pune",
     backgroundImage: bangalore,
+    dates:"31th Jan - 2 Feb, 2025",
     overlayColor: "from-purple-500/60", // Example color
     welcomeMessage: "( स्वागत आहे 🙏)", // Welcome message for Pune
   },
   {
     city: "Hyderabad",
     backgroundImage: hyderabad,
+    dates:"21th - 23th Feb, 2025",
     overlayColor: "from-yellow-500/60", // Example color
     welcomeMessage: "( Swagatam 🙏)", // Welcome message for Hyderabad
   },
   {
     city: "Gurugram",
     backgroundImage: chennai,
+    dates:"To be announced",
     overlayColor: "from-blue-500/60", // Example color
     welcomeMessage: "( Welcome 🙏)", // Welcome message for Gurugram
   },
   {
     city: "Mumbai",
     backgroundImage: mumbai,
+    dates:"To be announced",
     overlayColor: "from-pink-500/60", // Example color
     welcomeMessage: "( स्वागत आहे 🙏)", // Welcome message for Mumbai
   },
   {
     city: "Chennai",
     backgroundImage: mumbai,
+    dates:"To be announced",
     overlayColor: "from-pink-500/60", // Example color
     welcomeMessage: "( Varaverkirōm 🙏)", // Welcome message for Chennai
   },
@@ -111,10 +118,11 @@ export default function CityCardGrid() {
               </div>
               {/* Conditional rendering based on city name and screen size */}
               <div className="mt-4  py-2 px-4 w-full text-center leading-none">
-                {city.city === "Bengaluru" ? (
+                {city.city === "Bengaluru" || "Pune" || "Hyderabad" ? (
                   <a href="">
                     <div className="hover:border p-2 text-white font-semibold rounded-lg bg-white/40 hover:bg-white/70 hover:text-black">
-                      10th - 12th Jan, 2025
+                      {/* 10th - 12th Jan, 2025 */}
+                      {city.dates}
                       <br />
                       <span className="text-[10px] bg-[#ff0000]">(Venue will be announced soon...)</span>
                     </div>
@@ -122,7 +130,8 @@ export default function CityCardGrid() {
                 ) : (
                   <a href="">
                     <div className="hover:border p-2 text-white font-semibold rounded-lg bg-white/10 hover:bg-white/20">
-                      To be announced
+                    {city.dates}
+                      {/* To be announced */}
                       <br />
                       <span className="text-[10px] bg-[#ff0000]">(Venue will be announced soon...)</span>
                     </div>

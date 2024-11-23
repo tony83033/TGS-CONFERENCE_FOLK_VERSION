@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image'; // Importing Next.js Image component
 
 // Importing images as StaticImageData objects
-import Google from "../../..//public/assets/companyLogo/google.png";
+import Google from "../../../app/public/assets/companyLogo/google.png";
 import TCS from "../../../app/public/assets/companyLogo/tcs.png";
 import Infosys from "../../../app/public/assets/companyLogo/infosys.png";
 import Salesforce from "../../../app/public/assets/companyLogo/salesforce.png";
