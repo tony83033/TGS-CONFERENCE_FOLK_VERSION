@@ -72,7 +72,7 @@ export default function Component() {
           "Skill Validated Certificate & TGS Community access",
           "Chance to engage with Hiring Managers",
         ],
-        paymentLink: "https://example.com/bengaluru/early-bird", // Add your payment link here
+        paymentLink: "https://rzp.io/rzp/Cio2KAP", // Add your payment link here
       },
       {
         name: "Regular Fees",
@@ -83,7 +83,7 @@ export default function Component() {
           "Skill Validated Certificate & TGS Community access",
           "Chance to engage with Hiring Managers",
         ],
-        paymentLink: "https://example.com/bengaluru/regular", // Add your payment link here
+        paymentLink: "https://rzp.io/rzp/4sPDgKAY", // Add your payment link here
       },
       {
         name: "Group Discount",
@@ -107,7 +107,7 @@ export default function Component() {
           "Skill Validated Certificate & TGS Community access",
           "Chance to engage with Hiring Managers",
         ],
-        paymentLink: "https://example.com/hyderabad/early-bird", // Add your payment link here
+        paymentLink: "https://rzp.io/rzp/gzReyTr", // Add your payment link here
       },
       {
         name: "Regular Fees",
@@ -118,7 +118,7 @@ export default function Component() {
           "Skill Validated Certificate & TGS Community access",
           "Chance to engage with Hiring Managers",
         ],
-        paymentLink: "https://example.com/hyderabad/regular", // Add your payment link here
+        paymentLink: "https://rzp.io/rzp/RBsTL3lv", // Add your payment link here
       },
       {
         name: "Group Discount",
@@ -212,7 +212,7 @@ export default function Component() {
           "Skill Validated Certificate & TGS Community access",
           "Chance to engage with Hiring Managers",
         ],
-        paymentLink: "https://example.com/pune/early-bird", // Add your payment link here
+        paymentLink: "https://rzp.io/rzp/oaC4SfJ", // Add your payment link here
       },
       {
         name: "Regular Fees",
@@ -223,7 +223,7 @@ export default function Component() {
           "Skill Validated Certificate & TGS Community access",
           "Chance to engage with Hiring Managers",
         ],
-        paymentLink: "https://example.com/pune/regular", // Add your payment link here
+        paymentLink: "https://rzp.io/rzp/7RgUMtH", // Add your payment link here
       },
       {
         name: "Group Discount",
@@ -328,12 +328,12 @@ export default function Component() {
                     <span className="text-sm text-[#ffffff] font-semibold">
                       {tier.name === "Early Bird offer" ? (
                         <>
-                       <a className="style-none" href="https://rzp.io/rzp/Cio2KAP" target="blank">                           ₹ 8,400 + Taxes</a>
+                       <a className="style-none" href={tier.paymentLink} target="blank">                           ₹ 8,400 + Taxes</a>
 
                         </>
                       ) : tier.name === "Regular Fees" ? (
                         <>
-                                               <a className="style-none" href="https://rzp.io/rzp/4sPDgKAY" target="blank">  
+                                               <a className="style-none" href={tier.paymentLink} target="blank">  
                           ₹ 10,400 + Taxes
                           </a>
                         </>
