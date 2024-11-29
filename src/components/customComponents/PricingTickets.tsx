@@ -323,12 +323,11 @@ export default function Component() {
                 <CardFooter className="p-6 pt-0 flex items-center justify-center">
                   <Button
                     className="w-full bg-black hover:bg-gray-800 text-white rounded-[8px] py-3 text-base font-semibold"
-
                   >
                     <span className="text-sm text-[#ffffff] font-semibold">
                       {tier.name === "Early Bird offer" ? (
                         <>
-                       <a className="style-none" href={tier.paymentLink} target="blank">                           ₹ 8,400 + Taxes</a>
+                       <a className="style-none" href={tier.paymentLink} target="blank">₹ 8,400 + Taxes</a>
 
                         </>
                       ) : tier.name === "Regular Fees" ? (

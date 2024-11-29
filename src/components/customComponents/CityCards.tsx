@@ -22,42 +22,42 @@ const cities: CityCardProps[] = [
   {
     city: "Bengaluru",
     backgroundImage: mumbai,
-    dates:"10th - 12th Jan, 2025",
+    dates:"10th  - 12th Jan, 2025",
     overlayColor: "from-pink-500/60", // Example color
     welcomeMessage: "( Namaskara 🙏)", // Welcome message for Bengaluru
   },
   {
     city: "Pune",
     backgroundImage: bangalore,
-    dates:"31th Jan - 2 Feb, 2025",
+    dates:"31st Jan - 2nd Feb, 2025",
     overlayColor: "from-purple-500/60", // Example color
     welcomeMessage: "( स्वागत आहे 🙏)", // Welcome message for Pune
   },
   {
     city: "Hyderabad",
     backgroundImage: hyderabad,
-    dates:"21th - 23th Feb, 2025",
+    dates:"21st - 23rd Feb, 2025",
     overlayColor: "from-yellow-500/60", // Example color
     welcomeMessage: "( Swagatam 🙏)", // Welcome message for Hyderabad
   },
   {
     city: "Gurugram",
     backgroundImage: chennai,
-    dates:"To be announced",
+    dates:"7th - 9th March, 2025",
     overlayColor: "from-blue-500/60", // Example color
     welcomeMessage: "( Welcome 🙏)", // Welcome message for Gurugram
   },
   {
     city: "Mumbai",
     backgroundImage: mumbai,
-    dates:"To be announced",
+    dates:"21st - 23rd March, 2025",
     overlayColor: "from-pink-500/60", // Example color
     welcomeMessage: "( स्वागत आहे 🙏)", // Welcome message for Mumbai
   },
   {
     city: "Chennai",
     backgroundImage: mumbai,
-    dates:"To be announced",
+    dates:"11th - 13th April, 2025",
     overlayColor: "from-pink-500/60", // Example color
     welcomeMessage: "( Varaverkirōm 🙏)", // Welcome message for Chennai
   },
