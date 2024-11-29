@@ -136,7 +136,7 @@ const Navbar: React.FC = () => {
             className="block hover:text-blue-600"
             onClick={closeMobileMenu}
           >
-            Schedule
+            Agenda
           </a>
         </li>
         <li>
@@ -145,7 +145,7 @@ const Navbar: React.FC = () => {
             className="block hover:text-blue-600"
             onClick={closeMobileMenu}
           >
-            Venue
+            Cities on Tour
           </a>
         </li>
         <li>
