@@ -3,8 +3,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { List } from "lucide-react";
 import { cn } from "@/lib/utils"; // Assuming you have a `utils` file with `cn` from shadcn
-
-// import LOGO from "../../app/public/assets/Asset 9@33.33x.png"; // Adjust path if necessary
+import Image from "next/image";
+import LOGO from "../../app/public/assets/Asset 9@33.33x.png"; // Adjust path if necessary
 
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -50,14 +50,14 @@ const Navbar: React.FC = () => {
       <div className="container  mx-auto flex bg-black bg-opacity-100  items-center justify-between py-4 px-6">
         {/* Logo */}
         <a href="/" className="flex items-center space-x-2">
-          {/* <Image
+          <Image
             src={""}
             alt="Logo"
             width={112} // You can set the width
             height={64} // You can set the height
             className="object-contain" // Ensures the logo doesn't get distorted
-          /> */}
-          <h2 className="text-white font-bold">Winter Program</h2>
+          /> 
+          {/* <h2 className="text-white font-bold">Winter Program</h2> */}
         </a>
 
         {/* Navigation Menu */}
