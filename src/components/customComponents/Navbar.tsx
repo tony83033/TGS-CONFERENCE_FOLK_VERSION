@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { List } from "lucide-react";
 import { cn } from "@/lib/utils"; // Assuming you have a `utils` file with `cn` from shadcn
-import Image from "next/image";
+
 // import LOGO from "../../app/public/assets/Asset 9@33.33x.png"; // Adjust path if necessary
 
 const Navbar: React.FC = () => {
