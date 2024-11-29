@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
         {/* Logo */}
         <a href="/" className="flex items-center space-x-2">
           <Image
-            src={""}
+            src={LOGO}
             alt="Logo"
             width={112} // You can set the width
             height={64} // You can set the height
