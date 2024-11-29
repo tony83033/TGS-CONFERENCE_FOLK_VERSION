@@ -180,7 +180,7 @@ export default function Component() {
         paymentLink: "https://example.com/gurugram/early-bird", // Add your payment link here
       },
       {
-        name: "Regular Fees ",
+        name: "Regular Fees",
         features: [
           "Exclusive Hands-On Training with Mr Vimal Daga",
           "Capstone Project integrating all your learnings",
