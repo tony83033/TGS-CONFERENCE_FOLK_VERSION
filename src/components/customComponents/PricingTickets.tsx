@@ -37,7 +37,7 @@ export default function Component() {
           "Skill Validated Certificate & TGS Community access",
           "Chance to engage with Hiring Managers",
         ],
-        paymentLink: "https://example.com/mumbai/early-bird", // Add your payment link here
+        paymentLink: "https://rzp.io/rzp/tsqJE1QU", // Add your payment link here
       },
       {
         name: "Regular Fees",
