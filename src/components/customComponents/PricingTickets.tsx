@@ -48,7 +48,7 @@ export default function Component() {
           "Skill Validated Certificate & TGS Community access",
           "Chance to engage with Hiring Managers",
         ],
-        paymentLink: "https://example.com/mumbai/regular", // Add your payment link here
+        paymentLink: "https://rzp.io/rzp/mI9qfFM", // Add your payment link here
       },
       {
         name: "Group Discount",
@@ -142,7 +142,7 @@ export default function Component() {
           "Skill Validated Certificate & TGS Community access",
           "Chance to engage with Hiring Managers",
         ],
-        paymentLink: "https://example.com/chennai/early-bird", // Add your payment link here
+        paymentLink: "https://rzp.io/rzp/c9UWELvs", // Add your payment link here
       },
       {
         name: "Regular Fees",
@@ -153,7 +153,7 @@ export default function Component() {
           "Skill Validated Certificate & TGS Community access",
           "Chance to engage with Hiring Managers",
         ],
-        paymentLink: "https://example.com/chennai/regular", // Add your payment link here
+        paymentLink: "https://rzp.io/rzp/cEVo1d6w", // Add your payment link here
       },
       {
         name: "Group Discount",
@@ -177,7 +177,7 @@ export default function Component() {
           "Skill Validated Certificate & TGS Community access",
           "Chance to engage with Hiring Managers",
         ],
-        paymentLink: "https://example.com/gurugram/early-bird", // Add your payment link here
+        paymentLink: "https://rzp.io/rzp/XWnE9k2", // Add your payment link here
       },
       {
         name: "Regular Fees",
@@ -188,7 +188,7 @@ export default function Component() {
           "Skill Validated Certificate & TGS Community access",
           "Chance to engage with Hiring Managers",
         ],
-        paymentLink: "https://example.com/gurugram/regular", // Add your payment link here
+        paymentLink: "https://rzp.io/rzp/yXxDHaPF", // Add your payment link here
       },
       {
         name: "Group Discount",
