@@ -3,6 +3,8 @@
 
 
 import Image, { StaticImageData } from 'next/image'
+import pune from "../../app/public/assets/cityCards/pune1.jpg"
+import gurugram from "../../app/public/assets/cityCards/gurgaon1.jpg"
 import chennai from "../../app/public/assets/cityCards/Chennai.jpg"
 import mumbai from "../../app/public/assets/cityCards/Mumbai1.jpg"
 import bangalore from "../../app/public/assets/cityCards/bangalore1.jpg"
@@ -21,14 +23,14 @@ interface CityCardProps {
 const cities: CityCardProps[] = [
   {
     city: "Bengaluru",
-    backgroundImage: mumbai,
+    backgroundImage: bangalore,
     dates:"10th  - 12th Jan, 2025",
     overlayColor: "from-pink-500/60", // Example color
     welcomeMessage: "( Namaskara 🙏)", // Welcome message for Bengaluru
   },
   {
     city: "Pune",
-    backgroundImage: bangalore,
+    backgroundImage: pune,
     dates:"31st Jan - 2nd Feb, 2025",
     overlayColor: "from-purple-500/60", // Example color
     welcomeMessage: "( स्वागत आहे 🙏)", // Welcome message for Pune
@@ -42,7 +44,7 @@ const cities: CityCardProps[] = [
   },
   {
     city: "Gurugram",
-    backgroundImage: chennai,
+    backgroundImage: gurugram,
     dates:"7th - 9th March, 2025",
     overlayColor: "from-blue-500/60", // Example color
     welcomeMessage: "( Welcome 🙏)", // Welcome message for Gurugram
@@ -56,7 +58,7 @@ const cities: CityCardProps[] = [
   },
   {
     city: "Chennai",
-    backgroundImage: mumbai,
+    backgroundImage: chennai,
     dates:"11th - 13th April, 2025",
     overlayColor: "from-pink-500/60", // Example color
     welcomeMessage: "( Varaverkirōm 🙏)", // Welcome message for Chennai
@@ -119,7 +121,7 @@ export default function CityCardGrid() {
               {/* Conditional rendering based on city name and screen size */}
               <div className="mt-4  py-2 px-4 w-full text-center leading-none">
                 {city.city === "Bengaluru" || "Pune" || "Hyderabad" ? (
-                  <a href="">
+                  <a href="#buy-tickets">
                     <div className="hover:border p-2 text-white font-semibold rounded-lg bg-white/40 hover:bg-white/70 hover:text-black">
                       {/* 10th - 12th Jan, 2025 */}
                       {city.dates}
