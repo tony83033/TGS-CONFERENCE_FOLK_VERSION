@@ -1,6 +1,7 @@
 
 import hash13 from "../../app/public/assets/hash13whitelogo.png";
 import lwlogo from "../../app/public/assets/LW-white.png";
+import { FaLinkedin, FaInstagram, FaYoutube, FaFacebook, FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
   // Cloudinary video URL
@@ -27,7 +28,52 @@ export default function Footer() {
             </div>
            <span> <img src={hash13.src.toString()} width={96} height={48} alt="Logo" /></span>
           </div>
+        
+
+        <div className="mt-6 flex gap-6 justify-start items-center">
+            <a
+              href="https://www.linkedin.com/company/linuxworld-informatics-pvt-ltd/?originalSubdomain=in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 text-2xl hover:text-blue-800"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://www.instagram.com/linuxworld.india/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-pink-500 text-2xl hover:text-pink-700"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://www.youtube.com/@IIECconnect"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-red-600 text-2xl hover:text-red-800"
+            >
+              <FaYoutube />
+            </a>
+            <a
+              href="https://www.facebook.com/LinuxWorld.India/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 text-2xl hover:text-blue-700"
+            >
+              <FaFacebook />
+            </a>
+            <a
+              href="https://x.com/Linuxworldindia"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sky-400 text-2xl hover:text-sky-600"
+            >
+              <FaTwitter />
+            </a>
+            </div>
         </div>
+
 
         {/* Column 2: Cloudinary Video Stream */}
         <div className="flex justify-center items-center">
