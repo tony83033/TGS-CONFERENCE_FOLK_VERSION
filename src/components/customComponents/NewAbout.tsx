@@ -15,7 +15,7 @@ const TGSAboutSection = () => {
           <h1 className="text-3xl md:text-3xl font-bold relative text-white -mb-4">
             <span className='text-[#ebff00]'>About TGS</span> - The Growth String Initiative        
           </h1>
-          <div className="h-1 w-16 bg-red-500 mx-auto"></div>
+          <div className="h-1 w-16 bg-[#ff0000] mx-auto"></div>
           <p className="text-xl ">
             <span className="text-white  drop-shadow-[0_0_15px_rgba(255,255,0,0.3)]">
               Your Launchpad to Mastery Across Technologies!
@@ -23,7 +23,7 @@ const TGSAboutSection = () => {
           </p>
         </div>
 
-        <div className="mx-auto md:h-[300px] md:w-[400px] sm:w-[250px]">
+        <div className="mx-auto md:h-[230px] md:w-[400px] sm:w-[250px]">
         <iframe
   width="100%"
   height="100%"
@@ -109,11 +109,48 @@ const TGSAboutSection = () => {
         <div className="text-center p-10 rounded-2xl 
                       bg-zinc-900/50 backdrop-blur-sm
                       shadow-[0_4px_30px_rgba(255,255,255,0.15)]">
-          <p className="text-2xl font-medium italic">
-            <span className="text-[#ff0000] drop-shadow-[0_0_10px_rgba(255,0,0,0.3)]">
-              TGS: Where Every Edition Empowers You with the Technology of Today & Tomorrow!
-            </span>
-          </p>
+         <p
+  className="text-2xl font-medium italic animate-fade-in"
+>
+  <span
+    className="text-[#ff0000] drop-shadow-[0_0_10px_rgba(255,0,0,0.3)] animate-pulse-text"
+  >
+    TGS: Where Every Edition Empowers You with the Technology of Today & Tomorrow!
+  </span>
+</p>
+
+<style>
+{`
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulse-text {
+    0%, 100% {
+      text-shadow: 0 0 10px rgba(255, 0, 0, 0.3), 0 0 20px rgba(255, 0, 0, 0.5);
+    }
+    50% {
+      text-shadow: 0 0 20px rgba(255, 0, 0, 0.6), 0 0 40px rgba(255, 0, 0, 0.8);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 1s ease-out;
+  }
+
+  .animate-pulse-text {
+    animation: pulse-text 2s infinite;
+  }
+`}
+</style>
+
         </div>
       </div>
     </section>

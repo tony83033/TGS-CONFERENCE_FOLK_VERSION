@@ -94,7 +94,7 @@ export default function Component() {
           "Skill Validated Certificate & TGS Community access",
           "Chance to engage with Hiring Managers",
         ],
-        paymentLink: "https://example.com/bengaluru/group", // Add your payment link here
+        paymentLink: "", // Add your payment link here
       },
     ],
     Hyderabad: [
@@ -129,7 +129,7 @@ export default function Component() {
           "Skill Validated Certificate & TGS Community access",
           "Chance to engage with Hiring Managers",
         ],
-        paymentLink: "https://example.com/hyderabad/group", // Add your payment link here
+        paymentLink: "", // Add your payment link here
       },
     ],
     Chennai: [
@@ -164,7 +164,7 @@ export default function Component() {
           "Skill Validated Certificate & TGS Community access",
           "Chance to engage with Hiring Managers",
         ],
-        paymentLink: "https://example.com/chennai/group", // Add your payment link here
+        paymentLink: "", // Add your payment link here
       },
     ],
     Gurugram: [
@@ -199,7 +199,7 @@ export default function Component() {
           "Skill Validated Certificate & TGS Community access",
           "Chance to engage with Hiring Managers",
         ],
-        paymentLink: "https://example.com/gurugram/group", // Add your payment link here
+        paymentLink: "", // Add your payment link here
       },
     ],
     Pune: [
@@ -234,7 +234,7 @@ export default function Component() {
           "Skill Validated Certificate & TGS Community access",
           "Chance to engage with Hiring Managers",
         ],
-        paymentLink: "https://example.com/pune/group", // Add your payment link here
+        paymentLink: "", // Add your payment link here
       },
     ],
   };
@@ -321,27 +321,30 @@ export default function Component() {
                   ))}
                 </CardContent>
                 <CardFooter className="p-6 pt-0 flex items-center justify-center">
-                  <Button
-                    className="w-full bg-black hover:bg-gray-800 text-white rounded-[8px] py-3 text-base font-semibold"
-                  >
-                    <span className="text-sm text-[#ffffff] font-semibold">
-                      {tier.name === "Early Bird offer" ? (
-                        <>
-                       <a className="style-none" href={tier.paymentLink} target="blank">₹ 8,400 + Taxes</a>
+  <Button
+    className="w-full bg-black hover:shadow-white hover:bg-black hover:shadow-md text-white rounded-[8px] py-3 text-base font-semibold"
+    onClick={() => {
+      if (tier.name === "Early Bird offer") {
+        window.open(tier.paymentLink, "_blank");
+      } else if (tier.name === "Regular Fees") {
+        window.open(tier.paymentLink, "_blank");
+      } else {
+        document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+      }
+    }}
+  >
+    <span className="text-sm text-[#ffffff] font-semibold">
+      {tier.name === "Early Bird offer" ? (
+        "₹ 8,400 + Taxes"
+      ) : tier.name === "Regular Fees" ? (
+        "₹ 10,400 + Taxes"
+      ) : (
+        "Connect with our TGS Team"
+      )}
+    </span>
+  </Button>
+</CardFooter>
 
-                        </>
-                      ) : tier.name === "Regular Fees" ? (
-                        <>
-                                               <a className="style-none" href={tier.paymentLink} target="blank">  
-                          ₹ 10,400 + Taxes
-                          </a>
-                        </>
-                      ) : (
-                        <a href="#contact">Connect with our TGS Team</a>
-                      )}
-                    </span>
-                  </Button>
-                </CardFooter>
               </div>
             </Card>
           );
