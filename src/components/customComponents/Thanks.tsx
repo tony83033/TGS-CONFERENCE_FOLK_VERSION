@@ -22,9 +22,9 @@ export default function CongratulationsPage() {
         <p className="text-lg mb-6">
           NOTE: These 3 Days Could Easily Be Worth A Crore For You!
         </p>
-        <Button className="bg-[#EBFF00] hover:bg-[#EBFF00] text-black font-bold py-2 px-4 rounded-lg mb-8">
+        <a href="https://forms.gle/d9h8tVspe6adx7WV6" className="bg-[#EBFF00] hover:bg-[#EBFF00] text-black font-bold py-2 px-4 rounded-lg mb-8">
         Fill Google  Form
-        </Button>
+        </a>
         <div className="flex gap-4">
           <div className="bg-gray-800 p-4 rounded-lg text-center">
             <p className="text-sm text-gray-400">DATE</p>
