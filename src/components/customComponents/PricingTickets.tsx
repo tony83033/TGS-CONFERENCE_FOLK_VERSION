@@ -304,7 +304,7 @@ export default function Component() {
                   {tier.name === "Early Bird offer"
                     ? "Applicable till 30th Dec, 2024"
                     : tier.name === "Regular Fees"
-                    ? "Applicable from 02th Dec, 2024"
+                    ? "Applicable from 02th Jan, 2025"
                     : "Applicable for a team of 3 or above"}
                 </span>
               </CardHeader>
