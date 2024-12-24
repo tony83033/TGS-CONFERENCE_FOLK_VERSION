@@ -302,9 +302,9 @@ export default function Component() {
                 </h3>
                 <span className="text-xs text-[#FF6347] font-semibold animate-widen-narrow">
                   {tier.name === "Early Bird offer"
-                    ? "Applicable till 20th Dec, 2024"
+                    ? "Applicable till 30th Dec, 2024"
                     : tier.name === "Regular Fees"
-                    ? "Applicable from 22th Dec, 2024"
+                    ? "Applicable from 02th Dec, 2024"
                     : "Applicable for a team of 3 or above"}
                 </span>
               </CardHeader>

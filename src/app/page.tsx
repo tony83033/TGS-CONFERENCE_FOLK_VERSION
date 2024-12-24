@@ -23,7 +23,7 @@ export default function Home() {
    <EventSchedule></EventSchedule> 
    {/* VISIONARY BEHIND TGS 3 */}
    <MentorProfile></MentorProfile>
-   <GalleryCarousel></GalleryCarousel>
+   {/* <GalleryCarousel></GalleryCarousel> */}
    {/* ON  INDIA TOUR 4  */}
    <CityCardGrid></CityCardGrid>
 {/* TGS PASS 5 */}
