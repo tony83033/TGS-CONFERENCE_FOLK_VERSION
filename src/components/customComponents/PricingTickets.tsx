@@ -11,234 +11,15 @@ import Hyderabad from "../../../src/app/public/assets/cityCards/hyderabad.jpg";
 import Bengaluru from "../../../src/app/public/assets/cityCards/bangalore.jpg";
 import Gurugram from "../../../src/app/public/assets/cityCards/gurgaon1.jpg";
 import Chennai from "../../../src/app/public/assets/cityCards/Chennai.jpg";
-
+import { cityPricing } from "../../../data/tickets";
 import { BadgeCheck } from "lucide-react";
 
-interface PricingTier {
-  name: string;
-  features: string[];
-  paymentLink: string;
-}
 
-interface CityPricing {
-  [key: string]: PricingTier[];
-}
 
 export default function Component() {
   const [selectedCity, setSelectedCity] = useState("Bengaluru");
 
-  const cityPricing: CityPricing = {
-    Mumbai: [
-      {
-        name: "Early Bird offer",
-        features: [
-          "Exclusive Hands-On Training with Mr Vimal Daga",
-          "Capstone Project integrating all your learnings",
-          "Networking Opportunities with peers from top tech companies",
-          "Skill Validated Certificate & TGS Community access",
-          "Chance to engage with Hiring Managers",
-        ],
-        paymentLink: "https://rzp.io/l/tsqJE1QU",
-      },
-      {
-        name: "Regular Fees",
-        features: [
-          "Exclusive Hands-On Training with Mr Vimal Daga",
-          "Capstone Project integrating all your learnings",
-          "Networking Opportunities with peers from top tech companies",
-          "Skill Validated Certificate & TGS Community access",
-          "Chance to engage with Hiring Managers",
-        ],
-        paymentLink: "https://rzp.io/l/mI9qfFM",
-      },
-      {
-        name: "Group Discount",
-        features: [
-          "Exclusive Hands-On Training with Mr Vimal Daga",
-          "Capstone Project integrating all your learnings",
-          "Networking Opportunities with peers from top tech companies",
-          "Skill Validated Certificate & TGS Community access",
-          "Chance to engage with Hiring Managers",
-        ],
-        paymentLink: "",
-      },
-    ],
-    Bengaluru: [
-      {
-        name: "Early Bird offer",
-        features: [
-          "Exclusive Hands-On Training with Mr Vimal Daga",
-          "Capstone Project integrating all your learnings",
-          "Networking Opportunities with peers from top tech companies",
-          "Skill Validated Certificate & TGS Community access",
-          "Chance to engage with Hiring Managers",
-        ],
-        paymentLink: "", // Empty for closed registrations
-      },
-      {
-        name: "Regular Fees",
-        features: [
-          "Exclusive Hands-On Training with Mr Vimal Daga",
-          "Capstone Project integrating all your learnings",
-          "Networking Opportunities with peers from top tech companies",
-          "Skill Validated Certificate & TGS Community access",
-          "Chance to engage with Hiring Managers",
-        ],
-        paymentLink: "https://rzp.io/l/4sPDgKAY",
-      },
-      {
-        name: "Group Discount",
-        features: [
-          "Exclusive Hands-On Training with Mr Vimal Daga",
-          "Capstone Project integrating all your learnings",
-          "Networking Opportunities with peers from top tech companies",
-          "Skill Validated Certificate & TGS Community access",
-          "Chance to engage with Hiring Managers",
-        ],
-        paymentLink: "",
-      },
-    ],
-    Hyderabad: [
-      {
-        name: "Early Bird offer",
-        features: [
-          "Exclusive Hands-On Training with Mr Vimal Daga",
-          "Capstone Project integrating all your learnings",
-          "Networking Opportunities with peers from top tech companies",
-          "Skill Validated Certificate & TGS Community access",
-          "Chance to engage with Hiring Managers",
-        ],
-        paymentLink: "https://rzp.io/l/gzReyTr",
-      },
-      {
-        name: "Regular Fees",
-        features: [
-          "Exclusive Hands-On Training with Mr Vimal Daga",
-          "Capstone Project integrating all your learnings",
-          "Networking Opportunities with peers from top tech companies",
-          "Skill Validated Certificate & TGS Community access",
-          "Chance to engage with Hiring Managers",
-        ],
-        paymentLink: "https://rzp.io/l/RBsTL3lv",
-      },
-      {
-        name: "Group Discount",
-        features: [
-          "Exclusive Hands-On Training with Mr Vimal Daga",
-          "Capstone Project integrating all your learnings",
-          "Networking Opportunities with peers from top tech companies",
-          "Skill Validated Certificate & TGS Community access",
-          "Chance to engage with Hiring Managers",
-        ],
-        paymentLink: "",
-      },
-    ],
-    Chennai: [
-      {
-        name: "Early Bird offer",
-        features: [
-          "Exclusive Hands-On Training with Mr Vimal Daga",
-          "Capstone Project integrating all your learnings",
-          "Networking Opportunities with peers from top tech companies",
-          "Skill Validated Certificate & TGS Community access",
-          "Chance to engage with Hiring Managers",
-        ],
-        paymentLink: "https://rzp.io/l/c9UWELvs",
-      },
-      {
-        name: "Regular Fees",
-        features: [
-          "Exclusive Hands-On Training with Mr Vimal Daga",
-          "Capstone Project integrating all your learnings",
-          "Networking Opportunities with peers from top tech companies",
-          "Skill Validated Certificate & TGS Community access",
-          "Chance to engage with Hiring Managers",
-        ],
-        paymentLink: "https://rzp.io/l/cEVo1d6w",
-      },
-      {
-        name: "Group Discount",
-        features: [
-          "Exclusive Hands-On Training with Mr Vimal Daga",
-          "Capstone Project integrating all your learnings",
-          "Networking Opportunities with peers from top tech companies",
-          "Skill Validated Certificate & TGS Community access",
-          "Chance to engage with Hiring Managers",
-        ],
-        paymentLink: "",
-      },
-    ],
-    Gurugram: [
-      {
-        name: "Early Bird offer",
-        features: [
-          "Exclusive Hands-On Training with Mr Vimal Daga",
-          "Capstone Project integrating all your learnings",
-          "Networking Opportunities with peers from top tech companies",
-          "Skill Validated Certificate & TGS Community access",
-          "Chance to engage with Hiring Managers",
-        ],
-        paymentLink: "https://rzp.io/l/XWnE9k2",
-      },
-      {
-        name: "Regular Fees",
-        features: [
-          "Exclusive Hands-On Training with Mr Vimal Daga",
-          "Capstone Project integrating all your learnings",
-          "Networking Opportunities with peers from top tech companies",
-          "Skill Validated Certificate & TGS Community access",
-          "Chance to engage with Hiring Managers",
-        ],
-        paymentLink: "https://rzp.io/l/yXxDHaPF",
-      },
-      {
-        name: "Group Discount",
-        features: [
-          "Exclusive Hands-On Training with Mr Vimal Daga",
-          "Capstone Project integrating all your learnings",
-          "Networking Opportunities with peers from top tech companies",
-          "Skill Validated Certificate & TGS Community access",
-          "Chance to engage with Hiring Managers",
-        ],
-        paymentLink: "",
-      },
-    ],
-    Pune: [
-      {
-        name: "Early Bird offer",
-        features: [
-          "Exclusive Hands-On Training with Mr Vimal Daga",
-          "Capstone Project integrating all your learnings",
-          "Networking Opportunities with peers from top tech companies",
-          "Skill Validated Certificate & TGS Community access",
-          "Chance to engage with Hiring Managers",
-        ],
-        paymentLink: "https://rzp.io/l/oaC4SfJ",
-      },
-      {
-        name: "Regular Fees",
-        features: [
-          "Exclusive Hands-On Training with Mr Vimal Daga",
-          "Capstone Project integrating all your learnings",
-          "Networking Opportunities with peers from top tech companies",
-          "Skill Validated Certificate & TGS Community access",
-          "Chance to engage with Hiring Managers",
-        ],
-        paymentLink: "https://rzp.io/l/7RgUMtH",
-      },
-      {
-        name: "Group Discount",
-        features: [
-          "Exclusive Hands-On Training with Mr Vimal Daga",
-          "Capstone Project integrating all your learnings",
-          "Networking Opportunities with peers from top tech companies",
-          "Skill Validated Certificate & TGS Community access",
-          "Chance to engage with Hiring Managers",
-        ],
-        paymentLink: "",
-      },
-    ],
-  };
+
 
   const cities = [
     { name: "Bengaluru", image: Bengaluru.src.toString() },
@@ -281,11 +62,11 @@ export default function Component() {
       </div>
 
       {/* Early Bird Closed Banner for Bengaluru */}
-      {selectedCity === "Bengaluru" && (
+      {/* {selectedCity === "Bengaluru" && (
         <div className="text-red-600 font-bold text-lg mb-4 animate-pulse">
           ⚠️ Early Bird Registrations Closed for Bengaluru
         </div>
-      )}
+      )} */}
 
       {/* Pricing Cards */}
       <div className="flex flex-col md:flex-row gap-8 items-stretch justify-center">
@@ -310,9 +91,9 @@ export default function Component() {
                 </h3>
                 <span className="text-xs text-[#FF6347] font-semibold animate-widen-narrow">
                   {tier.name === "Early Bird offer"
-                    ? "Applicable till 30th Dec, 2024"
+                    ? "Applicable till 20th Jan, 2025"
                     : tier.name === "Regular Fees"
-                    ? "Applicable from 02th Jan, 2025"
+                    ? "Applicable from 21th Jan, 2025"
                     : "Applicable for a team of 3 or above"}
                 </span>
               </CardHeader>
@@ -329,35 +110,26 @@ export default function Component() {
                   ))}
                 </CardContent>
                 <CardFooter className="p-6 pt-0 flex items-center justify-center">
-                  <Button
-                    className={`w-full bg-black hover:shadow-white hover:bg-black hover:shadow-md text-white rounded-[8px] py-3 text-base font-semibold ${
-                      selectedCity === "Bengaluru" && tier.name === "Early Bird offer"
-                        ? "opacity-50 cursor-not-allowed"
-                        : ""
-                    }`}
-                    onClick={() => {
-                      if (selectedCity === "Bengaluru" && tier.name === "Early Bird offer") {
-                        return; // Disable click only for Bengaluru Early Bird
-                      }
-                      if (tier.name === "Early Bird offer") {
-                        window.open(tier.paymentLink, "_blank");
-                      } else if (tier.name === "Regular Fees") {
-                        window.open(tier.paymentLink, "_blank");
-                      } else {
-                        document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-                      }
-                    }}
-                  >
-                    <span className="text-sm text-[#ffffff] font-semibold">
-                      {selectedCity === "Bengaluru" && tier.name === "Early Bird offer"
-                        ? "Registrations Closed"
-                        : tier.name === "Early Bird offer"
-                        ? "₹ 8,400 + Taxes "
-                        : tier.name === "Regular Fees"
-                        ? "₹ 10,400 + Taxes"
-                        : "Connect with our TGS Team"}
-                    </span>
-                  </Button>
+               <Button
+  className={`w-full bg-black hover:shadow-white hover:bg-black hover:shadow-md text-white rounded-[8px] py-3 text-base font-semibold`}
+  onClick={() => {
+    if (tier.name === "Early Bird offer") {
+      window.open(tier.paymentLink, "_blank");
+    } else if (tier.name === "Regular Fees") {
+      window.open(tier.paymentLink, "_blank");
+    } else {
+      document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+    }
+  }}
+>
+  <span className="text-sm text-[#ffffff] font-semibold">
+    {tier.name === "Early Bird offer"
+      ? "₹ 8,400 + Taxes "
+      : tier.name === "Regular Fees"
+      ? "₹ 10,400 + Taxes"
+      : "Connect with our TGS Team"}
+  </span>
+</Button>
                 </CardFooter>
               </div>
             </Card>
