@@ -14,7 +14,7 @@ import { BadgeCheck } from "lucide-react";
 
 
 export default function Component() {
-  const [selectedCity, setSelectedCity] = useState("Bengaluru");
+  const [selectedCity, setSelectedCity] = useState("Pune");
 
 
 
