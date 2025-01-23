@@ -31,7 +31,7 @@ const cities: CityCardProps[] = [
   {
     city: "Pune",
     backgroundImage: pune,
-    dates:"31st Jan - 2nd Feb, 2025",
+    dates:"21st - 23rd March, 2025",
     overlayColor: "from-purple-500/60", // Example color
     welcomeMessage: "( स्वागत आहे 🙏)", // Welcome message for Pune
   },
@@ -49,13 +49,7 @@ const cities: CityCardProps[] = [
     overlayColor: "from-blue-500/60", // Example color
     welcomeMessage: "( Welcome 🙏)", // Welcome message for Gurugram
   },
-  {
-    city: "Mumbai",
-    backgroundImage: mumbai,
-    dates:"21st - 23rd March, 2025",
-    overlayColor: "from-pink-500/60", // Example color
-    welcomeMessage: "( स्वागत आहे 🙏)", // Welcome message for Mumbai
-  },
+ 
   {
     city: "Chennai",
     backgroundImage: chennai,
