@@ -6,7 +6,7 @@ import Image, { StaticImageData } from 'next/image'
 import pune from "../../app/public/assets/cityCards/pune1.jpg"
 import gurugram from "../../app/public/assets/cityCards/gurgaon1.jpg"
 import chennai from "../../app/public/assets/cityCards/Chennai.jpg"
-import mumbai from "../../app/public/assets/cityCards/Mumbai1.jpg"
+// import mumbai from "../../app/public/assets/cityCards/Mumbai1.jpg"
 import bangalore from "../../app/public/assets/cityCards/bangalore1.jpg"
 import hyderabad from "../../app/public/assets/cityCards/hyderabad1.jpg"
 import indiaFlag from "../../app/public/assets/indiaFlag.png"  // Placeholder path for the India flag image
