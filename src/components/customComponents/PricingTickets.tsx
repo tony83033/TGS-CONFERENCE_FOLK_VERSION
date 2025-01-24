@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
-import Mumbai from "../../../src/app/public/assets/cityCards/Mumbai.jpg";
+// import Mumbai from "../../../src/app/public/assets/cityCards/Mumbai.jpg";
 import Pune from "../../../src/app/public/assets/cityCards/pune1.jpg";
 import Hyderabad from "../../../src/app/public/assets/cityCards/hyderabad.jpg";
 import Bengaluru from "../../../src/app/public/assets/cityCards/bangalore.jpg";
@@ -23,7 +23,7 @@ export default function Component() {
     { name: "Pune", image: Pune.src.toString() },
     { name: "Hyderabad", image: Hyderabad.src.toString() },
     { name: "Gurugram", image: Gurugram.src.toString() },
-    { name: "Mumbai", image: Mumbai.src.toString() },
+    // { name: "Mumbai", image: Mumbai.src.toString() },
     { name: "Chennai", image: Chennai.src.toString() },
   ];
 
