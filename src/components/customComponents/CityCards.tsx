@@ -22,6 +22,13 @@ interface CityCardProps {
 
 const cities: CityCardProps[] = [
   {
+    city: "Hyderabad",
+    backgroundImage: hyderabad,
+    dates:"21st - 23rd Feb, 2025",
+    overlayColor: "from-yellow-500/60", // Example color
+    welcomeMessage: "( Swagatam 🙏)", // Welcome message for Hyderabad
+  },
+  {
     city: "Bengaluru",
     backgroundImage: bangalore,
     dates:"28th Feb - 2nd Mar, 2025",
@@ -35,13 +42,7 @@ const cities: CityCardProps[] = [
     overlayColor: "from-purple-500/60", // Example color
     welcomeMessage: "( स्वागत आहे 🙏)", // Welcome message for Pune
   },
-  {
-    city: "Hyderabad",
-    backgroundImage: hyderabad,
-    dates:"21st - 23rd Feb, 2025",
-    overlayColor: "from-yellow-500/60", // Example color
-    welcomeMessage: "( Swagatam 🙏)", // Welcome message for Hyderabad
-  },
+ 
   {
     city: "Gurugram",
     backgroundImage: gurugram,
