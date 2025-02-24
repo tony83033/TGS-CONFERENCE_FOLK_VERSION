@@ -17,7 +17,9 @@ interface CityCardProps {
   backgroundImage: string | StaticImageData,
   dates: string,
   overlayColor: string // New property for dynamic overlay color
+
   welcomeMessage: string // New property for dynamic welcome message
+  venue:string
 }
 
 const cities: CityCardProps[] = [
@@ -27,6 +29,7 @@ const cities: CityCardProps[] = [
     dates:"21st - 23rd Feb, 2025",
     overlayColor: "from-yellow-500/60", // Example color
     welcomeMessage: "( Swagatam 🙏)", // Welcome message for Hyderabad
+    venue:"Workflow Hitex Bizness Square,Hitec City, Hyderabad"
   },
   {
     city: "Bengaluru",
@@ -34,6 +37,7 @@ const cities: CityCardProps[] = [
     dates:"28th Feb - 2nd Mar, 2025",
     overlayColor: "from-pink-500/60", // Example color
     welcomeMessage: "( Namaskara 🙏)", // Welcome message for Bengaluru
+    venue:"Venue will be announced soon..."
   },
   {
     city: "Gurugram",
@@ -41,6 +45,7 @@ const cities: CityCardProps[] = [
     dates:"7th - 9th March, 2025",
     overlayColor: "from-blue-500/60", // Example color
     welcomeMessage: "( Welcome 🙏)", // Welcome message for Gurugram
+    venue:"Venue will be announced soon..."
   },
   {
     city: "Pune",
@@ -48,6 +53,7 @@ const cities: CityCardProps[] = [
     dates:"21st - 23rd March, 2025",
     overlayColor: "from-purple-500/60", // Example color
     welcomeMessage: "( स्वागत आहे 🙏)", // Welcome message for Pune
+    venue:"Venue will be announced soon..."
   },
  
 
@@ -58,6 +64,7 @@ const cities: CityCardProps[] = [
     dates:"11th - 13th April, 2025",
     overlayColor: "from-pink-500/60", // Example color
     welcomeMessage: "( Varaverkirōm 🙏)", // Welcome message for Chennai
+    venue:"Venue will be announced soon..."
   },
 ]
 
@@ -122,7 +129,7 @@ export default function CityCardGrid() {
                       {/* 10th - 12th Jan, 2025 */}
                       {city.dates}
                       <br />
-                      <span className="text-[10px] bg-[#ff0000]">(Venue will be announced soon...)</span>
+                      <span className="text-[10px]  bg-[#ff0000]">{city.venue}</span>
                     </div>
                   </a>
                 ) : (
@@ -131,7 +138,7 @@ export default function CityCardGrid() {
                     {city.dates}
                       {/* To be announced */}
                       <br />
-                      <span className="text-[10px] bg-[#ff0000]">(Venue will be announced soon...)</span>
+                      <span className="text-[10px]  bg-[#ff0000]">{city.venue}</span>
                     </div>
                   </a>
                 )}
