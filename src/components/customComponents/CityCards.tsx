@@ -42,7 +42,7 @@ const cities: CityCardProps[] = [
   {
     city: "Gurugram",
     backgroundImage: gurugram,
-    dates:"25th - 27th March, 2025",
+    dates:"25th - 27th April, 2025",
     overlayColor: "from-blue-500/60", // Example color
     welcomeMessage: "( Welcome 🙏)", // Welcome message for Gurugram
     venue:"Venue will be announced soon..."
