@@ -34,7 +34,7 @@ const cities: CityCardProps[] = [
   {
     city: "Bengaluru",
     backgroundImage: bangalore,
-    dates:"11th Feb - 13th April, 2025",
+    dates:"11th - 13th April, 2025",
     overlayColor: "from-pink-500/60", // Example color
     welcomeMessage: "( Namaskara 🙏)", // Welcome message for Bengaluru
     venue:"Venue will be announced soon..."
