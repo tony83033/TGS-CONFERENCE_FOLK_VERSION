@@ -58,14 +58,14 @@ const cities: CityCardProps[] = [
  
 
  
-  {
-    city: "Chennai",
-    backgroundImage: chennai,
-    dates:"11th - 13th April, 2025",
-    overlayColor: "from-pink-500/60", // Example color
-    welcomeMessage: "( Varaverkirōm 🙏)", // Welcome message for Chennai
-    venue:"Venue will be announced soon..."
-  },
+  // {
+  //   city: "Chennai",
+  //   backgroundImage: chennai,
+  //   dates:"11th - 13th April, 2025",
+  //   overlayColor: "from-pink-500/60", // Example color
+  //   welcomeMessage: "( Varaverkirōm 🙏)", // Welcome message for Chennai
+  //   venue:"Venue will be announced soon..."
+  // },
 ]
 
 const events = [
